@@ -22,7 +22,7 @@ var SLIDE_CONFIG = {
 
   // Author information
   presenters: [{
-    name: 'Paroo Haq, Jamil Hotiana, David Dao',
+    name: 'Paroo Haq, Jamil Hotiana, David Dao, Saqib Javed, Shahid Aslam, Abdul Basit',
     company: '',
     //gplus: 'https://plus.google.com/111225444277358003374/posts',
     //www: 'http://www.ebi.ac.uk/~mp/',
