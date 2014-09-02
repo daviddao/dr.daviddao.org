@@ -155,7 +155,7 @@ function snipvis(div) {
 
 
          //Div
-        var menu_pane = d3.select("body")
+        var menu_pane = d3.select(div)
                     .append("div")
                     .append("span")
                     .text("Chromosome:   ");
