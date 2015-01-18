@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>David Dao Website</title>
+  <title>David's DataVis Blog</title>
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="css/style.css" rel="stylesheet">
   <link href="./img/css" rel="stylesheet" type="text/css">
@@ -15,115 +15,115 @@
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
 <!-- Fancy Visualization in D3.js -->
- <script type="text/javascript">
-var color = d3.scale.ordinal().range(["#ffcc00","#008597","#ff7c35","#35ff99","#4d407c","#ff7c35","#2d3443"]);
-var width = document.body.clientWidth,
-    height = 475;
+<!--<script type="text/javascript">
+// var color = d3.scale.ordinal().range(["#ffcc00","#008597","#ff7c35","#35ff99","#4d407c","#ff7c35","#2d3443"]);
+// var width = document.body.clientWidth,
+//     height = 100;
 
-var svg = d3.select("body").append("svg")
-    .style("background","#1A2434")
-    .attr("width", width)
-    .attr("height", height);
+// var svg = d3.select("body").append("svg")
+//     .style("background","#1A2434")
+//     .attr("width", width)
+//     .attr("height", height);
 
-var graph = {nodes:[], links:[]};
+// var graph = {nodes:[], links:[]};
 
-var nb_nodes = 75, nb_cat = 10;
+// var nb_nodes = 75, nb_cat = 10;
 
-//Random Category and ascending ids
-graph.nodes = d3.range(nb_nodes).map(function(d, i) {  
-  return { cat:Math.floor(nb_cat*Math.random()), id:i, x:0, y:0 }; 
-})
+// //Random Category and ascending ids
+// graph.nodes = d3.range(nb_nodes).map(function(d, i) {  
+//   return { cat:Math.floor(nb_cat*Math.random()), id:i, x:0, y:0 }; 
+// })
 
-//Random Links
-graph.nodes.map(function(d, i) {
-  graph.nodes.map(function(e, j) {
-    if(Math.random()>.99 && i!=j)
-      graph.links.push({"source": i, "target": j})
+// //Random Links
+// graph.nodes.map(function(d, i) {
+//   graph.nodes.map(function(e, j) {
+//     if(Math.random()>.99 && i!=j)
+//       graph.links.push({"source": i, "target": j})
 
-  })
-})
+//   })
+// })
 
-// Generate the force layout
-var force = d3.layout.force()
-    .size([width, height])
-    .on("tick", tick)
-    .on("start", function(d) {})
-    .on("end", function(d) {})
+// // Generate the force layout
+// var force = d3.layout.force()
+//     .size([width, height])
+//     .on("tick", tick)
+//     .on("start", function(d) {})
+//     .on("end", function(d) {})
 
-function tick(e) {
-  graph_update(0);
-}
+// function tick(e) {
+//   graph_update(0);
+// }
 
-//Creates the SVG Elements according to the Graph Data
-function graph_update(delay) {
+// //Creates the SVG Elements according to the Graph Data
+// function graph_update(delay) {
 
-  link.transition().duration(delay)
-      .attr("x1", function(d) { return d.target.x; })
-      .attr("y1", function(d) { return d.target.y; })
-      .attr("x2", function(d) { return d.source.x; })
-      .attr("y2", function(d) { return d.source.y; });
+//   link.transition().duration(delay)
+//       .attr("x1", function(d) { return d.target.x; })
+//       .attr("y1", function(d) { return d.target.y; })
+//       .attr("x2", function(d) { return d.source.x; })
+//       .attr("y2", function(d) { return d.source.y; });
 
-  node.transition().duration(delay)
-      .attr("transform", function(d) { 
-        return "translate("+d.x+","+d.y+")"; 
-      });
-}
+//   node.transition().duration(delay)
+//       .attr("transform", function(d) { 
+//         return "translate("+d.x+","+d.y+")"; 
+//       });
+// }
 
-var link = svg.selectAll(".link")
-              .data(graph.links)
-            .enter().append("line")
-              .attr("class", "link")
-              .attr("stroke","grey");
+// var link = svg.selectAll(".link")
+//               .data(graph.links)
+//             .enter().append("line")
+//               .attr("class", "link")
+//               .attr("stroke","grey");
 
-var node = svg.selectAll(".node")
-              .data(graph.nodes)
-            .enter()
-              .append("g").attr("class", "node");
+// var node = svg.selectAll(".node")
+//               .data(graph.nodes)
+//             .enter()
+//               .append("g").attr("class", "node");
 
-node.append("circle")
-    .attr("r", 5)
-    .attr("fill",function(d,i){return color(d.cat)})
+// node.append("circle")
+//     .attr("r", 5)
+//     .attr("fill",function(d,i){return color(d.cat)})
 
-force_layout();
+// force_layout();
 
-function force_layout() {
+// function force_layout() {
 
- force.nodes(graph.nodes)
-      .links(graph.links)
-      .start();
-}
+//  force.nodes(graph.nodes)
+//       .links(graph.links)
+//       .start();
+// }
 
-d3.select("svg").on("mousemove", function(d, i) {
+// d3.select("svg").on("mousemove", function(d, i) {
 
-  graph.nodes.push({x:d3.mouse(this)[0], y:d3.mouse(this)[1], cat:Math.floor(nb_cat*Math.random())})
-  force.nodes(graph.nodes).start();
+//   graph.nodes.push({x:d3.mouse(this)[0], y:d3.mouse(this)[1], cat:Math.floor(nb_cat*Math.random())})
+//   force.nodes(graph.nodes).start();
 
-  node = node.data(graph.nodes);
+//   node = node.data(graph.nodes);
 
-  node.enter()
-      .append("g").attr("class", "node")
-      .append("circle")
-      .attr("r", function(d){return d.cat + ""})
-      .style("fill", function(d) { return color(d.cat); })
+//   node.enter()
+//       .append("g").attr("class", "node")
+//       .append("circle")
+//       .attr("r", function(d){return d.cat + ""})
+//       .style("fill", function(d) { return color(d.cat); })
 
-})
+// })
 
-function deleteNode() {
-  if (graph.nodes.length > 75) {
-    graph.nodes.pop();
-    node = node.data(graph.nodes);
-    force.nodes(graph.nodes).start();
+// function deleteNode() {
+//   if (graph.nodes.length > 75) {
+//     graph.nodes.pop();
+//     node = node.data(graph.nodes);
+//     force.nodes(graph.nodes).start();
 
-    node.exit().remove();
-  }
+//     node.exit().remove();
+//   }
 
-  setTimeout(deleteNode,100);
-}
+//   setTimeout(deleteNode,100);
+// }
 
-setTimeout(deleteNode,100);
+// setTimeout(deleteNode,100);
 
 
-    </script>
+//     </script>-->
 
 <div id="top" class="chart">
 
@@ -134,21 +134,12 @@ setTimeout(deleteNode,100);
   </div>
   <div id="headerblob">
     <div id="headertext">
-      <div id="htname" style="color:white"><span style="color:#ff005d">OpenVis</span>ualisation</div>
-      <div id="htdesc" style="color:white">About Making Sense of Open Data</div>
+      <div id="htname"><span style="color:#ff005d">D.Dao</span></div>
+      <div id="htdesc">Decoding Complexity</div>
     </div>
   </div>
 </div>
 <br>
-<div class="container">
-  <div id="timeline">
-    <div class="timelineitem">
-      <div class="tdate">16.11.2014</div>
-      <div class="ttitle">Better Biological Visualizations with D3js</div>
-      <div class="tdesc">Biologists want to represent their data in the web. But please, for the sake of the user, don't use simple PNG for it!</div>
-    </div>
-  </div>
-</div>
 
 
 <div id="sitefooter">

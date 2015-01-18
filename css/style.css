@@ -21,15 +21,15 @@ html, body {
 }
 #headerblob {
   position: absolute;
-  left: 20%;
-  top: 265px;
+  left: 2%;
+  top: 2%;
   width: 80%;
 }
 #headertext {
   font-size: 26px;
   font-weight: 400;
-  margin-top: 50px;
-  margin-left: 220px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 .imgme {
   border: 3px solid white;
