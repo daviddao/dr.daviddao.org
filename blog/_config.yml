@@ -1,0 +1,12 @@
+# Site settings
+title: David's Blog
+email: 
+description: ""
+baseurl: ""
+url: 
+twitter_username: daviddao_
+github_username: daviddao
+
+# Build settings
+markdown: redcarpet
+permalink: pretty
