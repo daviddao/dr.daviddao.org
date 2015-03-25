@@ -12,88 +12,12 @@
 <body>
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
+<script src="https://wzrd.in/bundle/exelixis@0.0.4"></script>
+
 <script src="js/processing.js" charset="utf-8"></script>
 
 
-<canvas width="1400px" height="490px" data-processing-sources="js/neuralnets.pde" tabindex="0" id="__processing0" style="image-rendering: -webkit-optimize-contrast !important;"></canvas>
-
-<!-- Fancy Visualization in D3.js -->
-  <script type="text/javascript">
-// var color = d3.scale.ordinal().range(["#ffcc00","#008597","#ff005d","#ff7c35","#35ff99","#4d407c","#ff7c35","#2d3443"]);
-// var width = document.body.clientWidth,
-//     height = 490;
-
-// var nodes = d3.range(100).map(function() { return {radius: Math.random() * 12 + 4}; }),
-//     root = nodes[0];
-    
-
-// root.radius = 0;
-// root.fixed = true;
-
-// var force = d3.layout.force()
-//     .gravity(0.03)
-//     .charge(function(d, i) { return i ? 0 : -2000; })
-//     .nodes(nodes)
-//     .size([width, height]);
-
-// force.start();
-
-// var svg = d3.select("body").append("svg")
-//     .style("background","#1A2434")
-//     .attr("width", width)
-//     .attr("height", height);
-
-// svg.selectAll("circle")
-//     .data(nodes.slice(1))
-//   .enter().append("circle")
-//     .attr("r", function(d) { return d.radius; })
-//     .style("fill", function(d, i) { return color(i % 8); });
-
-// force.on("tick", function(e) {
-//   var q = d3.geom.quadtree(nodes),
-//       i = 0,
-//       n = nodes.length;
-
-//   while (++i < n) q.visit(collide(nodes[i]));
-
-//   svg.selectAll("circle")
-//       .attr("cx", function(d) { return d.x; })
-//       .attr("cy", function(d) { return d.y; });
-// });
-
-// svg.on("mousemove", function() {
-//   var p1 = d3.mouse(this);
-//   root.px = p1[0];
-//   root.py = p1[1];
-//   force.resume();
-// });
-
-// function collide(node) {
-//   var r = node.radius + 16,
-//       nx1 = node.x - r,
-//       nx2 = node.x + r,
-//       ny1 = node.y - r,
-//       ny2 = node.y + r;
-//   return function(quad, x1, y1, x2, y2) {
-//     if (quad.point && (quad.point !== node)) {
-//       var x = node.x - quad.point.x,
-//           y = node.y - quad.point.y,
-//           l = Math.sqrt(x * x + y * y),
-//           r = node.radius + quad.point.radius;
-//       if (l < r) {
-//         l = (l - r) / l * .5;
-//         node.x -= x *= l;
-//         node.y -= y *= l;
-//         quad.point.x += x;
-//         quad.point.y += y;
-//       }
-//     }
-//     return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
-//   };
-// }
-</script>
-
-
+<canvas width="1400px" height="490px" data-processing-sources="js/graphs.pde" tabindex="0" id="__processing0" style="image-rendering: -webkit-optimize-contrast !important;"></canvas>
 
 <div id="top" class="chart">
 
@@ -132,24 +56,24 @@
   <div id="timeline">
     <div class="timelineitem">
       <div class="tdate">Summer 2014</div>
-      <div class="ttitle">Google Summer of Code Internship</div>
+      <div class="ttitle">Google Summer of Code Fellowship</div>
       <div class="tdesc"><span class="thigh">Interactive Data Visualization</span> for the Web.</div>
     </div>
     <div class="timelineitem">
       <div class="tdate">Since 2014</div>
       <div class="ttitle">Technical University of Munich: Master's Degree</div>
-      <div class="tdesc">Major in <span class="thigh">Computer Science</span>.</div>
+      <div class="tdesc">Major in <span class="thigh">Computer Science</span>. Research in Computational Biology, Machine Learning and Computer Vision.</div>
     </div>
     <div class="timelineitem">
       <div class="tdate">Since 2014</div>
       <div class="ttitle">Researcher at Heidelberg Insitute for Theoretical Studies</div>
-      <div class="tdesc">Algorithms for <span class="thigh">Computational Molecular Evolution</span>.</div>
+      <div class="tdesc">Pattern Recognition for <span class="thigh">Computational Molecular Evolution</span>.</div>
     </div>
     <div class="timelineitem">
       <div class="tdate">2010-2014
       </div>
       <div class="ttitle">Karlsruhe Institute of Technology: Bachelor's Degree</div>
-      <div class="tdesc">Major in <span class="thigh">Computer Science</span> and Minor in <span class="thigh">Physics</span>.</div>
+      <div class="tdesc">Major in <span class="thigh">Computer Science</span> and Minor in <span class="thigh">Physics</span>. Focus on NLP, AI and Machine Learning.</div>
     </div>
   </div>
 </div>
@@ -164,9 +88,27 @@
     <div class="pubwrap">
       <div class="row">
         <div class="col-md-6">
-          <div class="pubimg">
-          <img src="./img/bookchapter.png" width="450px">
-          </div>
+          <div class="pubimg" id="tree">
+<!--           <img src="./img/bookchapter.png" width="450px">
+ -->       </div>
+            <script>
+              var birds = "((((((Gallus_gallus:0.037542,Meleagris_gallopavo:0.052355):0.075671,Anas_platyrhynchos:0.121708):0.025573,(Taeniopygia_guttata:0.074787,Ficedula_albicollis:0.073690):0.125246):0.086652,Pelodiscus_sinensis:0.247248):0.032830,Anolis_carolinensis:0.297064):0.112759,Monodelphis_domestica:0.112759);"
+              var exe = require("exelixis");
+              var tree2 = exe.createTree({
+                el: document.getElementById('tree'),
+                tree: {
+                  data: birds,
+                  layoutInput: "radial",
+                },
+                label: {
+                  usePics: true,
+                  fontsize: 7,
+                },
+                nodes: {
+                  toggle: true,
+                }
+            })
+            </script>
         </div>
         <div class="col-md-6">
           <div class="pub">
@@ -199,19 +141,19 @@
         </a>
         <div class="ppt">BioJS</div>
         <div class="ppd">
-          BioJS is a community-based standard and repository of functional components to represent biological information on the web. Its modular architecture makes it easy for users to find a specific functionality without needing to know how it has been built. The BioJS community of developers currently provides a range of functionality that is open access and freely available.
+          BioJS is a community-based standard and repository of functional components to represent biological information on the web. 
         </div>
 
       </div>
     </div>
     <div class="col-md-4">
       <div class="pp">
-        <a href="http://kidjs.org/">
-          <img src="./img/rocket.png" class="img-circle imgb">
+        <a href="http://biojs.io/d/exelixis">
+          <img src="./img/smallTree.png" class="img-circle imgb">
         </a>
-        <div class="ppt">KidJS</div>
+        <div class="ppt">Exelixis</div>
         <div class="ppd">
-           Kid.js offers a variety of events for science and education. Need some help on your way to become an expert programmer? Our experts can help you with valuable tips and mentoring. Don't hesitate to ask questions.
+          Exelixis is an interactive and easy-to-use phylogenetic tree viewer for the web.
         </div>
       </div>
     </div>
@@ -222,7 +164,7 @@
         </a>
         <div class="ppt">OpenVis</div>
         <div class="ppd">
-          OpenVis is an organization trying to change scientific visualization for the better. We want to encourage more web visualizations to represent scientific research the way it should be: interactive, fun and informative. Join our team and help us!
+          OpenVis want to encourage more interactive web visualizations in order to make science interactive, fun and informative. 
         </div>
       </div>
     </div>
@@ -236,10 +178,26 @@
 <div class="container">
   <h2>Teaching</h2>
   <div class="ctr">
-    <div class="hht"><a href="https://i12r-studfilesrv.informatik.tu-muenchen.de/pp22014/index.php/Main_Page">Protein Prediction II - Data Visualization</a> (winter 2014-2015, together with Prof. Burkhard Rost)</div>
-    <a href="https://i12r-studfilesrv.informatik.tu-muenchen.de/pp22014/index.php/Main_Page">
-      <img src="./img/pp-ex.svg" id="img231n" width="1000px">
-    </a>
+    <div class="hht"><a href="https://i12r-studfilesrv.informatik.tu-muenchen.de/pp22014/index.php/Main_Page">Interactive Data Visualization for Biology</a> (winter 2014-2015, together with Prof. Burkhard Rost)</div>
+    <div id="yourDiv"></div>
+    <script>
+      var exe = require('exelixis');
+
+      var tree = exe.createTree({
+        tree: {
+          width: document.body.clientWidth - 0.1 * document.body.clientWidth,
+          layoutInput: "vertical",
+          scale: true,
+        },
+        nodes:{
+          toggle: true,
+        },
+        label:{
+          usePics: true,
+          fontsize: 12,
+        }
+      });
+    </script>
   </div>
   <div class="ctr">
     <div class="hht"><a href="http://www.bildung-und-begabung.de/unsere-projekte/talentakademie-uebersicht">Talentakademie Ruhr 2013</a> </div>
@@ -254,7 +212,7 @@
   <div class="ctr">
     <div class="hht"><a href="http://vizbi.org/2015/Program/">Invited Tutorial VizBi15, Boston</a></div>
     <a href="http://vizbi.org/2015/Program/">
-      <img src="./img/bg2015.jpg" id="img231n" width="1000px">
+      <img src="./img/vizbi.png" id="img231n" width="1000px">
     </a>
   </div>
   <div class="ctr">
