@@ -90,30 +90,12 @@
 
     <div class="pubwrap">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-3">
           <div class="pubimg" id="tree">
-<!--           <img src="./img/bookchapter.png" width="450px">
- -->       </div>
-            <script>
-              var birds = "((((((Gallus_gallus:0.037542,Meleagris_gallopavo:0.052355):0.075671,Anas_platyrhynchos:0.121708):0.025573,(Taeniopygia_guttata:0.074787,Ficedula_albicollis:0.073690):0.125246):0.086652,Pelodiscus_sinensis:0.247248):0.032830,Anolis_carolinensis:0.297064):0.112759,Monodelphis_domestica:0.112759);"
-              var exe = require("exelixis");
-              var tree2 = exe.createTree({
-                el: document.getElementById('tree'),
-                tree: {
-                  data: birds,
-                  layoutInput: "radial",
-                },
-                label: {
-                  usePics: true,
-                  fontsize: 7,
-                },
-                nodes: {
-                  toggle: true,
-                }
-            })
-            </script>
+          <img src="./img/bookchapter.png" width="450px">
+      </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-9">
           <div class="pub">
             <div class="pubt">Automated Plausibility Analysis of Large Phylogenies</div>
             <div class="pubd">Here, we develop an automated plausibility assessment approach and introduce the effective algorithm Plausibility-Check. We conducted experiments on simulated and real data sets using the STBase tree database that show that the overall running time of our algorithm on large phylogenies improves by five orders of magnitude compared to the naıve algorithm. Plausibility-Check is available as part of the RAxML open source code that is available for download at https://github.com/stamatak/standard-RAxML </div>
@@ -184,6 +166,8 @@
     <div class="hht"><a href="https://i12r-studfilesrv.informatik.tu-muenchen.de/pp22014/index.php/Main_Page">Interactive Data Visualization for Biology</a> (winter 2014-2015, together with Prof. Burkhard Rost)</div>
     <div id="yourDiv"></div>
     <script>
+      var birds = "((((((Gallus_gallus:0.037542,Meleagris_gallopavo:0.052355):0.075671,Anas_platyrhynchos:0.121708):0.025573,(Taeniopygia_guttata:0.074787,Ficedula_albicollis:0.073690):0.125246):0.086652,Pelodiscus_sinensis:0.247248):0.032830,Anolis_carolinensis:0.297064):0.112759,Monodelphis_domestica:0.112759);"
+
       var exe = require('exelixis');
 
       var tree = exe.createTree({
@@ -191,6 +175,7 @@
           width: document.body.clientWidth - 0.1 * document.body.clientWidth,
           layoutInput: "vertical",
           scale: true,
+          data: birds,
         },
         nodes:{
           toggle: true,
@@ -227,8 +212,6 @@
 </div>
 
 <hr class="soft">
-
-<div id="sitefooter">
 
 </div>
 
