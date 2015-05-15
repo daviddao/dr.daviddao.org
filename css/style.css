@@ -385,8 +385,8 @@ Modules - reusable parts of our design
 .cd-container::after {
   /* clearfix */
   content: '';
-  display: table;
-  clear: both;
+  display: table; 
+  clear: both; 
 }
 
 /* -------------------------------- 
@@ -454,7 +454,8 @@ header h1 {
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-block {
-    margin: 4em 0;
+    /* distance between content blocks */
+    margin: -9em 0;
   }
   .cd-timeline-block:first-child {
     margin-top: 0;
