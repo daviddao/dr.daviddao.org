@@ -7,17 +7,18 @@
   <title>David Dao Website</title>
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="css/style.css" rel="stylesheet">
+  <script src="vertical-timeline/js/modernizr.js"></script> <!-- Modernizr -->
 </head>
 
-<body>
-<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<body><!-- 
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script> -->
 
 <script src="https://wzrd.in/bundle/exelixis@0.0.4"></script>
 
 <script src="js/processing.js" charset="utf-8"></script>
 
 
-<canvas width="1400px" height="490px" data-processing-sources="js/graphs.pde" tabindex="0" id="__processing0" style="image-rendering: -webkit-optimize-contrast !important;"></canvas>
+<canvas width="1400px" height="300px" data-processing-sources="js/graphs.pde" tabindex="0" id="__processing0" style="image-rendering: -webkit-optimize-contrast !important;"></canvas>
 
 <div id="top" class="chart">
 
@@ -26,13 +27,8 @@
       <li><a href="http://daviddao.de/blog/">blog</a></li>
     </ul>
   </div>
-  <div id="headerblob">
-    <img src="./img/me.png" class="img-circle imgme">
-    <div id="headertext">
-      <div id="htname" style="color:white">David Dao</div>
-      <div id="htdesc" style="color:white">Technical University of Munich M.Sc. Student</div>
-      <div id="htem" style="color:white">david.dao _at_ tum.de</div>
-      <div id="icons">
+  <div id="topnav2">
+  <div id="icons">
         <div class="svgico">
           <a href="https://twitter.com/daviddao_"><img src="./img/03-twitter.svg"></a>
         </div>
@@ -46,41 +42,79 @@
           <a href="https://www.linkedin.com/in/dadao"><img src="./img/linkedin.svg" width="63px"></a>
         </div>
       </div>
+  </div>
+  <div id="headerblob">
+    <img src="./img/me.png" class="img imgme">
+    <div id="headertext">
+      <div id="htname" style="color:white">David Dao</div>
+      <div id="htdesc" style="color:white">M.Sc. Student at TU Munich</div>
+      <div id="htem" style="color:white">david.dao at tum.de</div>
     </div>
   </div>
 </div>
-<!-- <div class="container quote">
+<div class="container quote">
   <blockquote>
-  "Discovering the secret of life. One algorithm at a time."
+  "I am interested in machine learning and its applications, including bioinformatics, computer vision, natural language processing and information retrieval"
   </blockquote>
-</div> -->
-<br><br>
-<div class="container">
-  <div id="timeline">
-    <div class="timelineitem">
-      <div class="tdate">Summer 2014</div>
-      <div class="ttitle">Google Summer of Code Fellowship</div>
-      <div class="tdesc"><span class="thigh">Interactive Data Visualization</span> for the Web.</div>
-    </div>
-    <div class="timelineitem">
-      <div class="tdate">Since 2014</div>
-      <div class="ttitle">Technical University of Munich: Master's Degree</div>
-      <div class="tdesc">Major in <span class="thigh">Computer Science</span>. Research in Computational Biology, Machine Learning and Computer Vision.</div>
-    </div>
-    <div class="timelineitem">
-      <div class="tdate">Since 2014</div>
-      <div class="ttitle">Researcher at Heidelberg Institute for Theoretical Studies</div>
-      <div class="tdesc">Pattern Recognition for <span class="thigh">Computational Molecular Evolution</span>.</div>
-    </div>
-    <div class="timelineitem">
-      <div class="tdate">2010-2014
-      </div>
-      <div class="ttitle">Karlsruhe Institute of Technology: Bachelor's Degree</div>
-      <div class="tdesc">Major in <span class="thigh">Computer Science</span> and Minor in <span class="thigh">Physics</span>. Focus on NLP, AI and Machine Learning.</div>
-    </div>
-  </div>
 </div>
-<br><br>
+<section id="cd-timeline" class="cd-container">
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="/img/code.svg" title="Google Summer of Code Fellowship">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h1>Google Summer of Code Fellowship</h1>
+				<img src="img/ebi.png" height="50px" alt="Announcement Image" class="announcement-banner-image">
+				<p><span class="thigh">Interactive Data Visualization</span> for the Web</p>
+				<span class="cd-date">Summer 2014</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<!-- <div class="cd-timeline-img cd-movie">
+				<img src="vertical-timeline/img/cd-icon-movie.svg" alt="Movie">
+			</div> <!-- cd-timeline-img -->
+			<div class="cd-timeline-img cd-picture" style="background:#1178b9;">
+				<img src="img/graduation.svg">
+			</div>
+
+			<div class="cd-timeline-content">
+				<h1>Technical University of Munich: Master's Degree in Computer Science</h1>
+				<img src="img/cv_tum-350x120.png" height="75px" alt="Announcement Image" class="announcement-banner-image">
+				<p>Major in <span class="thigh">Computer Science</span>. Focus on Machine Learning, Bioinformatics, NLP and Computer vision</p>
+				<span class="cd-date">Since 2014</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-location">
+				<img src="img/lightbulb-o.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h1>Researcher at Heidelberg Institute for Theoretical Studies</h1>
+				<img src="img/hits.png" height="75px" alt="Announcement Image" class="announcement-banner-image">
+				<p>Pattern Recognition for <span class="thigh">Computational Molecular Evolution</span></p>
+				<span class="cd-date">Since 2014</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture" style="background:#1178b9;">
+				<img src="img/graduation.svg" alt="Location">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h1>Karlsruhe Institute of Technology: Bachelor's Degree in Computer Science</h1>
+				<img src="img/KIT.png" height="75px" alt="Announcement Image" class="announcement-banner-image">
+				<p>Major in <span class="thigh">Computer Science</span> and Minor in <span class="thigh">Physics</span>. Focus on NLP, AI and Machine Learning</p>
+				<span class="cd-date">2010 - 2014</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+	</section> <!-- cd-timeline -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="vertical-timeline/js/main.js"></script> <!-- Resource jQuery -->
 
 <hr class="soft">
 
@@ -92,8 +126,30 @@
       <div class="row">
         <div class="col-md-4">
           <div class="pubimg" id="tree">
-          <img src="./img/tree.png" width="450px">
+
+      <div id="yourDiv"></div>
       </div>
+    <script>
+      var birds = "((((((Gallus_gallus:0.037542,Meleagris_gallopavo:0.052355):0.075671,Anas_platyrhynchos:0.121708):0.025573,(Taeniopygia_guttata:0.074787,Ficedula_albicollis:0.073690):0.125246):0.086652,Pelodiscus_sinensis:0.247248):0.032830,Anolis_carolinensis:0.297064):0.112759,Monodelphis_domestica:0.112759);"
+
+      var exe = require('exelixis');
+
+      var tree = exe.createTree({
+        tree: {
+          width: yourDiv.clientWidth,
+          layoutInput: "radial",
+          scale: false,
+          data: birds,
+        },
+        nodes:{
+          toggle: true,
+        },
+        label:{
+          usePics: true,
+          fontsize: 0.1,
+        }
+      });
+    </script>
         </div>
         <div class="col-md-8">
           <div class="pub">
@@ -157,61 +213,6 @@
 
 
 </div>
-
-<hr class="soft">
-
-<div class="container">
-  <h2>Teaching</h2>
-  <div class="ctr">
-    <div class="hht"><a href="https://i12r-studfilesrv.informatik.tu-muenchen.de/pp22014/index.php/Main_Page">Interactive Data Visualization for Biology</a> (winter 2014-2015, together with Prof. Burkhard Rost)</div>
-    <div id="yourDiv"></div>
-    <script>
-      var birds = "((((((Gallus_gallus:0.037542,Meleagris_gallopavo:0.052355):0.075671,Anas_platyrhynchos:0.121708):0.025573,(Taeniopygia_guttata:0.074787,Ficedula_albicollis:0.073690):0.125246):0.086652,Pelodiscus_sinensis:0.247248):0.032830,Anolis_carolinensis:0.297064):0.112759,Monodelphis_domestica:0.112759);"
-
-      var exe = require('exelixis');
-
-      var tree = exe.createTree({
-        tree: {
-          width: document.body.clientWidth - 0.1 * document.body.clientWidth,
-          layoutInput: "vertical",
-          scale: true,
-          data: birds,
-        },
-        nodes:{
-          toggle: true,
-        },
-        label:{
-          usePics: true,
-          fontsize: 12,
-        }
-      });
-    </script>
-  </div>
-  <div class="ctr">
-    <div class="hht"><a href="http://www.bildung-und-begabung.de/unsere-projekte/talentakademie-uebersicht">Talentakademie Ruhr 2013</a> </div>
-  </div>
-  <div class="ctr">
-    <div class="hht"><a href="http://www.bildung-und-begabung.de/unsere-projekte/vorbilderakademie-uebersicht">Vorbilderakademie Bayreuth 2012</a> </div>
-  </div>
-  <div class="ctr">
-    <div class="hht"><a href="http://www.bildung-und-begabung.de/unsere-projekte/vorbilderakademie-uebersicht">Vorbilderakademie Bayreuth 2011</a> </div>
-  </div>
-  <h2>Invited Workshops</h2>
-  <div class="ctr">
-    <div class="hht"><a href="http://vizbi.org/2015/Program/">Invited Tutorial VizBi15, Boston</a></div>
-    <a href="http://vizbi.org/2015/Program/">
-      <img src="./img/vizbi.png" id="img231n" width="1000px">
-    </a>
-  </div>
-  <div class="ctr">
-    <div class="hht"><a href="https://ebi.biojs.net">Industry Workshop EMBL-EBI, Hinxton</a> </div>
-  </div>
-  <div class="ctr">
-    <div class="hht"><a href="http://www.eccb14.org/program/tutorials/biojs">Invited Tutorial ECCB 14, Strasbourg</a> </div>
-  </div>
-</div>
-
-<hr class="soft">
 
 </div>
 

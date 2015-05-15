@@ -47,7 +47,7 @@ void setup() {
   // Frame rate
   frameRate(60);
   // Size of canvas (width ,height)
-  size(window.innerWidth,490);
+  size(window.innerWidth,300);
   // Stroke/line/border thickness
   strokeWeight(5);
   // Initiate array with random values for circles
@@ -65,7 +65,7 @@ void draw() {
   // Fill background #fff
   background(26,36,52);
   // Size of canvas (width ,height)
-  size(window.innerWidth,490);
+  size(window.innerWidth,300);
   // Begin looping through circle array
   for (int j=0;j< count;j++) {
     // Disable shape stroke/border
