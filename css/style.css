@@ -455,7 +455,7 @@ header h1 {
 @media only screen and (min-width: 1170px) {
   .cd-timeline-block {
     /* distance between content blocks */
-    margin: -9em 0;
+    margin: -7.5em 0;
   }
   .cd-timeline-block:first-child {
     margin-top: 0;
