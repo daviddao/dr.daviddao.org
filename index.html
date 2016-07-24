@@ -22,11 +22,11 @@
 
 <div id="top" class="chart">
 
-  <div id="topnav">
+  <!--<div id="topnav">
     <ul>
       <li><a href="http://daviddao.de/blog/">blog</a></li>
     </ul>
-  </div>
+  </div>-->
   <div id="topnav2">
   <div id="icons">
         <div class="svgico">
@@ -47,14 +47,20 @@
     <img src="./img/me.png" class="img imgme">
     <div id="headertext">
       <div id="htname" style="color:white">David Dao</div>
-      <div id="htdesc" style="color:white">Grad. Researcher at Broad Institute of MIT & Harvard</div>
-      <div id="htem" style="color:white">daviddao at broad.mit.edu</div>
+      <div id="htdesc" style="color:white">daviddao at broad.mit.edu</div>
+      <div id="htem" style="color:white">Research Engineer</div>
     </div>
   </div>
 </div>
 <div class="container quote">
-  <blockquote>
-  "I am interested in machine learning (especially deep learning) and its applications in human health and autonomous robots"
+  <blockquote style="font-size:21px">
+    <b>Biography:</b> "My goal is to engineer cognitive machines in order to free us from mundane tasks and enhance our lifes.
+    As a M.Sc. Student at <a href="https://www.tum.de">Technical University Munich</a>, my research focuses on deep learning and interactive machine intelligence. 
+    During my studies, I worked at 
+  <a href="https://www.cern.ch">CERN</a>, <a href="http://www.ebi.ac.uk/">EMBL-EBI</a> and 
+  <a href="https://www.broadinstitute.org">Broad Institute of MIT and Harvard</a>. 
+  Since 2015, I am organizing Germany's <a href="https://www.meetup.com/munichacm">largest deep learning meetup</a> and 
+  am the chair of the <a href="http://munichacm.de">ACM student group in Munich</a>."
   </blockquote>
 </div>
 <section id="cd-timeline" class="cd-container">
@@ -176,43 +182,46 @@
   <h2>Publications</h2>
   <div id="pubs">
 
-    <div class="pubwrap">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="pubimg" id="tree">
-            
-      <div id="yourDiv"></div>
-      </div>
-    <script>
-      var birds = "((((((Gallus_gallus:0.037542,Meleagris_gallopavo:0.052355):0.075671,Anas_platyrhynchos:0.121708):0.025573,(Taeniopygia_guttata:0.074787,Ficedula_albicollis:0.073690):0.125246):0.086652,Pelodiscus_sinensis:0.247248):0.032830,Anolis_carolinensis:0.297064):0.112759,Monodelphis_domestica:0.112759);"
-
-      var exe = require('exelixis');
-
-      var tree = exe.createTree({
-        tree: {
-          width: yourDiv.clientWidth,
-          layoutInput: "radial",
-          scale: false,
-          data: birds,
-        },
-        nodes:{
-          toggle: true,
-        },
-        label:{
-          usePics: true,
-          fontsize: 0.1,
-        }
-      });
-    </script>
+    <div class="pubwrap" style="border-bottom: none;">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="pubimg">
+              <img src="http://i.imgur.com/45Iosp1.png">
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="pub">
+              <div class="pubt">CellProfiler Analyst: interactive data exploration, analysis, and classification of large biological image sets</div>
+              <div class="puba"><u>David Dao</u>, Adam N. Fraser, Jane Hung, Vebjorn Ljosa, Shantanu Singh and Anne E. Carpenter</div>
+              <div class="pubv">Bioinformatics (2016)</div>
+              <div class="publ">
+                <ul>
+                  <li><a href="https://github.com/CellProfiler/CellProfiler-Analyst">GitHub</a></li>
+                  <li><a href="http://cellprofiler.org/CPA">Project page</a></li>
+                  <li><a href="http://dx.doi.org/10.1093/bioinformatics/btw390">PDF</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-8">
+      </div>
+
+    <div class="pubwrap" style="border-bottom: none;">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="pubimg" id="tree">
+           <img src="./img/smalltree.png">
+          </div>
+        </div>
+        <div class="col-md-9">
           <div class="pub">
             <div class="pubt">Automated Plausibility Analysis of Large Phylogenies</div>
-            <div class="pubd">Here, we develop an automated plausibility assessment approach and introduce the effective algorithm Plausibility-Check. We conducted experiments on simulated and real data sets using the STBase tree database that show that the overall running time of our algorithm on large phylogenies improves by five orders of magnitude compared to the naıve algorithm. Plausibility-Check is available as part of the RAxML open source code that is available for download at https://github.com/stamatak/standard-RAxML </div>
-            <div class="puba">D. Dao, T. Flouri, A. Stamatakis</div>
-            <div class="pubv">Pattern Recognition in Computational Molecular Biology, Wiley & Sons, 2015</div>
+            <!--<div class="pubd">Here, we develop an automated plausibility assessment approach and introduce the effective algorithm Plausibility-Check. We conducted experiments on simulated and real data sets using the STBase tree database that show that the overall running time of our algorithm on large phylogenies improves by five orders of magnitude compared to the naıve algorithm. Plausibility-Check is available as part of the RAxML open source code that is available for download at https://github.com/stamatak/standard-RAxML </div>-->
+            <div class="puba"><u>David Dao</u>, Tomas Flouri, Alexandros Stamatakis</div>
+            <div class="pubv">Pattern Recognition in Computational Molecular Biology, Wiley & Sons (2015)</div>
             <div class="publ">
               <ul>
+                <li><a href="https://github.com/stamatak/standard-RAxML">GitHub</a></li>
                 <li><a href="http://sco.h-its.org/exelixis/pubs/Exelixis-RRDR-2013-6.pdf">Book Chapter</a></li>
               </ul>
             </div>
@@ -223,26 +232,20 @@
 
     <div class="pubwrap" style="border-bottom: none;">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="pubimg">
-              <img src="http://i.imgur.com/JHRgIzk.png">
+              <img src="./img/biojs.png">
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-9">
             <div class="pub">
               <div class="pubt">Anatomy of BioJS, an open source community for the life sciences </div>
-              <div class="pubd">
-                BioJS is an open source software project that develops visualization tools for 
-different types of biological data. Here we report on the factors that influenced the growth of 
-the BioJS user and developer community, and outline our strategy for building on this 
-growth. The lessons we have learned on BioJS may also be relevant to other open source 
-software projects
-              </div>
-              <div class="puba">G. Yachdav, T. Goldberg, S. Wilzbach, D. Dao, I. Shih <em>et al.</em></div>
-              <div class="pubv">eLife 2015</div>
+              <div class="puba">Guy Yachdav, Tatyana Goldberg, Sebastian Wilzbach, <u>David Dao</u>, Iris Shih, Saket Choudhary, Steve Crouch, Max Franz, Alexander García, Leyla J García, Björn A Grüning, Devasena Inupakutika, Ian Sillitoe, Anil S Thanki, Bruno Vieira, José M Villaveces, Maria V Schneider, Suzanna Lewis, Steve Pettifer, Burkhard Rost, and Manuel Corpas</div>
+              <div class="pubv">eLife (2015)</div>
               <div class="publ">
                 <ul>
-                  <li><a href="http://www.biojs.net">Project</a></li>
+                  <li><a href="https://github.com/biojs/biojs">GitHub</a></li>
+                  <li><a href="http://www.biojs.net">Project page</a></li>
                   <li><a href="http://elifesciences.org/content/4/e07009.abstract">PDF</a></li>
                 </ul>
               </div>
@@ -253,7 +256,6 @@ software projects
     </div>
 
   </div>
-</div>
 
 <hr class="soft">
 
@@ -262,12 +264,13 @@ software projects
   <div class="row">
     <div class="col-md-4">
       <div class="pp">
-        <a href="http://biojs.net">
-        <img src="./img/biojs.png" class="img-circle imgb">
+        <a href="https://github.com/daviddao/spatial-transformer-tensorflow">
+        <img src="https://avatars2.githubusercontent.com/u/15658638?v=3&s=119" class="img-circle imgb">
         </a>
-        <div class="ppt">BioJS</div>
+        <div class="ppt">Spatial Transformer TensorFlow</div>
         <div class="ppd">
-          BioJS is a community-based standard and repository of functional components to represent biological information on the web. 
+          The Spatial Transformer Network allows the spatial manipulation of data within neural networks. 
+          It is part of Google's TensorFlow models repository.
         </div>
 
       </div>
