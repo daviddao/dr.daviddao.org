@@ -1,403 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>David Dao</title>
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="css/style.css" rel="stylesheet">
-  <script src="vertical-timeline/js/modernizr.js"></script> <!-- Modernizr -->
 </head>
 
-<body><!-- 
-<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script> -->
+<body>
+  <canvas width="2000" height="300" style="background: rgb(55, 58, 66)"></canvas>
+  <script src="js/d3.v4.0.0-alpha.33.min.js"></script>
+  <script>
 
-<script src="js/exelixis.js" charset="utf-8"></script>
+    var canvas = document.querySelector("canvas"),
+      context = canvas.getContext("2d"),
+      width = canvas.width,
+      height = canvas.height;
 
-<script src="js/processing.js" charset="utf-8"></script>
+    var n = 400,
+      pi = Math.PI,
+      tau = 2 * pi;
 
+    var nodes = d3.range(n).map(function () {
+      var r = Math.random() * width / 3,
+        a = Math.random() * tau,
+        x = width / 2 + r * Math.cos(a),
+        y = height / 2 + r * Math.sin(a);
+      return {
+        x: x,
+        y: y,
+        vx: (height / 2 - y) * 0.006,
+        vy: (x - width / 2) * 0.006
+      };
+    });
 
-<canvas width="1400px" height="300px" data-processing-sources="js/graphs.pde" tabindex="0" id="__processing0" style="image-rendering: -webkit-optimize-contrast !important;"></canvas>
+    var force = d3.forceSimulation(nodes)
+      .drag(0)
+      .alphaDecay(0)
+      .force("charge", d3.forceManyBody().strength(0.02))
+      .force("center", d3.forceCenter(width / 2, height / 2))
+      .on("tick", ticked);
 
-<div id="top" class="chart">
+    var stroke = d3.scaleLinear()
+      .domain([0, 5])
+      .range(["rgb(205, 101, 83)", "rgb(150, 192, 206)"]);
 
-  <!--<div id="topnav">
+    function ticked() {
+      context.clearRect(0, 0, width, height);
+      context.lineWidth = 5;
+      context.lineCap = "circle";
+
+      for (var i = 0, node, vx, vy; i < n; ++i) {
+        node = nodes[i];
+        context.beginPath();
+        context.moveTo(node.x, node.y);
+        context.lineTo(node.x + node.vx * 3, node.y + node.vy * 3);
+        context.strokeStyle = stroke(node.vx * node.vx + node.vy * node.vy);
+        context.stroke();
+      }
+    }
+
+  </script>
+
+  <div id="top" class="chart">
+
+    <!--<div id="topnav">
     <ul>
       <li><a href="http://daviddao.de/blog/">blog</a></li>
     </ul>
   </div>-->
-  <div id="topnav2">
-  <div id="icons">
+    <div id="topnav2">
+      <div id="icons">
         <div class="svgico">
-          <a href="https://twitter.com/dwddao"><img src="./img/03-twitter.svg"></a>
+          <a href="https://twitter.com/dwddao">
+            <img src="./img/03-twitter.svg">
+          </a>
         </div>
         <div class="svgico">
-          <a href="https://plus.google.com/106964331265732757093/posts"><img src="./img/80-google-plus.svg"></a>
+          <a href="https://github.com/daviddao">
+            <img src="./img/octocat.svg" width="56px">
+          </a>
         </div>
         <div class="svgico">
-          <a href="https://github.com/daviddao"><img src="./img/octocat.svg" width="56px"></a>
+          <a href="https://www.linkedin.com/in/dwddao">
+            <img src="./img/linkedin.svg" width="63px">
+          </a>
         </div>
-        <div class="svgico">
-          <a href="https://www.linkedin.com/in/dadao"><img src="./img/linkedin.svg" width="63px"></a>
-        </div>
-      </div>
-  </div>
-  <div id="headerblob">
-    <img src="./img/me.png" class="img imgme">
-    <div id="headertext">
-      <div id="htname" style="color:white">David Dao</div>
-      <div id="htdesc" style="color:white">david.dao at inf.ethz.ch</div>
-      <div id="htem" style="color:white">PhD student at ETHZ</div>
-    </div>
-  </div>
-</div>
-<div class="container quote">
-  <blockquote style="font-size:21px">
-    I'm a PhD student at <a href="https://www.systems.ethz.ch">ETH Zurich's Systems Group</a>, working on deep neural networks, data-driven medicine and autonomous driving systems. Before joining ETH Zurich, I was an autonomous driving researcher at <a href="http://www.mbrdna.com">Mercedes-Benz Research</a> in Silicon Valley and a graduate student at the <a href="https://www.broadinstitute.org">Broad Institute of MIT and Harvard</a>.
-    I believe strongly that my job as a researcher is to advance and serve the field, and the public broadly. Thus, I am a firm believer in open source and am organizing Germany's <a href="https://www.meetup.com/munichacm">largest machine intelligence meetup</a>, Harvard University's <a href="http://refugedu.github.io/">refugees and education conference</a> and Silicon Valley's <a href="http://selfdrivingai.org/">selfdriving AI series</a>."
-  </blockquote>
-</div>
-<section id="cd-timeline" class="cd-container">
-
-    <div class="cd-timeline-block">
-      <div class="cd-timeline-img cd-picture">
-        <img src="img/code.svg" alt="Picture">
-      </div> 
-      <div class="cd-timeline-content">
-        <h1>PhD Student at ETH Zuerich Systems Group</h1>
-        <span style="float:right">Fall 2017</span><br>
-        <a href="https://ds3lab.org/"><img src="img/ethz.jpg" width="50%"></a>
       </div>
     </div>
-
-    <div class="cd-timeline-block">
-      <div class="cd-timeline-img cd-picture">
-        <img src="img/code.svg" alt="Picture">
-      </div> 
-      <div class="cd-timeline-content">
-        <h1>Research at Mercedes-Benz Research & Development North America</h1>
-        <span style="float:right">2016 - 2017</span><br>
-        <a href="http://www.mbrdna.com/"><img src="img/mbrdna.jpg" width="70%"></a>
-        <p> <span class="thigh">Deep Reinforcement Learning</span> for Autonomous Driving</p>
+    <div id="headerblob">
+      <img src="./img/me.png" class="img imgme">
+      <div id="headertext">
+        <div id="htname" style="color:white">David Dao</div>
+        <div id="htdesc" style="color:white">david.dao at inf.ethz.ch</div>
+        <div id="htem" style="color:white">PhD candidate at ETH Zurich / Adjunct researcher at Mercedes-Benz Research / Global Shaper at WEF</div>
       </div>
-    </div> 
+    </div>
+  </div>
+  <div class="container quote">
+    <blockquote style="font-size:21px">
+      I'm a doctoral student at
+      <a href="https://www.systems.ethz.ch">ETH Zurich Systems Group's</a> <a href="https://ds3lab.org">DS3Lab</a>, building AI systems that can advance sustainability and health.
+      Before joining ETH Zurich, I was an autonomous driving engineer at
+      <a href="http://www.mbrdna.com">Mercedes-Benz Research</a> in Silicon Valley and a graduate student at the
+      <a href="https://www.broadinstitute.org">Broad Institute of MIT and Harvard</a>. I'm the founder of Germany's
+      <a href="https://www.meetup.com/munichacm">largest machine intelligence meetup</a>, Harvard University's
+      <a href="http://refugedu.github.io/">refugees and education conference</a> and Silicon Valley's
+      <a href="http://selfdrivingai.org/">selfdriving AI series</a>. 
+    </blockquote>
+  </div>
 
-    <div class="cd-timeline-block">
-      <div class="cd-timeline-img cd-location">
-        <img src="img/lightbulb-o.svg" alt="Picture">
-      </div> <!-- cd-timeline-img -->
+  <hr class="soft">
+  <br>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-9">
+        <h3>Research
+            <span class="smalltext"> ·
+              <a href="https://medium.com/@daviddao">Blog
+              </a>
+            </span></h3>
+        <p class="research"> 
+          <b>First of its kind AI Systems</b> <br>
+            DataBright: Using smart contracts to organize data and machines<br>
+          <b>AI Systems for Sustainability</b> <br> 
+            Deforestation prediction of the Amazon Rainforest using satellite imagery 
+            <em class="award"> · Awarded with a Microsoft AI for Earth Grant</em> <br>
+            Data-driven planning and traffic prediction for self-driving cars
+            <em class="award"> · Joint project with Mercedes-Benz Research</em> <br>
+          <b>AI Systems for Health</b> <br> 
+            Interactive Machine Learning for Cell Biology 
+            <em class="award"> · Joint project with Broad Institute of MIT and Harvard</em>
+        </p>
+        <h3>Publications
+          <span class="smalltext"> ·
+            <a href="https://scholar.google.ca/citations?user=XHeNA_8AAAAJ&hl=en">Google Scholar
+            </a>
+          </span>
+        </h3>
+        <div id="publist">
 
-      <div class="cd-timeline-content">
-        <h1>Grad. Researcher at Broad Institute of MIT and Harvard</h1>
-        <span style="float:right">2015 - 2016</span><br>
-        <a href="http://www.broadinstitute.org/"><img src="img/broad.png" width="50%"></a>
-        <p> <span class="thigh">Deep Learning</span> for Image-Based Chemical-Genetic Profiling</p>
-      </div> <!-- cd-timeline-content -->
-    </div> <!-- cd-timeline-block -->
-
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture">
-				<img src="/img/code.svg" title="Google Summer of Code Fellowship">
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h1>Google Summer of Code Fellowship</h1>
-        <span style="float:right">Summer 2014</span><br>
-				<a href="http://biojs.github.io/next"><img src="img/gsoc.png" width="65%"></a>
-				<p>Coding on <span class="thigh">Interactive Data Visualization</span> for the Web</p>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-		<div class="cd-timeline-block">
-			<!-- <div class="cd-timeline-img cd-movie">
-				<img src="vertical-timeline/img/cd-icon-movie.svg" alt="Movie">
-			</div> <!-- cd-timeline-img -->
-			<div class="cd-timeline-img cd-picture" style="background:#1178b9;">
-				<img src="img/graduation.svg">
-			</div>
-
-			<div class="cd-timeline-content">
-				<h1>Technical University of Munich: Master's Degree in Computer Science</h1>
-        <span style="float:right">2014 - 2016</span><br>
-				<a href="http://www.tum.de/"><img src="img/cv_tum-350x120.png" width="40%"></a>
-				<p>Major in <span class="thigh">Computer Science</span>. Focus on Machine Learning, Bioinformatics, and Computer Vision</p>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-location">
-				<img src="img/lightbulb-o.svg" alt="Picture">
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h1>Researcher at Heidelberg Institute for Theoretical Studies</h1>
-        <span style="float:right">2014 - 2015</span><br>
-				<a href="http://www.h-its.org/de/"><img src="img/hits.png" width="60%"></a>
-				<p>Pattern Recognition in <span class="thigh">Computational Molecular Evolution</span></p>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture" style="background:#1178b9;">
-				<img src="img/graduation.svg" alt="Location">
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-
-				<h1>Karlsruhe Institute of Technology: Bachelor's Degree in Computer Science</h1>
-        <span style="float:right">2010 - 2014</span><br>
-				<a href="http://www.informatik.kit.edu/"><img src="img/KIT.png" width="20%"></a>
-				<p>Major in <span class="thigh">Computer Science</span> and Minor in <span class="thigh">Physics</span>. Focus on AI, Machine Translation, and Machine Learning</p>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-    <div class="cd-timeline-block">
-      <div class="cd-timeline-img cd-location">
-        <img src="img/lightbulb-o.svg" alt="Picture">
-      </div> <!-- cd-timeline-img -->
-
-      <div class="cd-timeline-content">
-        <h1>62nd Lindau Nobel Laureate Forum Participant</h1>
-        <span style="float:right">Summer 2012</span><br>
-        <a href="http://www.lindau-nobel.org/"><img src="img/lindau.png" width="50%"></a>
-        <p>Meeting and discussion with <span class="thigh">Nobel Laureates in Physics</span></p>
-      </div> <!-- cd-timeline-content -->
-    </div> <!-- cd-timeline-block -->
-
-    <div class="cd-timeline-block">
-      <div class="cd-timeline-img cd-picture">
-        <img src="/img/code.svg">
-      </div> <!-- cd-timeline-img -->
-
-      <div class="cd-timeline-content">
-        <h1>Visiting Student at CERN</h1>
-        <span style="float:right">Fall 2010</span><br>
-        <a href="http://home.web.cern.ch/"><img src="img/cern.png" width="20%"></a>
-        <p>Machine Learning and Pattern Recognition in <span class="thigh">Particle Physics</span></p>
-      </div> <!-- cd-timeline-content -->
-    </div> <!-- cd-timeline-block -->
-
-	</section> <!-- cd-timeline -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="vertical-timeline/js/main.js"></script> <!-- Resource jQuery -->
-
-<hr class="soft">
-
-<div class="container">
-  <h2>Publications</h2>
-  <div id="pubs">
-
-    <div class="pubwrap" style="border-bottom: none;">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="pubimg">
-              <img src="img/methods.png">
+          <div class="pubyear"><h4>2017</h4></div>
+          <div class="pubentry">
+            <a class="thumblink" href="papers/methods_2017.pdf">
+              <img class="pubthumb" src="papers/thumbs/methods_2017.png">
+            </a>
+            <div class="pubtext">
+              <a href="papers/methods_2017.pdf">An open-source solution for advanced imaging flow cytometry data
+                analysis using machine learning</a>
+              <div class="pubmetadata">
+                <span class="pubauthors">Holger Hennig, Paul Rees, Thomas Blasi, Lee Kamentsky, Jane Hung, David Dao, Anne E. Carpenter, Andrew Filby</span>&nbsp;
+                <span class="pubvenue">
+                  <i>Methods 2017</i>.</span>
+                </div>
             </div>
           </div>
-          <div class="col-md-9">
-            <div class="pub">
-              <div class="pubt">An open-source solution for advanced imaging flow cytometry data analysis using machine learning</div>
-              <div class="puba">Holger Hennig, Paul Rees, Thomas Blasi, Lee Kamentsky, Jane Hung, <u>David Dao</u>, Anne E Carpenter, Andrew Filby</div>
-              <div class="pubv">Methods (2017)</div>
-              <div class="publ">
-                <ul>
-                    <li><a href="http://www.sciencedirect.com/science/article/pii/S1046202316302912">PDF</a></li>
-                </ul>
+          <div class="pubyear"><h4>2016</h4></div>
+          <div class="pubentry">
+            <a class="thumblink" href="papers/cpa_2016.pdf">
+              <img class="pubthumb" src="papers/thumbs/cpa_2016.png">
+            </a>
+            <div class="pubtext">
+              <a href="papers/cpa_2016.pdf">CellProfiler Analyst: interactive data
+                exploration, analysis and classification
+                of large biological image sets</a>
+              <div class="pubmetadata">
+                <span class="pubauthors">David Dao, Adam N. Fraser, Jane Hung, Vebjorn Ljosa, Shantanu Singh, Anne E. Carpenter.</span>&nbsp;
+                <span class="pubvenue">
+                  <i>Bioinformatics 2016</i>.</span> [
+                <a href="http://cellprofiler.org/cp-analyst/">website</a>] [
+                <a href="http://cellprofiler.org/cpa/">documentation</a>] [ 
+                <a href="https://github.com/CellProfiler/CellProfiler-Analyst">code</a>]</div>
+            </div>
+          </div>
+          <div class="pubentry">
+            <a class="thumblink" href="papers/mscthesis_2016.pdf">
+              <img class="pubthumb" src="papers/thumbs/mscthesis_2016.png">
+            </a>
+            <div class="pubtext">
+              <a href="papers/mscthesis_2016.pdf">Image-based chemical-genetic profiling using
+                Deep Neural Networks</a>
+              <div class="pubmetadata">
+                <span class="pubauthors">David Dao.</span>&nbsp;
+                <span class="pubvenue">
+                  <i>Master Thesis 2016</i>.</span> 
               </div>
             </div>
           </div>
+          <div class="pubyear"><h4>2015</h4></div>
+          <div class="pubentry">
+            <a class="thumblink" href="papers/biojs_2015.pdf">
+              <img class="pubthumb" src="papers/thumbs/biojs_2015.png">
+            </a>
+            <div class="pubtext">
+              <a href="papers/biojs_2015.pdf">Anatomy of BioJS, an open
+                source community for the life
+                sciences</a>
+              <div class="pubmetadata">
+                <span class="pubauthors">Guy Yachdav, Tatyana Goldberg, Sebastian Wilzbach, David Dao,
+                  Iris Shih, Saket Choudhary, Steve Crouch, Max Franz,
+                  Alexander Garcia, Leyla J Garcia, Bjorn A Gruening, 
+                  Devasana Inupakutika, Ian Sillitoe, Anil S Thanki, Bruno Vieira,
+                  Jose M Villaveces, Maria V Schneider, Suzanna Lewis, Steve Pettifer,
+                  Burkhard Rost, Manuel Corpas.</span>&nbsp;
+                <span class="pubvenue">
+                  <i>F1000 2015</i>.</span> [
+                <a href="https://www.youtube.com/watch?v=M5EI8Wdxx68&t=5s">talk</a>] [
+                <a href="https://github.com/biojs/talks">slides</a>] [
+                <a href="https://github.com/biojs">code</a>]</div>
+            </div>
+          </div>
+          <div class="pubyear"><h4>2014</h4></div>
+          <div class="pubentry">
+            <a class="thumblink" href="papers/plausibility_2014.pdf">
+              <img class="pubthumb" src="papers/thumbs/plausibility_2014.png">
+            </a>
+            <div class="pubtext">
+              <a href="papers/plausibility_2014.pdf">Automated Plausibility Analysis of Large Phylogenies</a>
+              <div class="pubmetadata">
+                <span class="pubauthors">David Dao, Tomas Flouri, Alexandros Stamatakis.</span>&nbsp;
+                <span class="pubvenue">
+                  <i>Pattern Recognition in Computational Molecular Biology 2014</i>.</span> [
+                <a href="https://github.com/stamatak/standard-RAxML/commit/cbe68870dcb454438ba9bbf97c3a4736926cbbb1">code</a>]</div>
+            </div>
+          </div>
+
         </div>
+      </div>
+      <div class="col-md-3">
+        <a class="twitter-timeline" data-tweet-limit="3" data-theme="light" data-link-color="#CD6553" href="https://twitter.com/dwddao?ref_src=twsrc%5Etfw">Tweets by dwddao</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="showmobile" style="margin-top: -20px; margin-bottom: 10px;">
+          <hr style="margin-bottom: 5px;">You can follow me on Twitter at
+          <a href="http://twitter.com/dwddao">@dwddao</a>.</div>
       </div>
 
-      <div class="pubwrap" style="border-bottom: none;">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="pubimg">
-              <img src="img/thesis.png">
-            </div>
-          </div>
-          <div class="col-md-9">
-            <div class="pub">
-              <div class="pubt">Image-based chemical-genetic profiling using Deep Neural Networks</div>
-              <div class="puba"><u>David Dao</u></div>
-              <div class="pubv">Master Thesis (2016)</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="thesis.pdf">PDF</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-    <div class="pubwrap" style="border-bottom: none;">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="pubimg">
-              <img src="http://i.imgur.com/45Iosp1.png">
-            </div>
-          </div>
-          <div class="col-md-9">
-            <div class="pub">
-              <div class="pubt">CellProfiler Analyst: interactive data exploration, analysis, and classification of large biological image sets</div>
-              <div class="puba"><u>David Dao</u>, Adam N. Fraser, Jane Hung, Vebjorn Ljosa, Shantanu Singh and Anne E. Carpenter</div>
-              <div class="pubv">Bioinformatics (2016)</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="https://github.com/CellProfiler/CellProfiler-Analyst">GitHub</a></li>
-                  <li><a href="http://cellprofiler.org/CPA">Project page</a></li>
-                  <li><a href="http://dx.doi.org/10.1093/bioinformatics/btw390">PDF</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <div class="pubwrap" style="border-bottom: none;">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="pubimg" id="tree">
-           <img src="http://i.imgur.com/6eIONmD.png">
-          </div>
-        </div>
-        <div class="col-md-9">
-          <div class="pub">
-            <div class="pubt">Automated Plausibility Analysis of Large Phylogenies</div>
-            <!--<div class="pubd">Here, we develop an automated plausibility assessment approach and introduce the effective algorithm Plausibility-Check. We conducted experiments on simulated and real data sets using the STBase tree database that show that the overall running time of our algorithm on large phylogenies improves by five orders of magnitude compared to the naıve algorithm. Plausibility-Check is available as part of the RAxML open source code that is available for download at https://github.com/stamatak/standard-RAxML </div>-->
-            <div class="puba"><u>David Dao</u>, Tomas Flouri, Alexandros Stamatakis</div>
-            <div class="pubv">Pattern Recognition in Computational Molecular Biology, Wiley & Sons (2015)</div>
-            <div class="publ">
-              <ul>
-                <li><a href="https://github.com/stamatak/standard-RAxML">GitHub</a></li>
-                <li><a href="http://sco.h-its.org/exelixis/pubs/Exelixis-RRDR-2013-6.pdf">Book Chapter</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="pubwrap" style="border-bottom: none;">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="pubimg">
-              <img src="./img/biojs.png">
-            </div>
-          </div>
-          <div class="col-md-9">
-            <div class="pub">
-              <div class="pubt">Anatomy of BioJS, an open source community for the life sciences </div>
-              <div class="puba">Guy Yachdav, Tatyana Goldberg, Sebastian Wilzbach, <u>David Dao</u>, Iris Shih, Saket Choudhary, Steve Crouch, Max Franz, Alexander García, Leyla J García, Björn A Grüning, Devasena Inupakutika, Ian Sillitoe, Anil S Thanki, Bruno Vieira, José M Villaveces, Maria V Schneider, Suzanna Lewis, Steve Pettifer, Burkhard Rost, and Manuel Corpas</div>
-              <div class="pubv">eLife (2015)</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="https://github.com/biojs/biojs">GitHub</a></li>
-                  <li><a href="http://www.biojs.net">Project page</a></li>
-                  <li><a href="http://elifesciences.org/content/4/e07009.abstract">PDF</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
   </div>
 
-<hr class="soft">
-
-<div class="container">
-  <h2>My Projects</h2>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="pp">
-        <a href="https://github.com/daviddao/spatial-transformer-tensorflow">
-        <img src="https://avatars2.githubusercontent.com/u/15658638?v=3&s=119" class="img-circle imgb">
-        </a>
-        <div class="ppt">STN TensorFlow</div>
-        <div class="ppd">
-          The Spatial Transformer Network (STN) allows the spatial manipulation of data within neural networks. 
-          It is part of Google's TensorFlow models repository.
-        </div>
-
-      </div>
-    </div>
-     <div class="col-md-4">
-      <div class="pp">
-        <a href="https://github.com/daviddao/awesome-very-deep-learning">
-        <img src="./img/resnet.jpg" class="img-circle imgb">
-        </a>
-        <div class="ppt">Residual Learning Papers</div>
-        <div class="ppd">
-          Awesome-very-deep-learning is a curated list for papers and code about implementing and training very deep neural networks (50+ layers), especially residual neural networks.
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="pp">
-        <a href="https://github.com/CellProfiler/CellProfiler-Analyst">
-          <img style="width:126px" src="http://i.imgur.com/45Iosp1.png" class="img-circle imgb">
-        </a>
-        <div class="ppt">CellProfiler Analyst</div>
-        <div class="ppd">
-          Free software for cell biologists that allows the interactive exploration and machine learning analysis of subtle phenotypes in high throughput, image based experiments. 
-        </div>
-      </div>
-    </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-4">
-      <div class="pp">
-        <a href="http://biojs.net">
-          <img src="./img/biojs.png" class="img-circle imgb">
-        </a>
-        <div class="ppt">BioJS</div>
-        <div class="ppd">
-          I am one of the core developer of the BioJS project: an open source library of JavaScript components to interactively represent biological data in the web.
-        </div>
-      </div>
-    </div>
-     <div class="col-md-4">
-      <div class="pp">
-        <a href="http://meetup.com/munichacm">
-          <img src="./img/dlia.png" class="img-circle imgb">
-        </a>
-        <div class="ppt">Deep Learning in Action</div>
-        <div class="ppd">
-          Deep Learning in Action is a regular speaker series in Munich with 1000+ participants about Machine Learning (especially Deep Learning).
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="pp">
-        <a href="http://refugedu.github.io/">
-          <img src="./img/harvard.jpg" class="img-circle imgb">
-        </a>
-        <div class="ppt">Harvard Refugedu</div>
-        <div class="ppd">
-          Co-organized first-ever refugee education conference at Harvard University that strives to engage researchers, practitioners and policymakers from Europe, the Middle East and the US.
-        </div>
-      </div>
-    </div>
-  </div>
+  <script>
+    var lol = ["─────────▄──────────────▄", "────────▌▒█───────────▄▀▒▌", "────────▌▒▒▀▄───────▄▀▒▒▒▐", "───────▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐", "─────▄▄▀▒▒▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐ WOW! SO DOGE!!", "───▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀██▀▒▌", "──▐▒▒▒▄▄▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄▒▒▌", "──▌▒▒▐▄█▀▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐ SUCH CONSOLE, MANY JAVASCRIPT!", "─▐▒▒▒▒▒▒▒▒▒▒▒▌██▀▒▒▒▒▒▒▒▒▀▄▌", "─▌▒▀▄██▄▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒▌", "─▌▀▐▄█▄█▌▄▒▀▒▒▒▒▒▒░░░░░░▒▒▒▐", "▐▒▀▐▀▐▀▒▒▄▄▒▄▒▒▒▒▒░░░░░░▒▒▒▒▌ MUCH SECRET! SUCH CODING SKILLS!!", "▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒░░░░░░▒▒▒▐", "─▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒▒▒░░░░▒▒▒▒▌", "─▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▐ ", "──▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▄▒▒▒▒▌", "────▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀ GREAT GUY! VERY HIRE!!", "───▐▀▒▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀", "──▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀▀"];
+
+    for (i in lol) {
+      console.log(lol[i]);
+    }
+
+  </script>
 
 
-</div>
+</body>
 
-</div>
-
-<script>
-var lol = ["─────────▄──────────────▄","────────▌▒█───────────▄▀▒▌","────────▌▒▒▀▄───────▄▀▒▒▒▐","───────▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐","─────▄▄▀▒▒▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐ WOW! SO DOGE!!","───▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀██▀▒▌","──▐▒▒▒▄▄▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄▒▒▌","──▌▒▒▐▄█▀▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐ SUCH CONSOLE, MANY JAVASCRIPT!","─▐▒▒▒▒▒▒▒▒▒▒▒▌██▀▒▒▒▒▒▒▒▒▀▄▌","─▌▒▀▄██▄▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒▌","─▌▀▐▄█▄█▌▄▒▀▒▒▒▒▒▒░░░░░░▒▒▒▐","▐▒▀▐▀▐▀▒▒▄▄▒▄▒▒▒▒▒░░░░░░▒▒▒▒▌ MUCH SECRET! SUCH CODING SKILLS!!","▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒░░░░░░▒▒▒▐","─▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒▒▒░░░░▒▒▒▒▌","─▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▐ ","──▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▄▒▒▒▒▌","────▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀ GREAT GUY! VERY HIRE!!","───▐▀▒▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀","──▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀▀"];
-
-for(i in lol) {
-  console.log(lol[i]);
-}
-
-</script>
-
-
-</body></html>
+</html>

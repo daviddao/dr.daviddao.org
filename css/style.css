@@ -1,10 +1,33 @@
 html, body {
   height: 100%;
-  font-family: 'Roboto', sans-serif;
-  color: #7f8c97;
-  background-color: #e9f0f5;
+  font-family: 'Calibri', sans-serif;
+  color: rgb(115,130,143);
+  background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.pubentry {
+  display: block;
+  overflow: hidden;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+.pubthumb {
+  width: 60px;
+  border: 1px solid #444;
+  float: left;
+  margin-right: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+a {
+  color: rgb(205, 101, 83);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(205, 101, 83);
 }
 
 *, *:after, *:before {
@@ -208,6 +231,7 @@ li {
 }
 .quote blockquote {
   font-size: 28px;
+  background-color: oldlace;
 }
 h2 {
   text-align: center;
@@ -492,6 +516,18 @@ header h1 {
 .cd-timeline-img.cd-location {
   background: #f0ca45;
 }
+
+.award {
+  color: rgb(150, 192, 296);
+}
+.research {
+  font-size: 17px;
+}
+
+.smalltext {
+  font-size: .8em;
+}
+
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
     width: 60px;
