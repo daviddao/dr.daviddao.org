@@ -12,57 +12,102 @@
 </head>
 
 <body>
-  <canvas width="2000" height="300" style="background: rgb(55, 58, 66)"></canvas>
+  <canvas height="300" style="background: rgb(55, 58, 66)"></canvas>
   <script src="js/d3.v4.0.0-alpha.33.min.js"></script>
   <script>
 
-    var canvas = document.querySelector("canvas"),
-      context = canvas.getContext("2d"),
-      width = canvas.width,
-      height = canvas.height;
+(function() {
+			var 
+				// Obtain a reference to the canvas element
+				// using its id.
+				htmlCanvas = document.querySelector('canvas'),
+			
+        // Obtain a graphics context on the
+        // canvas element for drawing.
+        context = htmlCanvas.getContext('2d');
+ 
+			// Start listening to resize events and
+			// draw canvas.
+			initialize();
+ 
+			function initialize() {
+				// Register an event listener to
+				// call the resizeCanvas() function each time 
+				// the window is resized.
+				window.addEventListener('resize', resizeCanvas, false);
+				
+				// Draw canvas border for the first time.
+				resizeCanvas();
+			}
+				
+			// Display custom canvas.
+			// In this case it's a blue, 5 pixel border that 
+			// resizes along with the browser window.					
+			function redraw() {
+        var width = htmlCanvas.width,
+          height = htmlCanvas.height;
+				var n = 400,
+        pi = Math.PI,
+        tau = 2 * pi;
 
-    var n = 400,
-      pi = Math.PI,
-      tau = 2 * pi;
+        var nodes = d3.range(n).map(function () {
+          var r = Math.random() * width / 3,
+            a = Math.random() * tau,
+            x = width / 2 + r * Math.cos(a),
+            y = height / 2 + r * Math.sin(a);
+          return {
+            x: x,
+            y: y,
+            vx: (height / 2 - y) * 0.006,
+            vy: (x - width / 2) * 0.006
+          };
+        });
 
-    var nodes = d3.range(n).map(function () {
-      var r = Math.random() * width / 3,
-        a = Math.random() * tau,
-        x = width / 2 + r * Math.cos(a),
-        y = height / 2 + r * Math.sin(a);
-      return {
-        x: x,
-        y: y,
-        vx: (height / 2 - y) * 0.006,
-        vy: (x - width / 2) * 0.006
-      };
-    });
+        var force = d3.forceSimulation(nodes)
+          .drag(0)
+          .alphaDecay(0)
+          .force("charge", d3.forceManyBody().strength(0.02))
+          .force("center", d3.forceCenter(width / 2, height / 2))
+          .on("tick", ticked);
 
-    var force = d3.forceSimulation(nodes)
-      .drag(0)
-      .alphaDecay(0)
-      .force("charge", d3.forceManyBody().strength(0.02))
-      .force("center", d3.forceCenter(width / 2, height / 2))
-      .on("tick", ticked);
+        var stroke = d3.scaleLinear()
+          .domain([0, 5])
+          .range(["rgb(205, 101, 83)", "rgb(150, 192, 206)"]);
 
-    var stroke = d3.scaleLinear()
-      .domain([0, 5])
-      .range(["rgb(205, 101, 83)", "rgb(150, 192, 206)"]);
+        function ticked() {
+          context.clearRect(0, 0, width, height);
+          context.lineWidth = 5;
+          context.lineCap = "circle";
 
-    function ticked() {
-      context.clearRect(0, 0, width, height);
-      context.lineWidth = 5;
-      context.lineCap = "circle";
+          for (var i = 0, node, vx, vy; i < n; ++i) {
+            node = nodes[i];
+            context.beginPath();
+            context.moveTo(node.x, node.y);
+            context.lineTo(node.x + node.vx * 3, node.y + node.vy * 3);
+            context.strokeStyle = stroke(node.vx * node.vx + node.vy * node.vy);
+            context.stroke();
+          }
+        }
+			}
+		
+			// Runs each time the DOM window resize event fires.
+			// Resets the canvas dimensions to match window,
+			// then draws the new borders accordingly.
+			function resizeCanvas() {
+				htmlCanvas.width = window.innerWidth;
+				htmlCanvas.height = 300;
+				redraw();
+			}
+		
+		})();
 
-      for (var i = 0, node, vx, vy; i < n; ++i) {
-        node = nodes[i];
-        context.beginPath();
-        context.moveTo(node.x, node.y);
-        context.lineTo(node.x + node.vx * 3, node.y + node.vy * 3);
-        context.strokeStyle = stroke(node.vx * node.vx + node.vy * node.vy);
-        context.stroke();
-      }
-    }
+    // var canvas = document.querySelector("canvas"),
+    //   context = canvas.getContext("2d");
+    //   canvas.width = window.innerWidth;
+    // var width = canvas.width,
+    //   height = canvas.height;
+
+    
 
   </script>
 
@@ -233,7 +278,7 @@
         </div>
       </div>
       <div class="col-md-3">
-        <a class="twitter-timeline" data-tweet-limit="3" data-theme="light" data-link-color="#CD6553" href="https://twitter.com/dwddao?ref_src=twsrc%5Etfw">Tweets by dwddao</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="twitter-timeline" data-tweet-limit="3" data-theme="light" data-link-color="#CD6553" href="https://twitter.com/dwddao?ref_src=twsrc%5Etfw">Tweets by dwddao</a> 
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <div class="showmobile" style="margin-top: -20px; margin-bottom: 10px;">
           <hr style="margin-bottom: 5px;">You can follow me on Twitter at
