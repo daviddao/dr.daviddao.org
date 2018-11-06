@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/daviddao
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://daviddao.org
+  * I am daviddao (https://keybase.io/daviddao) on keybase.
+  * I have a public key ASDjk6i5ZIF9WqaG_paFtxVSVm2YAOoxuVxWMDs-iL6ubwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012073fcb9cbfe71a4cd1204564b6fc4783130d03e142479fc7be3b84f86e822884a0a",
+      "host": "keybase.io",
+      "kid": "0120e393a8b964817d5aa686fe9685b71552566d9800ea31b95c56303b3e88beae6f0a",
+      "uid": "257289d661feabbde37e77b7e85e9919",
+      "username": "daviddao"
+    },
+    "merkle_root": {
+      "ctime": 1541530919,
+      "hash": "c0aab2f617a4ceed69126286ee9ab3fa09834cb3bbf4bc8353ffd5bcd814ef0d9154316d9fe769343fd4814ca709456ba2021a734743ca3dc26f905c412c35d9",
+      "hash_meta": "d5a79a53dda3e7d45910ce2e0b9f7307c98f3c302c89f5d7ddb04e4e23278e22",
+      "seqno": 3910339
+    },
+    "service": {
+      "entropy": "u6r7tRgDRQvcwS0bULrCkIpv",
+      "hostname": "daviddao.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.9.0"
+  },
+  "ctime": 1541530945,
+  "expire_in": 504576000,
+  "prev": "ba68eb9c2391d20b9500aa99a92d88d64252d880db416401bfb8c4a45419d110",
+  "seqno": 13,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg45OouWSBfVqmhv6WhbcVUlZtmADqMblcVjA7Poi+rm8Kp3BheWxvYWTESpcCDcQgumjrnCOR0guVAKqZqS2I1kJS2IDbQWQBv7jEpFQZ0RDEIGiToceDDpuZ4+s14sIcPQfDjbiCZllyMatf5jfy4mhwAgHCo3NpZ8RApNikW7joTvoqkJ+yxED+4QvXk6mRBQK3CUi+Ynqg1/BjkWUp1yAXydR7wbRuxo4bFPhWB1AF/KpLX22UidDnDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBs9QhTlSllTDWMVYLz8IhAs8z0I3Vpns31LnV1qsZbIo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/daviddao
+
+==================================================================
