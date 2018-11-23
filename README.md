@@ -25,3 +25,5 @@ It's D3js and stored inside the script tag in `index.html`
 I included a secret doge meme `console.log()` in `index.html` just for fun!
 
 If you want to relink your github page to a custom domain read [this](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
+
+[That's how I linked my twitter feed](https://publish.twitter.com/#) in `index.html`
