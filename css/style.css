@@ -230,8 +230,18 @@ li {
   padding: 90px 0 50px;
 }
 .quote blockquote {
-  font-size: 28px;
+  font-size: 21px;
   background-color: oldlace;
+}
+.thesis {
+  color: #777;
+  text-align: center;
+  font-weight: 300;
+  padding: 0px 0 0px;
+}
+.thesis blockquote {
+  font-size: 21px;
+  background-color: whitesmoke;
 }
 h2 {
   text-align: center;
