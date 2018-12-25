@@ -15,7 +15,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130035334-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-130035334-1');
@@ -26,37 +29,36 @@
   <canvas height="300" style="background: rgb(55, 58, 66)"></canvas>
   <script src="js/d3.v4.0.0-alpha.33.min.js"></script>
   <script>
+    (function () {
+      var
+        // Obtain a reference to the canvas element
+        // using its id.
+        htmlCanvas = document.querySelector('canvas'),
 
-(function() {
-			var 
-				// Obtain a reference to the canvas element
-				// using its id.
-				htmlCanvas = document.querySelector('canvas'),
-			
         // Obtain a graphics context on the
         // canvas element for drawing.
         context = htmlCanvas.getContext('2d');
- 
-			// Start listening to resize events and
-			// draw canvas.
-			initialize();
- 
-			function initialize() {
-				// Register an event listener to
-				// call the resizeCanvas() function each time 
-				// the window is resized.
-				window.addEventListener('resize', resizeCanvas, false);
-				
-				// Draw canvas border for the first time.
-				resizeCanvas();
-			}
-								
-			function redraw() {
+
+      // Start listening to resize events and
+      // draw canvas.
+      initialize();
+
+      function initialize() {
+        // Register an event listener to
+        // call the resizeCanvas() function each time 
+        // the window is resized.
+        window.addEventListener('resize', resizeCanvas, false);
+
+        // Draw canvas border for the first time.
+        resizeCanvas();
+      }
+
+      function redraw() {
         var width = htmlCanvas.width,
           height = htmlCanvas.height;
-				var n = 400,
-        pi = Math.PI,
-        tau = 2 * pi;
+        var n = 400,
+          pi = Math.PI,
+          tau = 2 * pi;
 
         var nodes = d3.range(n).map(function () {
           var r = Math.random() * width / 3,
@@ -96,19 +98,18 @@
             context.stroke();
           }
         }
-			}
-		
-			// Runs each time the DOM window resize event fires.
-			// Resets the canvas dimensions to match window,
-			// then draws the new borders accordingly.
-			function resizeCanvas() {
-				htmlCanvas.width = window.innerWidth;
-				htmlCanvas.height = 300;
-				redraw();
-			}
-		
-		})();
+      }
 
+      // Runs each time the DOM window resize event fires.
+      // Resets the canvas dimensions to match window,
+      // then draws the new borders accordingly.
+      function resizeCanvas() {
+        htmlCanvas.width = window.innerWidth;
+        htmlCanvas.height = 300;
+        redraw();
+      }
+
+    })();
   </script>
 
   <div id="top" class="chart">
@@ -143,13 +144,21 @@
   </div>
   <div class="container quote">
     <blockquote>
-      I'm a Ph.D. student at <a href="https://www.systems.ethz.ch">ETH Zurich </a><a href="https://ds3lab.org">DS3Lab</a> developing systems to scale human cooperation. My research
-	leverages <a href="https://blockchainai.org">blockchain-based AI</a> to realize new types of privacy-preserving incentives for <a href="https://medium.com/@daviddao/decentralized-sustainability-9a53223d3001">sustainability</a>, <a href="http://cyto.ai">medicine</a>, and <a href="https://digitalculture.la/awful_ai">ethical AI 🔈</a>.
-	I was an engineer <a href="http://www.mbrdna.com">in Silicon Valley</a> and a research fellow at <a href="http://bair.berkeley.edu/">Berkeley AI Research (BAIR)</a> and  
-      <a href="https://www.broadinstitute.org">MIT Broad Institute</a>. I'm a Global Shaper at <a href="https://www.weforum.org">World Economic Forum</a> and I organize several large conferences in
-      <a href="https://www.meetup.com/munichacm">Germany</a>,  
+      I'm a Ph.D. student at <a href="https://www.systems.ethz.ch">ETH Zurich </a><a href="https://ds3lab.org">DS3Lab</a>
+      developing systems to scale human cooperation. My research
+      leverages <a href="https://blockchainai.org">blockchain-based AI</a> to realize new types of privacy-preserving
+      incentives for <a href="https://medium.com/@daviddao/decentralized-sustainability-9a53223d3001">sustainability</a>,
+      <a href="http://cyto.ai">medicine</a>, and <a href="https://digitalculture.la/awful_ai">ethical AI</a>.
+      I was an engineer <a href="http://www.mbrdna.com">in Silicon Valley</a> and a research fellow at <a href="http://bair.berkeley.edu/">Berkeley
+        AI Research (BAIR)</a> and
+      <a href="https://www.broadinstitute.org">MIT Broad Institute</a>. I'm a Global Shaper at <a href="https://www.weforum.org">World
+        Economic Forum</a> and I organize several large conferences in
+      <a href="https://www.meetup.com/munichacm">Germany</a>,
       <a href="http://selfdrivingai.org/">Silicon Valley</a>, and at
-      <a href="http://refugedu.github.io/">Harvard</a>. My work was featured in <a href="https://www.technologyreview.com/s/610781/in-blockchain-we-trust/">MIT Technology Review</a>, <a href="https://www.the-scientist.com/lab-tools/picking-out-patterns-31582">The Scientist</a> and <a href="https://www.nytimes.com/2018/10/20/technology/how-the-blockchain-could-break-big-techs-hold-on-ai.html">The New York Times</a>.  
+      <a href="http://refugedu.github.io/">Harvard</a>. My work was featured in <a href="https://www.technologyreview.com/s/610781/in-blockchain-we-trust/">MIT
+        Technology Review</a>, <a href="https://www.the-scientist.com/lab-tools/picking-out-patterns-31582">The
+        Scientist</a> and <a href="https://www.nytimes.com/2018/10/20/technology/how-the-blockchain-could-break-big-techs-hold-on-ai.html">The
+        New York Times</a>.
     </blockquote>
   </div>
 
@@ -158,37 +167,38 @@
   <div class="container">
     <div class="row">
       <div class="col-md-9" style="margin-bottom: 50px;">
-        <blockquote>         
-        <a href="http://whereisdavid.today"> 🛫 I'm traveling quite a lot.</a>     
+        <blockquote>
+          <a href="http://whereisdavid.today"> 🛫 I'm traveling quite a lot.</a>
         </blockquote>
         <h3>Research
-            <span class="smalltext"> ·
-              <a href="https://medium.com/@daviddao">Medium Blog</a>
-              <!-- ·
+          <span class="smalltext"> ·
+            <a href="https://medium.com/@daviddao">Medium Blog</a>
+            <!-- ·
               <a href="http://daviddao.org/blog">Technical Blog
               </a> -->
-            </span></h3>
+          </span></h3>
         <div class="thesis">
-          <blockquote>         
+          <blockquote>
             Want to change the world and finish your thesis at the same time? Come work with me, here are some
-            <a href="https://docs.google.com/document/d/16IrB6g6Z9uDBOqRA7V9S4jst2ZSh9DfSDCOLsh8ObMU/edit#heading=h.4zgg4fhg6jos">thesis proposals</a>!
+            <a href="https://docs.google.com/document/d/16IrB6g6Z9uDBOqRA7V9S4jst2ZSh9DfSDCOLsh8ObMU/edit#heading=h.4zgg4fhg6jos">thesis
+              proposals</a>!
           </blockquote>
         </div>
         <p class="research">
-      <b> Trustless Machine Learning </b> <br>
-	    Data Valuation: How much is your data worth? 
-            <em class="award"> · Joint project with UC Berkeley</em> <br>
-            DataBright: Using smart contracts to democratize data and machines <br>
-          <b>Data Systems for Sustainability</b> <br> 
-            GainForest: Deforestation markets of the Amazon Rainforest using satellite imagery 
-            <em class="award"> · Microsoft AI for Earth Grant · Grand Prize UNFCCC Hack4Climate at COP23</em> <br>
-            Data-driven planning and traffic prediction for self-driving cars
-            <em class="award"> · Joint project with Mercedes-Benz Research</em> <br>
-          <b>Privacy-Preserving Systems for Medicine</b> <br> 
-	    Kara: A privacy-preserving tokenized data market for medical data             
-	    <em class="award"> · Joint project with UC Berkeley</em> <br>
-	    Cyto.ai: Interactive machine learning for cell biology 
-            <em class="award"> · Joint project with Broad Institute of MIT and Harvard</em>
+          <b> Trustless Machine Learning </b> <br>
+          Data Valuation: How much is your data worth?
+          <em class="award"> · Joint project with UC Berkeley</em> <br>
+          DataBright: Using smart contracts to democratize data and machines <br>
+          <b>Learning Systems for Sustainability</b> <br>
+          GainForest: Deforestation markets of the Amazon Rainforest using satellite imagery
+          <em class="award"> · Microsoft AI for Earth Grant · Grand Prize UNFCCC Hack4Climate at COP23</em> <br>
+          Data-driven planning and traffic prediction for self-driving cars
+          <em class="award"> · Joint project with Mercedes-Benz Research</em> <br>
+          <b>Privacy-Preserving Learning Systems for Medicine</b> <br>
+          Kara: A privacy-preserving tokenized data market for medical data
+          <em class="award"> · Joint project with UC Berkeley</em> <br>
+          Cyto.ai: Interactive machine learning for cell biology
+          <em class="award"> · Joint project with Broad Institute of MIT and Harvard</em>
         </p>
         <h3>Publications
           <span class="smalltext"> ·
@@ -197,35 +207,45 @@
           </span>
         </h3>
         <div id="publist">
-          <div class="pubyear"><h4>Manuscripts</h4></div>
-          <div class="pubentry">
-            <a class="thumblink" href="">
-              <img class="pubthumb" src="papers/thumbs/dataval_2018.png">
-            </a>
-            <div class="pubtext">
-              <a href="">“How Much is My Data Worth?”: Data Valuation with Efficient Shapley Value Estimation</a>
-              <div class="pubmetadata">
-                <span class="pubauthors">Ruoxi Jia', David Dao', Boxin Wang, Frances Ann Hubis, Nick Hynes, Nezihe Merve Guerel, Bo Li, Ce Zhang, Dawn Song, and Costas J. Spanos</span>&nbsp;
-                <span class="pubvenue">
-                  <i>Arxiv 2018</i>.</span>
-                </div>
-            </div>
+          <div class="pubyear">
+            <h4>Manuscripts</h4>
           </div>
           <div class="pubentry">
             <a class="thumblink" href="papers/dbright_arxiv.pdf">
               <img class="pubthumb" src="papers/thumbs/dbright_arxiv.png">
             </a>
             <div class="pubtext">
-              <a href="papers/dbright_arxiv.pdf">DataBright: Towards a global exchange for decentralized data ownership and trusted computation</a>
+              <a href="papers/dbright_arxiv.pdf">DataBright: Towards a global exchange for decentralized data ownership
+                and trusted computation</a>
               <div class="pubmetadata">
                 <span class="pubauthors">David Dao, Dan Alistarh, Claudiu Musat, Ce Zhang</span>&nbsp;
                 <span class="pubvenue">
                   <i>Arxiv 2018</i>.</span>
-                </div>
+              </div>
             </div>
           </div>
 
-          <div class="pubyear"><h4>2018</h4></div>
+          <div class="pubyear">
+            <h4>2019</h4>
+          </div>
+          <div class="pubentry">
+            <a class="thumblink" href="">
+              <img class="pubthumb" src="papers/thumbs/dataval_2018.png">
+            </a>
+            <div class="pubtext">
+              <a href="">Towards Efficient Data Valuation Based on the Shapley Value</a>
+              <div class="pubmetadata">
+                <span class="pubauthors">Ruoxi Jia', David Dao', Boxin Wang, Frances Ann Hubis, Nick Hynes, Nezihe
+                  Merve Guerel, Bo Li, Ce Zhang, Dawn Song, and Costas J. Spanos</span>&nbsp;
+                <span class="pubvenue">
+                  <i>AISTATS 2019</i>.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pubyear">
+            <h4>2018</h4>
+          </div>
           <div class="pubentry">
             <a class="thumblink" href="">
               <img class="pubthumb" src="papers/thumbs/sterling_2018.png">
@@ -236,11 +256,13 @@
                 <span class="pubauthors">Nick Hynes, David Dao, David Yan, Raymond Cheng, Dawn Song</span>&nbsp;
                 <span class="pubvenue">
                   <i>VLDB Demo 2018</i>.</span>
-                </div>
+              </div>
             </div>
           </div>
 
-          <div class="pubyear"><h4>2017</h4></div>
+          <div class="pubyear">
+            <h4>2017</h4>
+          </div>
           <div class="pubentry">
             <a class="thumblink" href="papers/methods_2017.pdf">
               <img class="pubthumb" src="papers/thumbs/methods_2017.png">
@@ -249,13 +271,16 @@
               <a href="papers/methods_2017.pdf">An open-source solution for advanced imaging flow cytometry data
                 analysis using machine learning</a>
               <div class="pubmetadata">
-                <span class="pubauthors">Holger Hennig, Paul Rees, Thomas Blasi, Lee Kamentsky, Jane Hung, David Dao, Anne E. Carpenter, Andrew Filby</span>&nbsp;
+                <span class="pubauthors">Holger Hennig, Paul Rees, Thomas Blasi, Lee Kamentsky, Jane Hung, David Dao,
+                  Anne E. Carpenter, Andrew Filby</span>&nbsp;
                 <span class="pubvenue">
                   <i>Methods 2017</i>.</span>
-                </div>
+              </div>
             </div>
           </div>
-          <div class="pubyear"><h4>2016</h4></div>
+          <div class="pubyear">
+            <h4>2016</h4>
+          </div>
           <div class="pubentry">
             <a class="thumblink" href="papers/cpa_2016.pdf">
               <img class="pubthumb" src="papers/thumbs/cpa_2016.png">
@@ -265,11 +290,12 @@
                 exploration, analysis and classification
                 of large biological image sets</a>
               <div class="pubmetadata">
-                <span class="pubauthors">David Dao, Adam N. Fraser, Jane Hung, Vebjorn Ljosa, Shantanu Singh, Anne E. Carpenter.</span>&nbsp;
+                <span class="pubauthors">David Dao, Adam N. Fraser, Jane Hung, Vebjorn Ljosa, Shantanu Singh, Anne E.
+                  Carpenter.</span>&nbsp;
                 <span class="pubvenue">
-                  <i>Bioinformatics 2016</i>.</span> 
-                [<a href="http://cellprofiler.org/cp-analyst/">website</a>] 
-                [<a href="http://cellprofiler.org/cpa/">documentation</a>] 
+                  <i>Bioinformatics 2016</i>.</span>
+                [<a href="http://cellprofiler.org/cp-analyst/">website</a>]
+                [<a href="http://cellprofiler.org/cpa/">documentation</a>]
                 [<a href="https://github.com/CellProfiler/CellProfiler-Analyst">code</a>]</div>
             </div>
           </div>
@@ -283,11 +309,13 @@
               <div class="pubmetadata">
                 <span class="pubauthors">David Dao.</span>&nbsp;
                 <span class="pubvenue">
-                  <i>Master Thesis 2016</i>.</span> 
+                  <i>Master Thesis 2016</i>.</span>
               </div>
             </div>
           </div>
-          <div class="pubyear"><h4>2015</h4></div>
+          <div class="pubyear">
+            <h4>2015</h4>
+          </div>
           <div class="pubentry">
             <a class="thumblink" href="papers/biojs_2015.pdf">
               <img class="pubthumb" src="papers/thumbs/biojs_2015.png">
@@ -299,18 +327,20 @@
               <div class="pubmetadata">
                 <span class="pubauthors">Guy Yachdav, Tatyana Goldberg, Sebastian Wilzbach, David Dao,
                   Iris Shih, Saket Choudhary, Steve Crouch, Max Franz,
-                  Alexander Garcia, Leyla J Garcia, Bjorn A Gruening, 
+                  Alexander Garcia, Leyla J Garcia, Bjorn A Gruening,
                   Devasana Inupakutika, Ian Sillitoe, Anil S Thanki, Bruno Vieira,
                   Jose M Villaveces, Maria V Schneider, Suzanna Lewis, Steve Pettifer,
                   Burkhard Rost, Manuel Corpas.</span>&nbsp;
                 <span class="pubvenue">
-                  <i>F1000 2015</i>.</span> 
-                [<a href="https://www.youtube.com/watch?v=M5EI8Wdxx68&t=5s">talk</a>] 
-                [<a href="https://github.com/biojs/talks">slides</a>] 
+                  <i>F1000 2015</i>.</span>
+                [<a href="https://www.youtube.com/watch?v=M5EI8Wdxx68&t=5s">talk</a>]
+                [<a href="https://github.com/biojs/talks">slides</a>]
                 [<a href="https://github.com/biojs">code</a>]</div>
             </div>
           </div>
-          <div class="pubyear"><h4>2014</h4></div>
+          <div class="pubyear">
+            <h4>2014</h4>
+          </div>
           <div class="pubentry">
             <a class="thumblink" href="papers/plausibility_2014.pdf">
               <img class="pubthumb" src="papers/thumbs/plausibility_2014.png">
@@ -320,7 +350,7 @@
               <div class="pubmetadata">
                 <span class="pubauthors">David Dao, Tomas Flouri, Alexandros Stamatakis.</span>&nbsp;
                 <span class="pubvenue">
-                  <i>Pattern Recognition in Computational Molecular Biology 2014</i>.</span> 
+                  <i>Pattern Recognition in Computational Molecular Biology 2014</i>.</span>
                 [<a href="https://github.com/stamatak/standard-RAxML/commit/cbe68870dcb454438ba9bbf97c3a4736926cbbb1">code</a>]</div>
             </div>
           </div>
@@ -329,53 +359,67 @@
         <h3>Open Source Software
           <span class="smalltext"> ·
             <a href="https://github.com/daviddao">Github
-            </a> 
+            </a>
           </span>
         </h3>
-        <p class="research"> 
-            Almost all of my work is <em class="award">open source</em>
-            <br>
+        <p class="research">
+          Almost all of my work is <em class="award">open source</em>
+          <br>
           <p>
             <a href="https://stackexchange.com/users/5678345">
-              <img src="https://stackexchange.com/users/flair/5678345.png" height="58" alt="profile for David Dao on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for David Dao on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+              <img src="https://stackexchange.com/users/flair/5678345.png" height="58" alt="profile for David Dao on Stack Exchange, a network of free, community-driven Q&amp;A sites"
+                title="profile for David Dao on Stack Exchange, a network of free, community-driven Q&amp;A sites">
             </a>
           </p>
           <p class="research">
-         <b><a class="github-button" href="https://github.com/daviddao/awful-ai" data-icon="octicon-star" data-show-count="true" aria-label="Star daviddao/awful-ai on GitHub">Star</a> · <a href="https://github.com/daviddao/awful-ai">Awful-AI</a></b> 😈 is a curated list to track current scary usages of AI - hoping to raise awareness <br>
-         <b><a class="github-button" href="https://github.com/daviddao/awesome-very-deep-learning" data-icon="octicon-star" data-show-count="true" aria-label="Star daviddao/awesome-very-deep-learning on GitHub">Star</a> · <a href="https://github.com/daviddao/awesome-very-deep-learning">Awesome-Deep-Learning</a></b> 🔥 is a curated list of papers about very deep neural networks<br>
-         <b><a class="github-button" href="https://github.com/daviddao/spatial-transformer-tensorflow" data-icon="octicon-star" data-show-count="true" aria-label="Star daviddao/spatial-transformer-tensorflow on GitHub">Star</a> · <a href="https://github.com/daviddao/spatial-transformer-tensorflow">Spatial Transformer</a></b> 🌐 is part of <a href="https://github.com/tensorflow/models">TensorFlow Models</a> (where I'm <a href="https://github.com/tensorflow/models/blob/master/AUTHORS">co-author</a>)<br>
-         <b><a class="github-button" href="https://github.com/CellProfiler/CellProfiler-Analyst" data-icon="octicon-star" data-show-count="true" aria-label="Star CellProfiler/CellProfiler-Analyst on GitHub">Star</a> · <a href="https://github.com/CellProfiler/CellProfiler-Analyst">CellProfiler Analyst</a></b> 🔬 is an adaptive machine learning tool for biologists <br>
-         <b><a class="github-button" href="https://github.com/biojs/biojs" data-icon="octicon-star" data-show-count="true" aria-label="Star biojs/biojs on GitHub">Star</a> · <a href="https://github.com/biojs/biojs">BioJS</a></b> 🔬 is an interactive visualization ecosystem for life science <br>
+            <b><a class="github-button" href="https://github.com/daviddao/awful-ai" data-icon="octicon-star"
+                data-show-count="true" aria-label="Star daviddao/awful-ai on GitHub">Star</a> · <a href="https://github.com/daviddao/awful-ai">Awful-AI</a></b>
+            😈 is a curated list to track current scary usages of AI - hoping to raise awareness <br>
+            <b><a class="github-button" href="https://github.com/daviddao/awesome-very-deep-learning" data-icon="octicon-star"
+                data-show-count="true" aria-label="Star daviddao/awesome-very-deep-learning on GitHub">Star</a> · <a
+                href="https://github.com/daviddao/awesome-very-deep-learning">Awesome-Deep-Learning</a></b> 🔥 is a
+            curated list of papers about very deep neural networks<br>
+            <b><a class="github-button" href="https://github.com/daviddao/spatial-transformer-tensorflow" data-icon="octicon-star"
+                data-show-count="true" aria-label="Star daviddao/spatial-transformer-tensorflow on GitHub">Star</a> ·
+              <a href="https://github.com/daviddao/spatial-transformer-tensorflow">Spatial Transformer</a></b> 🌐 is
+            part of <a href="https://github.com/tensorflow/models">TensorFlow Models</a> (where I'm <a href="https://github.com/tensorflow/models/blob/master/AUTHORS">co-author</a>)<br>
+            <b><a class="github-button" href="https://github.com/CellProfiler/CellProfiler-Analyst" data-icon="octicon-star"
+                data-show-count="true" aria-label="Star CellProfiler/CellProfiler-Analyst on GitHub">Star</a> · <a href="https://github.com/CellProfiler/CellProfiler-Analyst">CellProfiler
+                Analyst</a></b> 🔬 is an adaptive machine learning tool for biologists <br>
+            <b><a class="github-button" href="https://github.com/biojs/biojs" data-icon="octicon-star" data-show-count="true"
+                aria-label="Star biojs/biojs on GitHub">Star</a> · <a href="https://github.com/biojs/biojs">BioJS</a></b>
+            🔬 is an interactive visualization ecosystem for life science <br>
           </p>
         </p>
         <h3>Scientific Collaborators
         </h3>
-        <p class="research"> 
+        <p class="research">
           I'm grateful to work with <em class="award">my scientific collaborators</em> <br>
           <p class="research">
-         <b> · <a href="#">Dawn Song, Ruoxi Jia, Nick Hynes (UC Berkeley)</a></b><br>
-         <b> · <a href="#">Robert Chang (Stanford Medicine)</a></b><br>
-         <b> · <a href="#">Anne Carpenter, Allen Goodman (MIT Broad Imaging Platform)</a></b><br>
-         <b> · <a href="#">Joe Near (University of Vermont)</a></b><br>
-         <b> · <a href="#">Yan Meng (Mercedes-Benz Research)</a></b><br>
+            <b> · <a href="#">Dawn Song, Ruoxi Jia, Nick Hynes (UC Berkeley)</a></b><br>
+            <b> · <a href="#">Robert Chang (Stanford Medicine)</a></b><br>
+            <b> · <a href="#">Anne Carpenter, Allen Goodman (MIT Broad Imaging Platform)</a></b><br>
+            <b> · <a href="#">Joe Near (University of Vermont)</a></b><br>
+            <b> · <a href="#">Yan Meng (Mercedes-Benz Research)</a></b><br>
           </p>
         </p>
         <h3>Former/Current Students
         </h3>
-        <p class="research"> 
+        <p class="research">
           I'm proud of <em class="award">my students</em> <br>
           <p class="research">
-         <b> · <a href="#">Catherine Cang (UC Berkeley)</a></b><br>
-         <b> · <a href="#">Jeffrey Liu (UC Berkeley)</a></b><br>
-         <b> · <a href="#">Luca Lanzendorfer (ETH / Now at Mercedes-Benz Research)</a></b><br>
-         <b> · <a href="#">Florian Chlan (ETH / Now at UBS)</a></b><br>
-         <b> · <a href="#">Nino Weingart (ETH)</a></b><br>
-         <b> · <a href="#">Christopher Friedrich (Reutlingen / Now at MIT)</a></b><br>
+            <b> · <a href="#">Catherine Cang (UC Berkeley)</a></b><br>
+            <b> · <a href="#">Jeffrey Liu (UC Berkeley)</a></b><br>
+            <b> · <a href="#">Luca Lanzendorfer (ETH / Now at Mercedes-Benz Research)</a></b><br>
+            <b> · <a href="#">Florian Chlan (ETH / Now at UBS)</a></b><br>
+            <b> · <a href="#">Nino Weingart (ETH)</a></b><br>
+            <b> · <a href="#">Christopher Friedrich (Reutlingen / Now at MIT)</a></b><br>
           </p>
         </p>
       </div>
       <div class="col-md-3">
-        <a class="twitter-timeline" data-tweet-limit="3" data-theme="light" data-link-color="#CD6553" href="https://twitter.com/dwddao?ref_src=twsrc%5Etfw">Tweets by dwddao</a> 
+        <a class="twitter-timeline" data-tweet-limit="3" data-theme="light" data-link-color="#CD6553" href="https://twitter.com/dwddao?ref_src=twsrc%5Etfw">Tweets
+          by dwddao</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <div class="showmobile" style="margin-top: -20px; margin-bottom: 10px;">
           <hr style="margin-bottom: 5px;">You can follow me on Twitter at
@@ -388,12 +432,18 @@
   </div>
 
   <script>
-    var lol = ["─────────▄──────────────▄", "────────▌▒█───────────▄▀▒▌", "────────▌▒▒▀▄───────▄▀▒▒▒▐", "───────▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐", "─────▄▄▀▒▒▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐ WOW! SO DOGE!!", "───▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀██▀▒▌", "──▐▒▒▒▄▄▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄▒▒▌", "──▌▒▒▐▄█▀▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐ SUCH CONSOLE, MANY JAVASCRIPT!", "─▐▒▒▒▒▒▒▒▒▒▒▒▌██▀▒▒▒▒▒▒▒▒▀▄▌", "─▌▒▀▄██▄▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒▌", "─▌▀▐▄█▄█▌▄▒▀▒▒▒▒▒▒░░░░░░▒▒▒▐", "▐▒▀▐▀▐▀▒▒▄▄▒▄▒▒▒▒▒░░░░░░▒▒▒▒▌ MUCH SECRET! SUCH CODING SKILLS!!", "▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒░░░░░░▒▒▒▐", "─▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒▒▒░░░░▒▒▒▒▌", "─▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▐ ", "──▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▄▒▒▒▒▌", "────▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀ GREAT GUY! VERY HIRE!!", "───▐▀▒▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀", "──▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀▀"];
+    var lol = ["─────────▄──────────────▄", "────────▌▒█───────────▄▀▒▌", "────────▌▒▒▀▄───────▄▀▒▒▒▐",
+      "───────▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐", "─────▄▄▀▒▒▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐ WOW! SO DOGE!!", "───▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀██▀▒▌",
+      "──▐▒▒▒▄▄▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄▒▒▌", "──▌▒▒▐▄█▀▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐ SUCH CONSOLE, MANY JAVASCRIPT!",
+      "─▐▒▒▒▒▒▒▒▒▒▒▒▌██▀▒▒▒▒▒▒▒▒▀▄▌", "─▌▒▀▄██▄▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒▌", "─▌▀▐▄█▄█▌▄▒▀▒▒▒▒▒▒░░░░░░▒▒▒▐",
+      "▐▒▀▐▀▐▀▒▒▄▄▒▄▒▒▒▒▒░░░░░░▒▒▒▒▌ MUCH SECRET! SUCH CODING SKILLS!!", "▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒░░░░░░▒▒▒▐",
+      "─▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒▒▒░░░░▒▒▒▒▌", "─▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▐ ", "──▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▄▒▒▒▒▌",
+      "────▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀ GREAT GUY! VERY HIRE!!", "───▐▀▒▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀", "──▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀▀"
+    ];
 
     for (i in lol) {
       console.log(lol[i]);
     }
-
   </script>
 
 
