@@ -161,22 +161,22 @@
       <a href="https://refugedu.github.io/">Harvard</a>. 
     </blockquote>
     
-      🗞️ <em>Media features:</em> <br>
+      🗞️ <em id="annotate_4a">Media features:</em> <br>
       <b>Komorebi</b> featured in <a href="https://ethz.ch/en/news-and-events/eth-news/news/2019/12/rainforest-preservation-through-machine-learning.html">ETH News</a>, <a href="https://www.tagblatt.ch/leben/maschinenlernen-gegen-waldschander-ld.1174837">Swiss Tagblatt</a><br>
       <b>GainForest</b> featured in <a href="https://www.technologyreview.com/s/610781/in-blockchain-we-trust/">MIT Technology Review</a>, <a href="https://news.microsoft.com/europe/features/how-gainforest-microsoft-and-the-un-are-incentivizing-sustainability/">Microsoft</a>, <a href="https://youtu.be/UOANny6i0QM?t=164">United Nations</a><br>
       <b>Kara</b> featured in <a href="https://wired.com/story/ai-needs-data-you-should-get-paid/">WIRED</a>, <a href="https://www.nytimes.com/2018/10/20/technology/how-the-blockchain-could-break-big-techs-hold-on-ai.html">The New York Times</a>, <a href="https://www.technologyreview.com/s/613520/how-ai-could-save-lives-without-spilling-secrets/">MIT Technology Review</a> and <a href="https://ethz.ch/en/news-and-events/eth-news/news/2020/04/understanding-the-dynamics-of-the-epidemic.html">ETH News</a> <br>
       <b>Previous research at MIT</b> featured in <a href="https://www.the-scientist.com/lab-tools/picking-out-patterns-31582">The Scientist</a>
 
       <br><br>
-      🎨 <em>Art work:</em> <br>
-      <b>Awful AI</b> featured in <a href="https://www.fotomuseum.ch/en/explore/situations/157111">Fotomuseum Winterthur</a> and <a href="https://digitalculture.la/awful_ai">digitalculture.la</a>
+      🎨 <em id="annotate_4b">Art work:</em> <br>
+      <b>Awful AI</b> featured in <a href="https://www.fotomuseum.ch/en/explore/situations/157111">Fotomuseum Winterthur</a>
 
       <br><br>
-      🎙️ <em>Interviews:</em> <br>
-      <a href="https://inf.ethz.ch/news-and-events/spotlights/2020/01/interview_david_dao.html">ETH Spotlight</a>, <a href="https://ethz.ch/en/news-and-events/eth-news/news/2020/05/podcast-ai-climate-change.html">ETH Podcast</a>
+      🎙️ <em id="annotate_4c">Interviews:</em> <br>
+      <a href="https://inf.ethz.ch/news-and-events/spotlights/2020/01/interview_david_dao.html">ETH Spotlight</a>, <a href="https://ethz.ch/en/news-and-events/eth-news/news/2020/05/podcast-ai-climate-change.html">ETH Podcast</a>, <a href="https://digitalculture.la/awful_ai">digitalculture.la</a>
       <br><br>
 
-      👇 <em id="annotate_4">In short for millenials:</em> <br>
+      👇 <em id="annotate_4d">In short for millenials:</em> <br>
       PhD student @DS3Lab. AI for Sustainable Development 🌱<br>
       Founder @GainForest. Using 🛰 and 🎮to restore 🌴<br>
       Goal: Save the world with crazy technology 🌍<br>
@@ -250,7 +250,7 @@
               </a>                  🏆 <em class="award" id="annotate_7">(Best Proposal Award)</em>
 
               <div class="pubmetadata">
-                <span class="pubauthors">Simona Santamaria', <span id="annotate_m">David Dao</span>', Björn Lütjens', Ce Zhang</span>&nbsp;
+                <span class="pubauthors">Simona Santamaria', <span id="annotate_n">David Dao</span>', Björn Lütjens', Ce Zhang</span>&nbsp;
                 <span class="pubvenue">
                   <i>ICLR climate change workshop 2020</i>.</span>
               </div>
@@ -264,7 +264,7 @@
               <a href="papers/xingu_2020.pdf">Xingu: Curating Weak Supervision Signals for Sustainable Climate Finance
               </a>
               <div class="pubmetadata">
-                <span class="pubauthors"><span id="annotate_n">David Dao</span>, Johannes Rausch, Iveta Rott, Ce Zhang</span>&nbsp;
+                <span class="pubauthors"><span id="annotate_m">David Dao</span>, Johannes Rausch, Iveta Rott, Ce Zhang</span>&nbsp;
                 <span class="pubvenue">
                   <i>ICLR climate change workshop 2020</i>.</span>
               </div>
@@ -583,8 +583,11 @@
     const a0 = RoughNotation.annotate(document.querySelector('#annotate_0'), { type: 'box', animationDelay: 500, color: 'rgb(255, 213, 79)' });
     // const a1 = RoughNotation.annotate(document.querySelector('#annotate_1'), { type: 'underline', animationDelay: 500, color: '#299DB6' });
     const a2 = RoughNotation.annotate(document.querySelector('#annotate_2'), { type: 'box', animationDelay: 500, color: 'rgb(255, 213, 79)' });
-    const a4 = RoughNotation.annotate(document.querySelector('#annotate_4'), { type: 'highlight', animationDelay: 500, color: 'rgb(255, 213, 79)' });
-    const ag0 = RoughNotation.annotationGroup([a0, a2, a4]);
+    const a4a = RoughNotation.annotate(document.querySelector('#annotate_4a'), { type: 'underline', animationDelay: 500, color: 'rgb(255, 213, 79)' });
+    const a4b = RoughNotation.annotate(document.querySelector('#annotate_4b'), { type: 'box', animationDelay: 500, color: 'rgb(255, 213, 79)' });
+    const a4c = RoughNotation.annotate(document.querySelector('#annotate_4c'), { type: 'circle', animationDelay: 500, color: 'rgb(255, 213, 79)' });
+    const a4d = RoughNotation.annotate(document.querySelector('#annotate_4d'), { type: 'highlight', animationDelay: 500, color: 'rgb(255, 213, 79)' });
+    const ag0 = RoughNotation.annotationGroup([a0, a2, a4a, a4b, a4c, a4d]);
     ag0.show();
     const a5 = RoughNotation.annotate(document.querySelector('#annotate_5'), { type: 'box', animationDelay: 500, color: 'rgb(255, 213, 79)' });
     const a6 = RoughNotation.annotate(document.querySelector('#annotate_6'), { type: 'box', animationDelay: 500, color: 'rgb(255, 213, 79)' });
@@ -592,13 +595,14 @@
     const ag1 = RoughNotation.annotationGroup([a5, a6, a7]);
     ag1.show();
 
-    // papers
-    // for (i = 0; i < 14; i++) {
-    //   n = String.fromCharCode(97 + i);
-    //   const tmp_a = RoughNotation.annotate(document.querySelector('#annotate_' + n), { type: 'underline', animationDelay: 500, color: 'rgb(255, 213, 79)' });    
-    //   tmp_a.show();
-    // }
-
+    // papers are annotated with an alphabet
+    agA = []
+    for (i = 13; i >= 0; i--) {
+      n = String.fromCharCode(97 + i);
+      const tmp_a = RoughNotation.annotate(document.querySelector('#annotate_' + n), { type: 'underline', animationDelay: 500, color: 'rgb(255, 213, 79)' });    
+      agA.push(tmp_a)
+    }
+    RoughNotation.annotationGroup(agA).show();
     //RoughNotation.annotate(document.querySelector('#annotate_5'), { type: 'highlight', animationDelay: 500, color: 'rgb(255, 213, 79)' });
 
 
