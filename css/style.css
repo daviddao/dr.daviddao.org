@@ -22,12 +22,12 @@ html, body {
 }
 
 a {
-  color: rgb(205, 101, 83);
+  color: #00d1b2;
   text-decoration: none;
 }
 
 a:hover {
-  color: rgb(205, 101, 83);
+  color: #00d1b2;
 }
 
 *, *:after, *:before {
@@ -72,15 +72,18 @@ a:hover {
 #htname {
   font-size: 46px;
   font-weight: 400;
+  color: #363636;
 }
 #htdesc {
   font-size: 18px;
   font-weight: 500;
-  margin-top: -6px;
+  margin-top: -6px;  
+  color: #363636;
 }
 #htem {
   font-size: 14px;
   font-weight: 300;
+  color: #363636;
 }
 @media (max-width: 768px) {
   #headerblob {
@@ -231,7 +234,7 @@ li {
 }
 .quote blockquote {
   font-size: 21px;
-  background-color: oldlace;
+  background-color: #f5f5f5;
 }
 .thesis {
   color: #777;
@@ -427,8 +430,8 @@ Modules - reusable parts of our design
 Main components 
 
 -------------------------------- */
-header h1 {
-  color: white;
+header {
+  color: #363636;
   font-size: 18px;
   font-size: 1.125rem;
 }
@@ -498,6 +501,10 @@ header h1 {
   }
 }
 
+h3, b, em {
+  color: #363636;
+}
+
 .cd-timeline-img {
   position: absolute;
   top: 0;
@@ -528,7 +535,7 @@ header h1 {
 }
 
 .award {
-  color: rgb(150, 192, 296);
+  color: #268bd2;
 }
 .research {
   font-size: 17px;

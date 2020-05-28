@@ -23,10 +23,11 @@
 
     gtag('config', 'UA-130035334-1');
   </script>
+  <!-- For underlines -->
 </head>
 
 <body>
-  <canvas height="300" style="background: rgb(55, 58, 66)"></canvas>
+  <canvas height="300" style="background: rgb(255, 255, 255);"></canvas>
   <script src="js/d3.v4.0.0-alpha.33.min.js"></script>
   <script>
     (function () {
@@ -82,7 +83,7 @@
 
         var stroke = d3.scaleLinear()
           .domain([0, 5])
-          .range(["rgb(205, 101, 83)", "rgb(150, 192, 206)"]);
+          .range(["rgb(255, 191, 0)", "rgb(150, 192, 206)"]);
 
         function ticked() {
           context.clearRect(0, 0, width, height);
@@ -136,19 +137,21 @@
     <div id="headerblob">
       <img src="./img/me.jpg" class="img imgme round" style="width:200px;">
       <div id="headertext">
-        <div id="htname" style="color:white">David Dao</div>
-        <div id="htdesc" style="color:white">daviddao at broad.mit.edu</div>
-        <div id="htem" style="color:white">PhD student at ETH Zurich | Past: Stanford, Berkeley, MIT</div>
+        <div id="htname" >David Dao</div>
+        <div id="htdesc" >daviddao at inf.ethz.ch</div>
+        <div id="htem" >PhD student at ETH Zurich | Past: Stanford, Berkeley, MIT</div>
       </div>
     </div>
   </div>
+  <hr class="soft">
   <div class="container quote">
     <blockquote>
-      I'm a Ph.D. student at <a href="https://www.systems.ethz.ch">ETH Zurich </a> building AI and Data Systems for <a href="https://www.globalgoals.org/">Sustainable Development</a>. 
+      I'm a <span id="annotate_0">Ph.D. student at <a href="https://www.systems.ethz.ch">ETH Zurich</a></span> building <span id="annotate_1">AI and Data Systems for <a href="https://www.globalgoals.org/">Sustainable Development</span></a>. 
       <br>
       I'm leading the <a href="https://climateai.org">Climate + AI initiative</a> at <a href="https://ds3lab.org">DS3Lab</a>, mapping the <a href="https://github.com/daviddao/awful-ai">ethical use of AI</a>,
       and directing the <a href="https://kara.cloud">Kara research project</a> with Stanford and UC Berkeley, aiming to build a privacy-preserving data market for medical research.
-      Furthermore, I'm the founder of <a href="https://GainForest.net">GainForest</a>, a <a href="https://news.microsoft.com/europe/features/how-gainforest-microsoft-and-the-un-are-incentivizing-sustainability/">non-profit grantee of Microsoft’s AI for Earth program</a>, which leverages decentralized technology to prevent deforestation.
+      Furthermore, I'm the <span id="annotate_2">founder of <a href="https://GainForest.net">GainForest</a></span>, a <a href="https://news.microsoft.com/europe/features/how-gainforest-microsoft-and-the-un-are-incentivizing-sustainability/">non-profit grantee of Microsoft’s AI for Earth program</a>, <br>
+      which leverages <span id="annotate_3">decentralized technology to prevent deforestation</span>.
   Previously, I was an engineer <a href="https://mbrdna.com/teams/autonomous-driving/">in Silicon Valley</a> and a research fellow at <a href="http://bair.berkeley.edu/">Berkeley
         AI Research (BAIR)</a>, <a href="https://www.stanford.edu/">Stanford University</a> and
       <a href="https://www.broadinstitute.org">Broad Institute of MIT and Harvard</a>. I'm a Global Shaper at <a href="https://www.weforum.org">World
@@ -173,7 +176,7 @@
       <a href="https://inf.ethz.ch/news-and-events/spotlights/2020/01/interview_david_dao.html">ETH Spotlight</a>, <a href="https://ethz.ch/en/news-and-events/eth-news/news/2020/05/podcast-ai-climate-change.html">ETH Podcast</a>
       <br><br>
 
-      👇 <em>In short for millenials:</em> <br>
+      👇 <em id="annotate_4">In short for millenials:</em> <br>
       PhD student @DS3Lab. AI for Sustainable Development 🌱<br>
       Founder @GainForest. Using 🛰 and 🎮to restore 🌴<br>
       Goal: Save the world with crazy technology 🌍<br>
@@ -192,7 +195,7 @@
         <div class="thesis">
           <blockquote>
             Want to work on the UN's Sustainable Development Goals (SDGs) and finish your thesis at the same time? Here are some
-            <a href="https://www.notion.so/ds3lab/aec5e167152a4375992397999d244671?v=ed29dfc6df4e4f8f88ec55110c5ad2a2">thesis
+            <a id="annotate_5" href="https://www.notion.so/ds3lab/aec5e167152a4375992397999d244671?v=ed29dfc6df4e4f8f88ec55110c5ad2a2">thesis
               proposals</a>!
           </blockquote>
         </div>
@@ -221,7 +224,7 @@
         </p>
         <div class="thesis">
           <blockquote>
-            <b>tldr;</b> Design systems such that society and AI <em>gain from each other</em>. <br>
+            <b>tldr;</b> Design systems such that society and AI <em id="annotate_6">gain from each other</em>. <br>
             Here is <a href="https://www.notion.so/ds3lab/My-Research-Goal-4d1c2906110a4b2fb7dff69d50b1c974">my mission statement</a> and a <a href="./img/research-plan.png">timeline</a>.
           </blockquote>
         </div>
@@ -244,10 +247,10 @@
             </a>
             <div class="pubtext">
               <a href="papers/truebranch_2020.pdf">TrueBranch: Metric Learning-based Verification of Forest Conservation Projects 
-              </a>                  🏆 <em class="award">(Best Proposal Award)</em>
+              </a>                  🏆 <em class="award" id="annotate_7">(Best Proposal Award)</em>
 
               <div class="pubmetadata">
-                <span class="pubauthors">Simona Santamaria', David Dao', Björn Lütjens', Ce Zhang</span>&nbsp;
+                <span class="pubauthors">Simona Santamaria', <span id="annotate_m">David Dao</span>', Björn Lütjens', Ce Zhang</span>&nbsp;
                 <span class="pubvenue">
                   <i>ICLR climate change workshop 2020</i>.</span>
               </div>
@@ -261,7 +264,7 @@
               <a href="papers/xingu_2020.pdf">Xingu: Curating Weak Supervision Signals for Sustainable Climate Finance
               </a>
               <div class="pubmetadata">
-                <span class="pubauthors">David Dao, Johannes Rausch, Iveta Rott, Ce Zhang</span>&nbsp;
+                <span class="pubauthors"><span id="annotate_n">David Dao</span>, Johannes Rausch, Iveta Rott, Ce Zhang</span>&nbsp;
                 <span class="pubvenue">
                   <i>ICLR climate change workshop 2020</i>.</span>
               </div>
@@ -278,7 +281,7 @@
               <a href="papers/geolabels_2019.pdf">GeoLabels: Towards Efficient Ecosystem Monitoring using Data Programming on Geospatial Information 
               </a>
               <div class="pubmetadata">
-                <span class="pubauthors">David Dao, Johannes Rausch, Ce Zhang</span>&nbsp;
+                <span class="pubauthors"><span id="annotate_l">David Dao</span>, Johannes Rausch, Ce Zhang</span>&nbsp;
                 <span class="pubvenue">
                   <i>NeurIPS climate change workshop 2019</i>.</span>
               </div>
@@ -292,7 +295,7 @@
               <a href="https://arxiv.org/abs/1909.00077">Data Capsule: A New Paradigm for Automatic Compliance with Data Privacy Regulations
               </a>
               <div class="pubmetadata">
-                <span class="pubauthors">Lun Wang, Joseph P. Near, Neel Somani, Peng Gao, Andrew Low, David Dao, Dawn Song</span>&nbsp;
+                <span class="pubauthors">Lun Wang, Joseph P. Near, Neel Somani, Peng Gao, Andrew Low, <span id="annotate_k">David Dao</span>, Dawn Song</span>&nbsp;
                 <span class="pubvenue">
                   <i>VLDB Poly Workshop 2019</i>.</span>
               </div>
@@ -305,7 +308,7 @@
             <div class="pubtext">
               <a href="https://arxiv.org/pdf/1908.08619">Efficient Task-Specific Data Valuation for Nearest Neighbor Algorithms</a>
               <div class="pubmetadata">
-                <span class="pubauthors">Ruoxi Jia, David Dao, Boxin Wang, Frances Ann Hubis, Nezihe Merve Gurel, Bo Li, Ce Zhang, Costas J. Spanos, Dawn Song</span>&nbsp;
+                <span class="pubauthors">Ruoxi Jia, <span id="annotate_j">David Dao</span>, Boxin Wang, Frances Ann Hubis, Nezihe Merve Gurel, Bo Li, Ce Zhang, Costas J. Spanos, Dawn Song</span>&nbsp;
                 <span class="pubvenue">
                   <i>VLDB 2019</i>.</span>
               </div>
@@ -318,7 +321,7 @@
             <div class="pubtext">
               <a href="https://www.climatechange.ai/CameraReady/73/CameraReadySubmission/gainforest.pdf">GainForest: Scaling Climate Finance for Forest Conservation using Interpretable Machine Learning on Satellite Imagery</a>
               <div class="pubmetadata">
-                <span class="pubauthors">David Dao, Catherine Cang, Clement Fung, Ming Zhang, Reuven Gonzales, Nick Beglinger, Ce Zhang</span>&nbsp;
+                <span class="pubauthors"><span id="annotate_i">David Dao</span>, Catherine Cang, Clement Fung, Ming Zhang, Reuven Gonzales, Nick Beglinger, Ce Zhang</span>&nbsp;
                 <span class="pubvenue">
                   <i>ICML climate change workshop 2019</i>.</span>
               </div>
@@ -331,7 +334,7 @@
             <div class="pubtext">
               <a href="papers/datavalue_2019.pdf">Towards Efficient Data Valuation Based on the Shapley Value</a>
               <div class="pubmetadata">
-                <span class="pubauthors">Ruoxi Jia', David Dao', Boxin Wang, Frances Ann Hubis, Nick Hynes, Nezihe
+                <span class="pubauthors">Ruoxi Jia', <span id="annotate_h">David Dao</span>', Boxin Wang, Frances Ann Hubis, Nick Hynes, Nezihe
                   Merve Guerel, Bo Li, Ce Zhang, Dawn Song, and Costas J. Spanos</span>&nbsp;
                 <span class="pubvenue">
                   <i>AISTATS 2019</i>.</span>
@@ -350,7 +353,7 @@
               <a href="papers/databright_2018.pdf">DataBright: A Data Curation Platform for Machine Learning based on Markets
                 and Trusted Computation</a>
               <div class="pubmetadata">
-                <span class="pubauthors">David Dao, Dan Alistarh, Claudiu Musat, Ce Zhang</span>&nbsp;
+                <span class="pubauthors"><span id="annotate_g">David Dao</span>, Dan Alistarh, Claudiu Musat, Ce Zhang</span>&nbsp;
                 <span class="pubvenue">
                   <i>ICML GaMeDATA workshop 2018</i>.</span>
               </div>
@@ -363,7 +366,7 @@
             <div class="pubtext">
               <a href="papers/sterling_2018.pdf">A Demonstration of Sterling: A Privacy-Preserving Data Marketplace</a>
               <div class="pubmetadata">
-                <span class="pubauthors">Nick Hynes, David Dao, David Yan, Raymond Cheng, Dawn Song</span>&nbsp;
+                <span class="pubauthors">Nick Hynes, <span id="annotate_f">David Dao</span>, David Yan, Raymond Cheng, Dawn Song</span>&nbsp;
                 <span class="pubvenue">
                   <i>VLDB Demo 2018</i>.</span>
               </div>
@@ -381,7 +384,7 @@
               <a href="papers/methods_2017.pdf">An open-source solution for advanced imaging flow cytometry data
                 analysis using machine learning</a>
               <div class="pubmetadata">
-                <span class="pubauthors">Holger Hennig, Paul Rees, Thomas Blasi, Lee Kamentsky, Jane Hung, David Dao,
+                <span class="pubauthors">Holger Hennig, Paul Rees, Thomas Blasi, Lee Kamentsky, Jane Hung, <span id="annotate_e">David Dao</span>,
                   Anne E. Carpenter, Andrew Filby</span>&nbsp;
                 <span class="pubvenue">
                   <i>Methods 2017</i>.</span>
@@ -400,7 +403,7 @@
                 exploration, analysis and classification
                 of large biological image sets</a>
               <div class="pubmetadata">
-                <span class="pubauthors">David Dao, Adam N. Fraser, Jane Hung, Vebjorn Ljosa, Shantanu Singh, Anne E.
+                <span class="pubauthors"><span id="annotate_d">David Dao</span>, Adam N. Fraser, Jane Hung, Vebjorn Ljosa, Shantanu Singh, Anne E.
                   Carpenter.</span>&nbsp;
                 <span class="pubvenue">
                   <i>Bioinformatics 2016</i>.</span>
@@ -417,7 +420,7 @@
               <a href="papers/mscthesis_2016.pdf">Image-based chemical-genetic profiling using
                 Deep Neural Networks</a>
               <div class="pubmetadata">
-                <span class="pubauthors">David Dao.</span>&nbsp;
+                <span class="pubauthors"><span id="annotate_c">David Dao</span>.</span>&nbsp;
                 <span class="pubvenue">
                   <i>Master Thesis 2016</i>.</span>
               </div>
@@ -435,7 +438,7 @@
                 source community for the life
                 sciences</a>
               <div class="pubmetadata">
-                <span class="pubauthors">Guy Yachdav, Tatyana Goldberg, Sebastian Wilzbach, David Dao,
+                <span class="pubauthors">Guy Yachdav, Tatyana Goldberg, Sebastian Wilzbach, <span id="annotate_b">David Dao</span>,
                   Iris Shih, Saket Choudhary, Steve Crouch, Max Franz,
                   Alexander Garcia, Leyla J Garcia, Bjorn A Gruening,
                   Devasana Inupakutika, Ian Sillitoe, Anil S Thanki, Bruno Vieira,
@@ -458,7 +461,7 @@
             <div class="pubtext">
               <a href="papers/plausibility_2014.pdf">Automated Plausibility Analysis of Large Phylogenies</a>
               <div class="pubmetadata">
-                <span class="pubauthors">David Dao, Tomas Flouri, Alexandros Stamatakis.</span>&nbsp;
+                <span class="pubauthors"><span id="annotate_a">David Dao</span>, Tomas Flouri, Alexandros Stamatakis.</span>&nbsp;
                 <span class="pubvenue">
                   <i>Pattern Recognition in Computational Molecular Biology 2014</i>.</span>
                 [<a href="https://github.com/stamatak/standard-RAxML/commit/cbe68870dcb454438ba9bbf97c3a4736926cbbb1">code</a>]</div>
@@ -560,7 +563,6 @@
   </div>
 
   </div>
-
   <script>
     var lol = ["─────────▄──────────────▄", "────────▌▒█───────────▄▀▒▌", "────────▌▒▒▀▄───────▄▀▒▒▒▐",
       "───────▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐", "─────▄▄▀▒▒▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐ WOW! SO DOGE!!", "───▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀██▀▒▌",
@@ -574,6 +576,33 @@
     for (i in lol) {
       console.log(lol[i]);
     }
+
+
+    var RoughNotation=function(t){"use strict";const e="http://www.w3.org/2000/svg";class s{constructor(t){this.seed=t}next(){return this.seed?(2**31-1&(this.seed=Math.imul(48271,this.seed)))/2**31:Math.random()}}function n(t,e,s,n,i){return{type:"path",ops:u(t,e,s,n,i)}}function i(t,e){return function(t,e,s){const i=(t||[]).length;if(i>2){const n=[];for(let e=0;e<i-1;e++)n.push(...u(t[e][0],t[e][1],t[e+1][0],t[e+1][1],s));return e&&n.push(...u(t[i-1][0],t[i-1][1],t[0][0],t[0][1],s)),{type:"path",ops:n}}return 2===i?n(t[0][0],t[0][1],t[1][0],t[1][1],s):{type:"path",ops:[]}}(t,!0,e)}function o(t,e,s,n,o){return i([[t,e],[t+s,e],[t+s,e+n],[t,e+n]],o)}function h(t,e,s,n,i){return function(t,e,s,n){const[i,o]=d(n.increment,t,e,n.rx,n.ry,1,n.increment*a(.1,a(.4,1,s),s),s);let h=p(i,null,s);if(!s.disableMultiStroke){const[i]=d(n.increment,t,e,n.rx,n.ry,1.5,0,s),o=p(i,null,s);h=h.concat(o)}return{estimatedPoints:o,opset:{type:"path",ops:h}}}(t,e,i,function(t,e,s){const n=Math.sqrt(2*Math.PI*Math.sqrt((Math.pow(t/2,2)+Math.pow(e/2,2))/2)),i=Math.max(s.curveStepCount,s.curveStepCount/Math.sqrt(200)*n),o=2*Math.PI/i;let h=Math.abs(t/2),r=Math.abs(e/2);const a=1-s.curveFitting;return h+=c(h*a,s),r+=c(r*a,s),{increment:o,rx:h,ry:r}}(s,n,i)).opset}function r(t){return t.randomizer||(t.randomizer=new s(t.seed||0)),t.randomizer.next()}function a(t,e,s,n=1){return s.roughness*n*(r(s)*(e-t)+t)}function c(t,e,s=1){return a(-t,t,e,s)}function u(t,e,s,n,i,o=!1){const h=o?i.disableMultiStrokeFill:i.disableMultiStroke,r=l(t,e,s,n,i,!0,!1);if(h)return r;const a=l(t,e,s,n,i,!0,!0);return r.concat(a)}function l(t,e,s,n,i,o,h){const a=Math.pow(t-s,2)+Math.pow(e-n,2),u=Math.sqrt(a);let l=1;l=u<200?1:u>500?.4:-.0016668*u+1.233334;let p=i.maxRandomnessOffset||0;p*p*100>a&&(p=u/10);const d=p/2,f=.2+.2*r(i);let g=i.bowing*i.maxRandomnessOffset*(n-e)/200,m=i.bowing*i.maxRandomnessOffset*(t-s)/200;g=c(g,i,l),m=c(m,i,l);const _=[],w=()=>c(d,i,l),v=()=>c(p,i,l);return o&&(h?_.push({op:"move",data:[t+w(),e+w()]}):_.push({op:"move",data:[t+c(p,i,l),e+c(p,i,l)]})),h?_.push({op:"bcurveTo",data:[g+t+(s-t)*f+w(),m+e+(n-e)*f+w(),g+t+2*(s-t)*f+w(),m+e+2*(n-e)*f+w(),s+w(),n+w()]}):_.push({op:"bcurveTo",data:[g+t+(s-t)*f+v(),m+e+(n-e)*f+v(),g+t+2*(s-t)*f+v(),m+e+2*(n-e)*f+v(),s+v(),n+v()]}),_}function p(t,e,s){const n=t.length,i=[];if(n>3){const o=[],h=1-s.curveTightness;i.push({op:"move",data:[t[1][0],t[1][1]]});for(let e=1;e+2<n;e++){const s=t[e];o[0]=[s[0],s[1]],o[1]=[s[0]+(h*t[e+1][0]-h*t[e-1][0])/6,s[1]+(h*t[e+1][1]-h*t[e-1][1])/6],o[2]=[t[e+1][0]+(h*t[e][0]-h*t[e+2][0])/6,t[e+1][1]+(h*t[e][1]-h*t[e+2][1])/6],o[3]=[t[e+1][0],t[e+1][1]],i.push({op:"bcurveTo",data:[o[1][0],o[1][1],o[2][0],o[2][1],o[3][0],o[3][1]]})}if(e&&2===e.length){const t=s.maxRandomnessOffset;i.push({op:"lineTo",data:[e[0]+c(t,s),e[1]+c(t,s)]})}}else 3===n?(i.push({op:"move",data:[t[1][0],t[1][1]]}),i.push({op:"bcurveTo",data:[t[1][0],t[1][1],t[2][0],t[2][1],t[2][0],t[2][1]]})):2===n&&i.push(...u(t[0][0],t[0][1],t[1][0],t[1][1],s));return i}function d(t,e,s,n,i,o,h,r){const a=[],u=[],l=c(.5,r)-Math.PI/2;u.push([c(o,r)+e+.9*n*Math.cos(l-t),c(o,r)+s+.9*i*Math.sin(l-t)]);for(let h=l;h<2*Math.PI+l-.01;h+=t){const t=[c(o,r)+e+n*Math.cos(h),c(o,r)+s+i*Math.sin(h)];a.push(t),u.push(t)}return u.push([c(o,r)+e+n*Math.cos(l+2*Math.PI+.5*h),c(o,r)+s+i*Math.sin(l+2*Math.PI+.5*h)]),u.push([c(o,r)+e+.98*n*Math.cos(l+h),c(o,r)+s+.98*i*Math.sin(l+h)]),u.push([c(o,r)+e+.9*n*Math.cos(l+.5*h),c(o,r)+s+.9*i*Math.sin(l+.5*h)]),[u,a]}const f={maxRandomnessOffset:2,roughness:1.5,bowing:1,stroke:"#000",strokeWidth:1.5,curveTightness:0,curveFitting:.95,curveStepCount:9,fillStyle:"hachure",fillWeight:-1,hachureAngle:-41,hachureGap:-1,dashOffset:-1,dashGap:-1,zigzagOffset:-1,seed:0,combineNestedSvgPaths:!1,disableMultiStroke:!1,disableMultiStrokeFill:!1},g=JSON.parse(JSON.stringify(f));g.disableMultiStroke=!0;const m=JSON.parse(JSON.stringify(f));m.roughness=3,m.disableMultiStroke=!0;class _{constructor(t,e){this._state="unattached",this._resizing=!1,this._animationGroupDelay=0,this._resizeListener=()=>{this._resizing||(this._resizing=!0,setTimeout(()=>{if(this._resizing=!1,"showing"===this._state){const t=this.computeSize();t&&this.hasRectChanged(t)&&this.show()}},400))},this._e=t,this._config=e,this.attach()}get config(){return this._config}attach(){if("unattached"===this._state&&this._e.parentElement){!function(){if(!window.__rough_notation_keyframe_styles){const t=window.__rough_notation_keyframe_styles=document.createElement("style");t.textContent="\n    @keyframes rough-notation-dash {\n      to {\n        stroke-dashoffset: 0;\n      }\n    }\n    ",document.head.appendChild(t)}}();const t=this._svg=document.createElementNS(e,"svg"),s=t.style;s.position="absolute",s.top="0",s.left="0",s.overflow="visible",s.pointerEvents="none",s.width="100px",s.height="100px";const n="highlight"===this._config.type;if(this._e.insertAdjacentElement(n?"beforebegin":"afterend",t),this._state="not-showing",n){const t=window.getComputedStyle(this._e).position;(!t||"static"===t)&&(this._e.style.position="relative")}this.attachListeners()}}detachListeners(){window.removeEventListener("resize",this._resizeListener),this._resizeObserver&&this._resizeObserver.unobserve(this._e)}attachListeners(){this.detachListeners(),window.addEventListener("resize",this._resizeListener,{passive:!0}),!this._resizeObserver&&"ResizeObserver"in window&&(this._resizeObserver=new window.ResizeObserver(t=>{for(const e of t){let t=!0;if(e.contentRect){const s=this.computeSizeWithBounds(e.contentRect);s&&!this.hasRectChanged(s)&&(t=!1)}t&&this._resizeListener()}})),this._resizeObserver&&this._resizeObserver.observe(this._e)}sameInteger(t,e){return Math.round(t)===Math.round(e)}hasRectChanged(t){return!this._lastSize||!t||!(this.sameInteger(t.x,this._lastSize.x)&&this.sameInteger(t.y,this._lastSize.y)&&this.sameInteger(t.w,this._lastSize.w)&&this.sameInteger(t.h,this._lastSize.h))}isShowing(){return"not-showing"!==this._state}show(){switch(this._state){case"unattached":break;case"showing":this.hide(),this.show();break;case"not-showing":this.attach(),this._svg&&this.render(this._svg)}}hide(){if(this._svg)for(;this._svg.lastChild;)this._svg.removeChild(this._svg.lastChild);this._state="not-showing"}remove(){this._svg&&this._svg.parentElement&&this._svg.parentElement.removeChild(this._svg),this._svg=void 0,this._state="unattached",this.detachListeners()}render(t){const s=this.computeSize();s&&(!function(t,s,i,r){const a=[];let c=i.strokeWidth||2;const u=0===i.padding?0:i.padding||5,l=void 0===i.animate||!!i.animate;switch(i.type){case"underline":{const t=s.y+s.h+u;a.push(n(s.x,t,s.x+s.w,t,g)),a.push(n(s.x+s.w,t,s.x,t,g));break}case"strike-through":{const t=s.y+s.h/2;a.push(n(s.x,t,s.x+s.w,t,g)),a.push(n(s.x+s.w,t,s.x,t,g));break}case"box":{const t=s.x-u,e=s.y-u,n=s.w+2*u,i=s.h+2*u;a.push(o(t,e,n,i,g)),a.push(o(t,e,n,i,g));break}case"crossed-off":{const t=s.x,e=s.y,i=t+s.w,o=e+s.h;a.push(n(t,e,i,o,g)),a.push(n(i,o,t,e,g)),a.push(n(i,e,t,o,g)),a.push(n(t,o,i,e,g));break}case"circle":{const t=2*u,e=s.w+2*t,n=s.h+2*t,i=s.x-t+e/2,o=s.y-t+n/2;a.push(h(i,o,e,n,f));break}case"highlight":{c=.95*s.h;const t=s.y+s.h/2;a.push(n(s.x,t,s.x+s.w,t,m)),a.push(n(s.x+s.w,t,s.x,t,m));break}}if(a.length){const s=function(t){const e=[];for(const s of t){let t="";for(const n of s.ops){const s=n.data;switch(n.op){case"move":t.trim()&&e.push(t.trim()),t=`M${s[0]} ${s[1]} `;break;case"bcurveTo":t+=`C${s[0]} ${s[1]}, ${s[2]} ${s[3]}, ${s[4]} ${s[5]} `;break;case"lineTo":t+=`L${s[0]} ${s[1]} `}}t.trim()&&e.push(t.trim())}return e}(a),n=[],o=[];let h=0;const u=0===i.animationDuration?0:i.animationDuration||800,p=(0===i.animationDelay?0:i.animationDelay||0)+(r||0);for(const r of s){const s=document.createElementNS(e,"path");if(s.setAttribute("d",r),s.setAttribute("fill","none"),s.setAttribute("stroke",i.color||"currentColor"),s.setAttribute("stroke-width",""+c),l){const t=s.getTotalLength();n.push(t),h+=t}t.appendChild(s),o.push(s)}if(l){let t=0;for(let e=0;e<o.length;e++){const s=o[e],i=n[e],r=h?u*(i/h):0,a=p+t,c=s.style;c.strokeDashoffset=""+i,c.strokeDasharray=""+i,c.animation=`rough-notation-dash ${r}ms ease-out ${a}ms forwards`,t+=r}}}}(t,s,this._config,this._animationGroupDelay),this._lastSize=s,this._state="showing")}computeSize(){return this.computeSizeWithBounds(this._e.getBoundingClientRect())}computeSizeWithBounds(t){if(this._svg){const e=this._svg.getBoundingClientRect(),s=t;return{x:(s.x||s.left)-(e.x||e.left),y:(s.y||s.top)-(e.y||e.top),w:s.width,h:s.height}}return null}}return t.annotate=function(t,e){return new _(t,e)},t.annotationGroup=function(t){let e=0;for(const s of t){const t=s;t._animationGroupDelay=e;e+=0===t.config.animationDuration?0:t.config.animationDuration||800}const s=[...t];return{show(){for(const t of s)t.show()},hide(){for(const t of s)t.hide()}}},t}({});
+
+    const a0 = RoughNotation.annotate(document.querySelector('#annotate_0'), { type: 'box', animationDelay: 500, color: 'rgb(255, 213, 79)' });
+    // const a1 = RoughNotation.annotate(document.querySelector('#annotate_1'), { type: 'underline', animationDelay: 500, color: '#299DB6' });
+    const a2 = RoughNotation.annotate(document.querySelector('#annotate_2'), { type: 'box', animationDelay: 500, color: 'rgb(255, 213, 79)' });
+    const a4 = RoughNotation.annotate(document.querySelector('#annotate_4'), { type: 'highlight', animationDelay: 500, color: 'rgb(255, 213, 79)' });
+    const ag0 = RoughNotation.annotationGroup([a0, a2, a4]);
+    ag0.show();
+    const a5 = RoughNotation.annotate(document.querySelector('#annotate_5'), { type: 'box', animationDelay: 500, color: 'rgb(255, 213, 79)' });
+    const a6 = RoughNotation.annotate(document.querySelector('#annotate_6'), { type: 'box', animationDelay: 500, color: 'rgb(255, 213, 79)' });
+    const a7 = RoughNotation.annotate(document.querySelector('#annotate_7'), { type: 'highlight', animationDelay: 500, color: 'rgb(255, 213, 79)' });
+    const ag1 = RoughNotation.annotationGroup([a5, a6, a7]);
+    ag1.show();
+
+    // papers
+    for (i = 0; i < 14; i++) {
+      n = String.fromCharCode(97 + i);
+      const tmp_a = RoughNotation.annotate(document.querySelector('#annotate_' + n), { type: 'underline', animationDelay: 500, color: 'rgb(255, 213, 79)' });    
+      tmp_a.show();
+    }
+
+    //RoughNotation.annotate(document.querySelector('#annotate_5'), { type: 'highlight', animationDelay: 500, color: 'rgb(255, 213, 79)' });
+
+
+
   </script>
   <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="322cc5a3-1eb3-40ec-a190-b5359d0f76cf";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
