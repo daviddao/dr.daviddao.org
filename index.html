@@ -234,6 +234,7 @@
             </a>
           </span>
         </h3>
+        <button type="button" class="btn btn-primary" onclick="highlightPaper()">✏️ Spotlights</button>
         <div id="publist">
           <!-- <div class="pubyear">
             <h4>Manuscripts</h4>
@@ -591,18 +592,20 @@
     ag0.show();
     const a5 = RN.annotate(document.querySelector('#annotate_5'), { type: 'box', animationDelay: 500, color: 'rgb(255, 213, 79)' });
     const a6 = RN.annotate(document.querySelector('#annotate_6'), { type: 'box', animationDelay: 500, color: 'rgb(255, 213, 79)' });
-    const a7 = RN.annotate(document.querySelector('#annotate_7'), { type: 'highlight', animationDelay: 500, color: 'rgb(255, 213, 79)' });
-    const ag1 = RN.annotationGroup([a5, a6, a7]);
+    const ag1 = RN.annotationGroup([a5, a6]);
     ag1.show();
 
     // papers are annotated with an alphabet
-    agA = []
-    for (i = 13; i >= 0; i--) {
-      n = String.fromCharCode(97 + i);
-      const tmp_a = RN.annotate(document.querySelector('#annotate_' + n), { type: 'underline', animationDelay: 500, color: 'rgb(255, 213, 79)' });    
-      agA.push(tmp_a)
+    function highlightPaper() {
+      const a7 = RN.annotate(document.querySelector('#annotate_7'), { type: 'highlight', animationDelay: 500, color: 'rgb(255, 213, 79)' });
+      agA = [a7]
+      for (i = 13; i >= 0; i--) {
+        n = String.fromCharCode(97 + i);
+        const tmp_a = RN.annotate(document.querySelector('#annotate_' + n), { type: 'underline', animationDelay: 500, color: 'rgb(255, 213, 79)' });    
+        agA.push(tmp_a)
+      }
+      RN.annotationGroup(agA).show();
     }
-    RN.annotationGroup(agA).show();
     //RN.annotate(document.querySelector('#annotate_5'), { type: 'highlight', animationDelay: 500, color: 'rgb(255, 213, 79)' });
 
 
