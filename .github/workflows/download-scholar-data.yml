@@ -1,5 +1,8 @@
 name: Download scholar
-on: push
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '0 0 1-31 * *'
 jobs:
   report:
     runs-on: ubuntu-latest
