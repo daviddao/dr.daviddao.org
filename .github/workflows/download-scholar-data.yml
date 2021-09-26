@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.PAT }}
       - name: Download scholar
         env:
           super_secret: ${{ secrets.SERPAPI }}
@@ -15,5 +17,3 @@ jobs:
           git config --global user.email 'david@gainforest.net'
           git commit -am "Automated scholar data commit"
           git push
-        with:
-          token: ${{ secrets.PAT }}
