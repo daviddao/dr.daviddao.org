@@ -1,0 +1,19 @@
+name: Download scholar
+on: push
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download scholar
+        env:
+          super_secret: ${{ secrets.SERPAPI }}
+        run: curl https://serpapi.com/search.json?author_id=XHeNA_8AAAAJ&engine=google_scholar_author&hl=en&api_key="$super_secret" > ./scholar.json
+      - name: Commit data
+        run: |
+          git config --global user.name 'David Dao'
+          git config --global user.email 'david@gainforest.net'
+          git commit -am "Automated scholar data commit"
+          git push
+        with:
+          token: ${{ secrets.PAT }}
