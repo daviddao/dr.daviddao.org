@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "6160e3cb14b24562882d55a8",
+    "id": "61623602f636ffa9d4c9c458",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/6160e3cb14b24562882d55a8.json",
-    "created_at": "2021-10-09 00:35:23 UTC",
-    "processed_at": "2021-10-09 00:35:23 UTC",
+    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61623602f636ffa9d4c9c458.json",
+    "created_at": "2021-10-10 00:38:26 UTC",
+    "processed_at": "2021-10-10 00:38:26 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/6160e3cb14b24562882d55a8.html",
-    "total_time_taken": 4.2
+    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61623602f636ffa9d4c9c458.html",
+    "total_time_taken": 2.31
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -56,7 +56,7 @@
       "authors": "R Jia*, D Dao*, B Wang, FA Hubis, M Gurel, N Hynes, B Li, C Zhang, ...",
       "publication": "AISTATS, 2019",
       "cited_by": {
-        "value": 99,
+        "value": 98,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17484913464031621276",
         "serpapi_link": "https://serpapi.com/search.json?cites=17484913464031621276&engine=google_scholar&hl=en",
         "cites_id": "17484913464031621276"
@@ -84,7 +84,7 @@
       "authors": "H Hennig, P Rees, T Blasi, L Kamentsky, J Hung, D Dao, AE Carpenter, ...",
       "publication": "Methods 112, 201-210, 2017",
       "cited_by": {
-        "value": 60,
+        "value": 61,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=18199354547788839905",
         "serpapi_link": "https://serpapi.com/search.json?cites=18199354547788839905&engine=google_scholar&hl=en",
         "cites_id": "18199354547788839905"
@@ -112,7 +112,7 @@
       "authors": "N Hynes, D Dao, D Yan, R Cheng, D Song",
       "publication": "Proceedings of the VLDB Endowment 11 (12), 2086-2089, 2018",
       "cited_by": {
-        "value": 28,
+        "value": 29,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4955005265641816256",
         "serpapi_link": "https://serpapi.com/search.json?cites=4955005265641816256&engine=google_scholar&hl=en",
         "cites_id": "4955005265641816256"
@@ -321,8 +321,8 @@
     "table": [
       {
         "citations": {
-          "all": 389,
-          "since_2016": 386
+          "all": 390,
+          "since_2016": 387
         }
       },
       {
@@ -361,7 +361,7 @@
       },
       {
         "year": 2021,
-        "citations": 129
+        "citations": 130
       }
     ]
   },
