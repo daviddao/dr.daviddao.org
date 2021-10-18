@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "616b7035681ebe09f45add01",
+    "id": "616cc20a9c84acfce245d2c0",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/616b7035681ebe09f45add01.json",
-    "created_at": "2021-10-17 00:37:09 UTC",
-    "processed_at": "2021-10-17 00:37:09 UTC",
+    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/616cc20a9c84acfce245d2c0.json",
+    "created_at": "2021-10-18 00:38:34 UTC",
+    "processed_at": "2021-10-18 00:38:34 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/616b7035681ebe09f45add01.html",
-    "total_time_taken": 0.81
+    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/616cc20a9c84acfce245d2c0.html",
+    "total_time_taken": 0.41
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -70,7 +70,7 @@
       "authors": "D Dao, AN Fraser, J Hung, V Ljosa, S Singh, AE Carpenter",
       "publication": "Bioinformatics, 057976, 2016",
       "cited_by": {
-        "value": 89,
+        "value": 90,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15265904677077731352",
         "serpapi_link": "https://serpapi.com/search.json?cites=15265904677077731352&engine=google_scholar&hl=en",
         "cites_id": "15265904677077731352"
@@ -309,8 +309,8 @@
     "table": [
       {
         "citations": {
-          "all": 392,
-          "since_2016": 389
+          "all": 393,
+          "since_2016": 390
         }
       },
       {
@@ -349,7 +349,7 @@
       },
       {
         "year": 2021,
-        "citations": 133
+        "citations": 134
       }
     ]
   },
