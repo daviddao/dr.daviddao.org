@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "6179f07f96f5d719d162ee36",
+    "id": "617b41a4c99903e9aad2f2d3",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/6179f07f96f5d719d162ee36.json",
-    "created_at": "2021-10-28 00:36:15 UTC",
-    "processed_at": "2021-10-28 00:36:15 UTC",
+    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/617b41a4c99903e9aad2f2d3.json",
+    "created_at": "2021-10-29 00:34:44 UTC",
+    "processed_at": "2021-10-29 00:34:44 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/6179f07f96f5d719d162ee36.html",
-    "total_time_taken": 1.52
+    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/617b41a4c99903e9aad2f2d3.html",
+    "total_time_taken": 0.54
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -84,7 +84,7 @@
       "authors": "H Hennig, P Rees, T Blasi, L Kamentsky, J Hung, D Dao, AE Carpenter, ...",
       "publication": "Methods 112, 201-210, 2017",
       "cited_by": {
-        "value": 61,
+        "value": 62,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=18199354547788839905",
         "serpapi_link": "https://serpapi.com/search.json?cites=18199354547788839905&engine=google_scholar&hl=en",
         "cites_id": "18199354547788839905"
@@ -309,8 +309,8 @@
     "table": [
       {
         "citations": {
-          "all": 396,
-          "since_2016": 393
+          "all": 397,
+          "since_2016": 394
         }
       },
       {
@@ -349,7 +349,7 @@
       },
       {
         "year": 2021,
-        "citations": 137
+        "citations": 138
       }
     ]
   },
