@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "618088ce351764df81ea2495",
+    "id": "6181d983c504e9eaed73e0f7",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/618088ce351764df81ea2495.json",
-    "created_at": "2021-11-02 00:39:42 UTC",
-    "processed_at": "2021-11-02 00:39:42 UTC",
+    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/6181d983c504e9eaed73e0f7.json",
+    "created_at": "2021-11-03 00:36:19 UTC",
+    "processed_at": "2021-11-03 00:36:19 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/618088ce351764df81ea2495.html",
-    "total_time_taken": 0.54
+    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/6181d983c504e9eaed73e0f7.html",
+    "total_time_taken": 2.57
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -56,7 +56,7 @@
       "authors": "R Jia*, D Dao*, B Wang, FA Hubis, M Gurel, N Hynes, B Li, C Zhang, ...",
       "publication": "AISTATS, 2019",
       "cited_by": {
-        "value": 101,
+        "value": 103,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17484913464031621276",
         "serpapi_link": "https://serpapi.com/search.json?cites=17484913464031621276&engine=google_scholar&hl=en",
         "cites_id": "17484913464031621276"
@@ -70,7 +70,7 @@
       "authors": "D Dao, AN Fraser, J Hung, V Ljosa, S Singh, AE Carpenter",
       "publication": "Bioinformatics, 057976, 2016",
       "cited_by": {
-        "value": 90,
+        "value": 91,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15265904677077731352",
         "serpapi_link": "https://serpapi.com/search.json?cites=15265904677077731352&engine=google_scholar&hl=en",
         "cites_id": "15265904677077731352"
@@ -84,7 +84,7 @@
       "authors": "H Hennig, P Rees, T Blasi, L Kamentsky, J Hung, D Dao, AE Carpenter, ...",
       "publication": "Methods 112, 201-210, 2017",
       "cited_by": {
-        "value": 62,
+        "value": 63,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=18199354547788839905",
         "serpapi_link": "https://serpapi.com/search.json?cites=18199354547788839905&engine=google_scholar&hl=en",
         "cites_id": "18199354547788839905"
@@ -176,6 +176,20 @@
       "year": "2018"
     },
     {
+      "title": "Ease. ML: A Lifecycle Management System for Machine Learning",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:M05iB0D1s5AC",
+      "citation_id": "XHeNA_8AAAAJ:M05iB0D1s5AC",
+      "authors": "L Aguilar Melgar, D Dao, S Gan, NM Gürel, N Hollenstein, J Jiang, ...",
+      "publication": "11th Annual Conference on Innovative Data Systems Research (CIDR 2021)(virtual), 2021",
+      "cited_by": {
+        "value": 4,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17460518780466483440,1603920567372647497",
+        "serpapi_link": "https://serpapi.com/search.json?cites=17460518780466483440%2C1603920567372647497&engine=google_scholar&hl=en",
+        "cites_id": "17460518780466483440,1603920567372647497"
+      },
+      "year": "2021"
+    },
+    {
       "title": "GeoLabels: Towards Efficient Ecosystem Monitoring using Data Programming on Geospatial Information",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:NaGl4SEjCO4C",
       "citation_id": "XHeNA_8AAAAJ:NaGl4SEjCO4C",
@@ -200,20 +214,6 @@
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11030679061162792135",
         "serpapi_link": "https://serpapi.com/search.json?cites=11030679061162792135&engine=google_scholar&hl=en",
         "cites_id": "11030679061162792135"
-      },
-      "year": "2021"
-    },
-    {
-      "title": "Ease. ML: A Lifecycle Management System for Machine Learning",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:M05iB0D1s5AC",
-      "citation_id": "XHeNA_8AAAAJ:M05iB0D1s5AC",
-      "authors": "L Aguilar Melgar, D Dao, S Gan, NM Gürel, N Hollenstein, J Jiang, ...",
-      "publication": "11th Annual Conference on Innovative Data Systems Research (CIDR 2021)(virtual), 2021",
-      "cited_by": {
-        "value": 3,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17460518780466483440,1603920567372647497",
-        "serpapi_link": "https://serpapi.com/search.json?cites=17460518780466483440%2C1603920567372647497&engine=google_scholar&hl=en",
-        "cites_id": "17460518780466483440,1603920567372647497"
       },
       "year": "2021"
     },
@@ -309,8 +309,8 @@
     "table": [
       {
         "citations": {
-          "all": 397,
-          "since_2016": 394
+          "all": 402,
+          "since_2016": 399
         }
       },
       {
@@ -349,7 +349,7 @@
       },
       {
         "year": 2021,
-        "citations": 138
+        "citations": 144
       }
     ]
   },
