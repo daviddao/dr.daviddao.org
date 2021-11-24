@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "619c37aa8e02e4c9a1a31905",
+    "id": "619d893b303eb1cf3a325686",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/619c37aa8e02e4c9a1a31905.json",
-    "created_at": "2021-11-23 00:36:58 UTC",
-    "processed_at": "2021-11-23 00:36:58 UTC",
+    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/619d893b303eb1cf3a325686.json",
+    "created_at": "2021-11-24 00:37:15 UTC",
+    "processed_at": "2021-11-24 00:37:15 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/619c37aa8e02e4c9a1a31905.html",
-    "total_time_taken": 6.18
+    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/619d893b303eb1cf3a325686.html",
+    "total_time_taken": 1.06
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -56,7 +56,7 @@
       "authors": "R Jia*, D Dao*, B Wang, FA Hubis, M Gurel, N Hynes, B Li, C Zhang, ...",
       "publication": "AISTATS, 2019",
       "cited_by": {
-        "value": 109,
+        "value": 110,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17484913464031621276",
         "serpapi_link": "https://serpapi.com/search.json?cites=17484913464031621276&engine=google_scholar&hl=en",
         "cites_id": "17484913464031621276"
@@ -84,7 +84,7 @@
       "authors": "H Hennig, P Rees, T Blasi, L Kamentsky, J Hung, D Dao, AE Carpenter, ...",
       "publication": "Methods 112, 201-210, 2017",
       "cited_by": {
-        "value": 63,
+        "value": 64,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=18199354547788839905",
         "serpapi_link": "https://serpapi.com/search.json?cites=18199354547788839905&engine=google_scholar&hl=en",
         "cites_id": "18199354547788839905"
@@ -98,7 +98,7 @@
       "authors": "R Jia, D Dao, B Wang, FA Hubis, NM Gurel, B Li, C Zhang, CJ Spanos, ...",
       "publication": "VLDB, 2019",
       "cited_by": {
-        "value": 46,
+        "value": 47,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8974280610722983070",
         "serpapi_link": "https://serpapi.com/search.json?cites=8974280610722983070&engine=google_scholar&hl=en",
         "cites_id": "8974280610722983070"
@@ -309,8 +309,8 @@
     "table": [
       {
         "citations": {
-          "all": 411,
-          "since_2016": 408
+          "all": 414,
+          "since_2016": 411
         }
       },
       {
@@ -349,7 +349,7 @@
       },
       {
         "year": 2021,
-        "citations": 153
+        "citations": 155
       }
     ]
   },
