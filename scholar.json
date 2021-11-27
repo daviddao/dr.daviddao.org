@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "61a02c1366d81fd194d0b6d7",
+    "id": "61a17d71979054a5fdc594e0",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61a02c1366d81fd194d0b6d7.json",
-    "created_at": "2021-11-26 00:36:35 UTC",
-    "processed_at": "2021-11-26 00:36:35 UTC",
+    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61a17d71979054a5fdc594e0.json",
+    "created_at": "2021-11-27 00:36:01 UTC",
+    "processed_at": "2021-11-27 00:36:01 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61a02c1366d81fd194d0b6d7.html",
-    "total_time_taken": 0.4
+    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61a17d71979054a5fdc594e0.html",
+    "total_time_taken": 1.9
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -56,7 +56,7 @@
       "authors": "R Jia*, D Dao*, B Wang, FA Hubis, M Gurel, N Hynes, B Li, C Zhang, ...",
       "publication": "AISTATS, 2019",
       "cited_by": {
-        "value": 110,
+        "value": 111,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17484913464031621276",
         "serpapi_link": "https://serpapi.com/search.json?cites=17484913464031621276&engine=google_scholar&hl=en",
         "cites_id": "17484913464031621276"
@@ -98,7 +98,7 @@
       "authors": "R Jia, D Dao, B Wang, FA Hubis, NM Gurel, B Li, C Zhang, CJ Spanos, ...",
       "publication": "VLDB, 2019",
       "cited_by": {
-        "value": 47,
+        "value": 48,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8974280610722983070",
         "serpapi_link": "https://serpapi.com/search.json?cites=8974280610722983070&engine=google_scholar&hl=en",
         "cites_id": "8974280610722983070"
@@ -140,7 +140,7 @@
       "authors": "L Wang, JP Near, N Somani, P Gao, A Low, D Dao, D Song",
       "publication": "Heterogeneous Data Management, Polystores, and Analytics for Healthcare, 3-23, 2019",
       "cited_by": {
-        "value": 17,
+        "value": 18,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17119379763499216965",
         "serpapi_link": "https://serpapi.com/search.json?cites=17119379763499216965&engine=google_scholar&hl=en",
         "cites_id": "17119379763499216965"
@@ -309,8 +309,8 @@
     "table": [
       {
         "citations": {
-          "all": 414,
-          "since_2016": 411
+          "all": 417,
+          "since_2016": 414
         }
       },
       {
@@ -341,7 +341,7 @@
       },
       {
         "year": 2019,
-        "citations": 72
+        "citations": 73
       },
       {
         "year": 2020,
@@ -349,7 +349,7 @@
       },
       {
         "year": 2021,
-        "citations": 155
+        "citations": 156
       }
     ]
   },
