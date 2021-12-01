@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "61a5729cdc02f16e786a8eff",
+    "id": "61a6c452cca014e6c7e4702b",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61a5729cdc02f16e786a8eff.json",
-    "created_at": "2021-11-30 00:38:52 UTC",
-    "processed_at": "2021-11-30 00:38:52 UTC",
+    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61a6c452cca014e6c7e4702b.json",
+    "created_at": "2021-12-01 00:39:46 UTC",
+    "processed_at": "2021-12-01 00:39:46 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61a5729cdc02f16e786a8eff.html",
-    "total_time_taken": 1.09
+    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61a6c452cca014e6c7e4702b.html",
+    "total_time_taken": 1.02
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -56,7 +56,7 @@
       "authors": "R Jia*, D Dao*, B Wang, FA Hubis, M Gurel, N Hynes, B Li, C Zhang, ...",
       "publication": "AISTATS, 2019",
       "cited_by": {
-        "value": 111,
+        "value": 112,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17484913464031621276",
         "serpapi_link": "https://serpapi.com/search.json?cites=17484913464031621276&engine=google_scholar&hl=en",
         "cites_id": "17484913464031621276"
@@ -98,7 +98,7 @@
       "authors": "R Jia, D Dao, B Wang, FA Hubis, NM Gurel, B Li, C Zhang, CJ Spanos, ...",
       "publication": "VLDB, 2019",
       "cited_by": {
-        "value": 48,
+        "value": 49,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8974280610722983070",
         "serpapi_link": "https://serpapi.com/search.json?cites=8974280610722983070&engine=google_scholar&hl=en",
         "cites_id": "8974280610722983070"
@@ -176,6 +176,20 @@
       "year": "2018"
     },
     {
+      "title": "Scalability vs. Utility: Do We Have To Sacrifice One for the Other in Data Importance Quantification?",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:pqnbT2bcN3wC",
+      "citation_id": "XHeNA_8AAAAJ:pqnbT2bcN3wC",
+      "authors": "R Jia, F Wu, X Sun, J Xu, D Dao, B Kailkhura, C Zhang, B Li, D Song",
+      "publication": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern …, 2021",
+      "cited_by": {
+        "value": 4,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11030679061162792135",
+        "serpapi_link": "https://serpapi.com/search.json?cites=11030679061162792135&engine=google_scholar&hl=en",
+        "cites_id": "11030679061162792135"
+      },
+      "year": "2021"
+    },
+    {
       "title": "Ease. ML: A Lifecycle Management System for Machine Learning",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:M05iB0D1s5AC",
       "citation_id": "XHeNA_8AAAAJ:M05iB0D1s5AC",
@@ -202,20 +216,6 @@
         "cites_id": "15664633480530337581"
       },
       "year": "2019"
-    },
-    {
-      "title": "Scalability vs. Utility: Do We Have To Sacrifice One for the Other in Data Importance Quantification?",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:pqnbT2bcN3wC",
-      "citation_id": "XHeNA_8AAAAJ:pqnbT2bcN3wC",
-      "authors": "R Jia, F Wu, X Sun, J Xu, D Dao, B Kailkhura, C Zhang, B Li, D Song",
-      "publication": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern …, 2021",
-      "cited_by": {
-        "value": 3,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11030679061162792135",
-        "serpapi_link": "https://serpapi.com/search.json?cites=11030679061162792135&engine=google_scholar&hl=en",
-        "cites_id": "11030679061162792135"
-      },
-      "year": "2021"
     },
     {
       "title": "TrueBranch: Robust Deep Learning-Based Verification of Forest Conservation Projects",
@@ -309,8 +309,8 @@
     "table": [
       {
         "citations": {
-          "all": 417,
-          "since_2016": 414
+          "all": 420,
+          "since_2016": 417
         }
       },
       {
@@ -341,7 +341,7 @@
       },
       {
         "year": 2019,
-        "citations": 73
+        "citations": 72
       },
       {
         "year": 2020,
@@ -349,7 +349,7 @@
       },
       {
         "year": 2021,
-        "citations": 156
+        "citations": 160
       }
     ]
   },
