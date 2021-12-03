@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "61a8153dce87f8814615e48e",
+    "id": "61a966cefdca3ebd7a38daa7",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61a8153dce87f8814615e48e.json",
-    "created_at": "2021-12-02 00:37:17 UTC",
-    "processed_at": "2021-12-02 00:37:17 UTC",
+    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61a966cefdca3ebd7a38daa7.json",
+    "created_at": "2021-12-03 00:37:34 UTC",
+    "processed_at": "2021-12-03 00:37:34 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61a8153dce87f8814615e48e.html",
-    "total_time_taken": 0.91
+    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61a966cefdca3ebd7a38daa7.html",
+    "total_time_taken": 0.65
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -499,8 +499,8 @@
       "link": "https://scholar.google.com/citations?user=a5u9fVYAAAAJ&hl=en",
       "serpapi_link": "https://serpapi.com/search.json?author_id=a5u9fVYAAAAJ&engine=google_scholar_author&hl=en",
       "author_id": "a5u9fVYAAAAJ",
-      "affiliations": "PhD Student, Imperial College London",
-      "email": "Verified email at ic.ac.uk",
+      "affiliations": "Senior Researcher, Microsoft Research",
+      "email": "Verified email at microsoft.com",
       "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=a5u9fVYAAAAJ&citpid=4"
     },
     {
