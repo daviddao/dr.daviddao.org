@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "61ad5bd2ef7ddab1b39c9cab",
+    "id": "61aead578b7ed2bf5fb040fc",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61ad5bd2ef7ddab1b39c9cab.json",
-    "created_at": "2021-12-06 00:39:46 UTC",
-    "processed_at": "2021-12-06 00:39:46 UTC",
+    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61aead578b7ed2bf5fb040fc.json",
+    "created_at": "2021-12-07 00:39:51 UTC",
+    "processed_at": "2021-12-07 00:39:51 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61ad5bd2ef7ddab1b39c9cab.html",
-    "total_time_taken": 0.47
+    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61aead578b7ed2bf5fb040fc.html",
+    "total_time_taken": 0.4
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -246,6 +246,18 @@
       "year": "2014"
     },
     {
+      "title": "Toward Foundation Models for Earth Monitoring: Proposal for a Climate Change Benchmark",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:ZHo1McVdvXMC",
+      "citation_id": "XHeNA_8AAAAJ:ZHo1McVdvXMC",
+      "authors": "A Lacoste, ED Sherwin, H Kerner, H Alemohammad, B Lütjens, J Irvin, ...",
+      "publication": "arXiv preprint arXiv:2112.00570, 2021",
+      "cited_by": {
+        "value": null,
+        "link": "https://scholar.google.com"
+      },
+      "year": "2021"
+    },
+    {
       "title": "Challenges in KDD and ML for Sustainable Development",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:SeFeTyx0c_EC",
       "citation_id": "XHeNA_8AAAAJ:SeFeTyx0c_EC",
@@ -345,7 +357,7 @@
       },
       {
         "year": 2020,
-        "citations": 115
+        "citations": 116
       },
       {
         "year": 2021,
