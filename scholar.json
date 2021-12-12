@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "61b3f2a8216a9dc6109454d3",
+    "id": "61b5451ae4a23d7c139af7ea",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61b3f2a8216a9dc6109454d3.json",
-    "created_at": "2021-12-11 00:36:56 UTC",
-    "processed_at": "2021-12-11 00:36:56 UTC",
+    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61b5451ae4a23d7c139af7ea.json",
+    "created_at": "2021-12-12 00:40:58 UTC",
+    "processed_at": "2021-12-12 00:40:58 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61b3f2a8216a9dc6109454d3.html",
-    "total_time_taken": 0.54
+    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61b5451ae4a23d7c139af7ea.html",
+    "total_time_taken": 0.76
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -56,7 +56,7 @@
       "authors": "R Jia*, D Dao*, B Wang, FA Hubis, M Gurel, N Hynes, B Li, C Zhang, ...",
       "publication": "AISTATS, 2019",
       "cited_by": {
-        "value": 113,
+        "value": 116,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17484913464031621276",
         "serpapi_link": "https://serpapi.com/search.json?cites=17484913464031621276&engine=google_scholar&hl=en",
         "cites_id": "17484913464031621276"
@@ -98,7 +98,7 @@
       "authors": "R Jia, D Dao, B Wang, FA Hubis, NM Gurel, B Li, C Zhang, CJ Spanos, ...",
       "publication": "VLDB, 2019",
       "cited_by": {
-        "value": 50,
+        "value": 51,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8974280610722983070",
         "serpapi_link": "https://serpapi.com/search.json?cites=8974280610722983070&engine=google_scholar&hl=en",
         "cites_id": "8974280610722983070"
@@ -182,7 +182,7 @@
       "authors": "R Jia, F Wu, X Sun, J Xu, D Dao, B Kailkhura, C Zhang, B Li, D Song",
       "publication": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern …, 2021",
       "cited_by": {
-        "value": 4,
+        "value": 5,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11030679061162792135",
         "serpapi_link": "https://serpapi.com/search.json?cites=11030679061162792135&engine=google_scholar&hl=en",
         "cites_id": "11030679061162792135"
@@ -321,8 +321,8 @@
     "table": [
       {
         "citations": {
-          "all": 422,
-          "since_2016": 419
+          "all": 427,
+          "since_2016": 424
         }
       },
       {
@@ -357,11 +357,11 @@
       },
       {
         "year": 2020,
-        "citations": 116
+        "citations": 115
       },
       {
         "year": 2021,
-        "citations": 162
+        "citations": 167
       }
     ]
   },
