@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "61b5451ae4a23d7c139af7ea",
+    "id": "61b6962d2d5b1218c482dfbc",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61b5451ae4a23d7c139af7ea.json",
-    "created_at": "2021-12-12 00:40:58 UTC",
-    "processed_at": "2021-12-12 00:40:58 UTC",
+    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61b6962d2d5b1218c482dfbc.json",
+    "created_at": "2021-12-13 00:39:09 UTC",
+    "processed_at": "2021-12-13 00:39:09 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61b5451ae4a23d7c139af7ea.html",
-    "total_time_taken": 0.76
+    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61b6962d2d5b1218c482dfbc.html",
+    "total_time_taken": 0.67
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -26,14 +26,14 @@
         "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Amachine_learning"
       },
       {
-        "title": "Game Theory",
-        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:game_theory",
-        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Agame_theory"
+        "title": "Data Valuation",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:data_valuation",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Adata_valuation"
       },
       {
-        "title": "Data Markets",
-        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:data_markets",
-        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Adata_markets"
+        "title": "Remote Sensing",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:remote_sensing",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Aremote_sensing"
       },
       {
         "title": "Computational Sustainability",
@@ -41,9 +41,9 @@
         "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Acomputational_sustainability"
       },
       {
-        "title": "Bioinformatics",
-        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:bioinformatics",
-        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Abioinformatics"
+        "title": "Computational Biology",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:computational_biology",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Acomputational_biology"
       }
     ],
     "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=XHeNA_8AAAAJ&citpid=5"
