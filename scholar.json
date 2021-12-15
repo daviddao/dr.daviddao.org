@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "61b7e8278cd87804847e189c",
+    "id": "61b938feaef264ded74a4119",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61b7e8278cd87804847e189c.json",
-    "created_at": "2021-12-14 00:41:11 UTC",
-    "processed_at": "2021-12-14 00:41:11 UTC",
+    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61b938feaef264ded74a4119.json",
+    "created_at": "2021-12-15 00:38:22 UTC",
+    "processed_at": "2021-12-15 00:38:22 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61b7e8278cd87804847e189c.html",
-    "total_time_taken": 0.56
+    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61b938feaef264ded74a4119.html",
+    "total_time_taken": 0.44
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -112,7 +112,7 @@
       "authors": "N Hynes, D Dao, D Yan, R Cheng, D Song",
       "publication": "Proceedings of the VLDB Endowment 11 (12), 2086-2089, 2018",
       "cited_by": {
-        "value": 31,
+        "value": 32,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4955005265641816256",
         "serpapi_link": "https://serpapi.com/search.json?cites=4955005265641816256&engine=google_scholar&hl=en",
         "cites_id": "4955005265641816256"
@@ -246,6 +246,17 @@
       "year": "2014"
     },
     {
+      "title": "ReforesTree: A Dataset for Estimating Tropical Forest Carbon Stock with Deep Learning and Aerial Imagery",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:3s1wT3WcHBgC",
+      "citation_id": "XHeNA_8AAAAJ:3s1wT3WcHBgC",
+      "authors": "G Reiersen, D Dao, B Lütjens, K Klemmer, K Amara, A Steinegger, ...",
+      "cited_by": {
+        "value": null,
+        "link": "https://scholar.google.com"
+      },
+      "year": "2022"
+    },
+    {
       "title": "Toward Foundation Models for Earth Monitoring: Proposal for a Climate Change Benchmark",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:ZHo1McVdvXMC",
       "citation_id": "XHeNA_8AAAAJ:ZHo1McVdvXMC",
@@ -303,26 +314,14 @@
         "link": "https://scholar.google.com"
       },
       "year": "2019"
-    },
-    {
-      "title": "Image-based chemical-genetic profiling using Deep Neural Networks",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:M3NEmzRMIkIC",
-      "citation_id": "XHeNA_8AAAAJ:M3NEmzRMIkIC",
-      "authors": "D Dao",
-      "publication": "Master thesis, 2016",
-      "cited_by": {
-        "value": null,
-        "link": "https://scholar.google.com"
-      },
-      "year": "2016"
     }
   ],
   "cited_by": {
     "table": [
       {
         "citations": {
-          "all": 427,
-          "since_2016": 424
+          "all": 428,
+          "since_2016": 425
         }
       },
       {
@@ -353,15 +352,15 @@
       },
       {
         "year": 2019,
-        "citations": 72
+        "citations": 73
       },
       {
         "year": 2020,
-        "citations": 115
+        "citations": 114
       },
       {
         "year": 2021,
-        "citations": 167
+        "citations": 168
       }
     ]
   },
