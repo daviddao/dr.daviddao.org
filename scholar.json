@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "61ba8a91681ebe73e1a88f6f",
+    "id": "61bbdcad37014c52b6c594e8",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61ba8a91681ebe73e1a88f6f.json",
-    "created_at": "2021-12-16 00:38:41 UTC",
-    "processed_at": "2021-12-16 00:38:41 UTC",
+    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61bbdcad37014c52b6c594e8.json",
+    "created_at": "2021-12-17 00:41:17 UTC",
+    "processed_at": "2021-12-17 00:41:17 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61ba8a91681ebe73e1a88f6f.html",
-    "total_time_taken": 0.71
+    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61bbdcad37014c52b6c594e8.html",
+    "total_time_taken": 1.82
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -56,7 +56,7 @@
       "authors": "R Jia*, D Dao*, B Wang, FA Hubis, M Gurel, N Hynes, B Li, C Zhang, ...",
       "publication": "AISTATS, 2019",
       "cited_by": {
-        "value": 116,
+        "value": 117,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17484913464031621276",
         "serpapi_link": "https://serpapi.com/search.json?cites=17484913464031621276&engine=google_scholar&hl=en",
         "cites_id": "17484913464031621276"
@@ -98,7 +98,7 @@
       "authors": "R Jia, D Dao, B Wang, FA Hubis, NM Gurel, B Li, C Zhang, CJ Spanos, ...",
       "publication": "VLDB, 2019",
       "cited_by": {
-        "value": 51,
+        "value": 52,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8974280610722983070",
         "serpapi_link": "https://serpapi.com/search.json?cites=8974280610722983070&engine=google_scholar&hl=en",
         "cites_id": "8974280610722983070"
@@ -320,8 +320,8 @@
     "table": [
       {
         "citations": {
-          "all": 428,
-          "since_2016": 425
+          "all": 430,
+          "since_2016": 427
         }
       },
       {
@@ -360,7 +360,7 @@
       },
       {
         "year": 2021,
-        "citations": 168
+        "citations": 170
       }
     ]
   },
