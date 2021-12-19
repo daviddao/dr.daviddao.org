@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "61bd2e40969c08e310b5c7de",
+    "id": "61be7fea2348848e2822036d",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61bd2e40969c08e310b5c7de.json",
-    "created_at": "2021-12-18 00:41:36 UTC",
-    "processed_at": "2021-12-18 00:41:36 UTC",
+    "json_endpoint": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61be7fea2348848e2822036d.json",
+    "created_at": "2021-12-19 00:42:18 UTC",
+    "processed_at": "2021-12-19 00:42:18 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61bd2e40969c08e310b5c7de.html",
-    "total_time_taken": 1.57
+    "raw_html_file": "https://serpapi.com/searches/0e9d6598c6ab6ccd/61be7fea2348848e2822036d.html",
+    "total_time_taken": 1.95
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -56,7 +56,7 @@
       "authors": "R Jia*, D Dao*, B Wang, FA Hubis, M Gurel, N Hynes, B Li, C Zhang, ...",
       "publication": "AISTATS, 2019",
       "cited_by": {
-        "value": 117,
+        "value": 116,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17484913464031621276",
         "serpapi_link": "https://serpapi.com/search.json?cites=17484913464031621276&engine=google_scholar&hl=en",
         "cites_id": "17484913464031621276"
@@ -196,7 +196,7 @@
       "authors": "L Aguilar Melgar, D Dao, S Gan, NM Gürel, N Hollenstein, J Jiang, ...",
       "publication": "11th Annual Conference on Innovative Data Systems Research (CIDR 2021)(virtual), 2021",
       "cited_by": {
-        "value": 4,
+        "value": 5,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17460518780466483440,1603920567372647497",
         "serpapi_link": "https://serpapi.com/search.json?cites=17460518780466483440%2C1603920567372647497&engine=google_scholar&hl=en",
         "cites_id": "17460518780466483440,1603920567372647497"
@@ -356,11 +356,11 @@
       },
       {
         "year": 2020,
-        "citations": 114
+        "citations": 113
       },
       {
         "year": 2021,
-        "citations": 170
+        "citations": 171
       }
     ]
   },
