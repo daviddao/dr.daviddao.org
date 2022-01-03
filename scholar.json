@@ -1,3 +1,533 @@
 {
-  "error": "Your searches for the month are exhausted. You can upgrade plans on SerpApi.com website."
+  "search_metadata": {
+    "id": "61d24f0737b24a42efc4fd13",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/61d24f0737b24a42efc4fd13.json",
+    "created_at": "2022-01-03 01:19:03 UTC",
+    "processed_at": "2022-01-03 01:19:03 UTC",
+    "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
+    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/61d24f0737b24a42efc4fd13.html",
+    "total_time_taken": 0.91
+  },
+  "search_parameters": {
+    "engine": "google_scholar_author",
+    "author_id": "XHeNA_8AAAAJ",
+    "hl": "en"
+  },
+  "author": {
+    "name": "David Dao",
+    "affiliations": "ETH Zurich",
+    "email": "Verified email at inf.ethz.ch",
+    "website": "https://daviddao.org/",
+    "interests": [
+      {
+        "title": "Machine Learning",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:machine_learning",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Amachine_learning"
+      },
+      {
+        "title": "Data Valuation",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:data_valuation",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Adata_valuation"
+      },
+      {
+        "title": "Remote Sensing",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:remote_sensing",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Aremote_sensing"
+      },
+      {
+        "title": "Computational Sustainability",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:computational_sustainability",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Acomputational_sustainability"
+      },
+      {
+        "title": "Computational Biology",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:computational_biology",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Acomputational_biology"
+      }
+    ],
+    "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=XHeNA_8AAAAJ&citpid=5"
+  },
+  "articles": [
+    {
+      "title": "Towards Efficient Data Valuation Based on the Shapley Value",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:YFjsv_pBGBYC",
+      "citation_id": "XHeNA_8AAAAJ:YFjsv_pBGBYC",
+      "authors": "R Jia*, D Dao*, B Wang, FA Hubis, M Gurel, N Hynes, B Li, C Zhang, ...",
+      "publication": "AISTATS, 2019",
+      "cited_by": {
+        "value": 117,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17484913464031621276",
+        "serpapi_link": "https://serpapi.com/search.json?cites=17484913464031621276&engine=google_scholar&hl=en",
+        "cites_id": "17484913464031621276"
+      },
+      "year": "2019"
+    },
+    {
+      "title": "CellProfiler Analyst: interactive data exploration, analysis, and classification of large biological image sets",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:k_IJM867U9cC",
+      "citation_id": "XHeNA_8AAAAJ:k_IJM867U9cC",
+      "authors": "D Dao, AN Fraser, J Hung, V Ljosa, S Singh, AE Carpenter",
+      "publication": "Bioinformatics, 057976, 2016",
+      "cited_by": {
+        "value": 92,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15265904677077731352",
+        "serpapi_link": "https://serpapi.com/search.json?cites=15265904677077731352&engine=google_scholar&hl=en",
+        "cites_id": "15265904677077731352"
+      },
+      "year": "2016"
+    },
+    {
+      "title": "An open-source solution for advanced imaging flow cytometry data analysis using machine learning",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:maZDTaKrznsC",
+      "citation_id": "XHeNA_8AAAAJ:maZDTaKrznsC",
+      "authors": "H Hennig, P Rees, T Blasi, L Kamentsky, J Hung, D Dao, AE Carpenter, ...",
+      "publication": "Methods 112, 201-210, 2017",
+      "cited_by": {
+        "value": 64,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=18199354547788839905",
+        "serpapi_link": "https://serpapi.com/search.json?cites=18199354547788839905&engine=google_scholar&hl=en",
+        "cites_id": "18199354547788839905"
+      },
+      "year": "2017"
+    },
+    {
+      "title": "Efficient Task-Specific Data Valuation for Nearest Neighbor Algorithms",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:O3NaXMp0MMsC",
+      "citation_id": "XHeNA_8AAAAJ:O3NaXMp0MMsC",
+      "authors": "R Jia, D Dao, B Wang, FA Hubis, NM Gurel, B Li, C Zhang, CJ Spanos, ...",
+      "publication": "VLDB, 2019",
+      "cited_by": {
+        "value": 52,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8974280610722983070",
+        "serpapi_link": "https://serpapi.com/search.json?cites=8974280610722983070&engine=google_scholar&hl=en",
+        "cites_id": "8974280610722983070"
+      },
+      "year": "2019"
+    },
+    {
+      "title": "A demonstration of sterling: a privacy-preserving data marketplace",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:NMxIlDl6LWMC",
+      "citation_id": "XHeNA_8AAAAJ:NMxIlDl6LWMC",
+      "authors": "N Hynes, D Dao, D Yan, R Cheng, D Song",
+      "publication": "Proceedings of the VLDB Endowment 11 (12), 2086-2089, 2018",
+      "cited_by": {
+        "value": 32,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4955005265641816256",
+        "serpapi_link": "https://serpapi.com/search.json?cites=4955005265641816256&engine=google_scholar&hl=en",
+        "cites_id": "4955005265641816256"
+      },
+      "year": "2018"
+    },
+    {
+      "title": "Cutting edge: anatomy of BioJS, an open source community for the life sciences",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:YsMSGLbcyi4C",
+      "citation_id": "XHeNA_8AAAAJ:YsMSGLbcyi4C",
+      "authors": "G Yachdav, T Goldberg, S Wilzbach, D Dao, I Shih, S Choudhary, ...",
+      "publication": "Elife 4, e07009, 2015",
+      "cited_by": {
+        "value": 22,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1120282079215850924",
+        "serpapi_link": "https://serpapi.com/search.json?cites=1120282079215850924&engine=google_scholar&hl=en",
+        "cites_id": "1120282079215850924"
+      },
+      "year": "2015"
+    },
+    {
+      "title": "Data capsule: A new paradigm for automatic compliance with data privacy regulations",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:ns9cj8rnVeAC",
+      "citation_id": "XHeNA_8AAAAJ:ns9cj8rnVeAC",
+      "authors": "L Wang, JP Near, N Somani, P Gao, A Low, D Dao, D Song",
+      "publication": "Heterogeneous Data Management, Polystores, and Analytics for Healthcare, 3-23, 2019",
+      "cited_by": {
+        "value": 18,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17119379763499216965",
+        "serpapi_link": "https://serpapi.com/search.json?cites=17119379763499216965&engine=google_scholar&hl=en",
+        "cites_id": "17119379763499216965"
+      },
+      "year": "2019"
+    },
+    {
+      "title": "GainForest: Scaling Climate Finance for Forest Conservation using Interpretable Machine Learning on Satellite Imagery",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:J_g5lzvAfSwC",
+      "citation_id": "XHeNA_8AAAAJ:J_g5lzvAfSwC",
+      "authors": "D Dao, C Cang, C Fung, M Zhang, N Pawlowski, R Gonzales, N Beglinger, ...",
+      "publication": "ICML Climate Change AI workshop, 2019",
+      "cited_by": {
+        "value": 9,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11838752411058826778",
+        "serpapi_link": "https://serpapi.com/search.json?cites=11838752411058826778&engine=google_scholar&hl=en",
+        "cites_id": "11838752411058826778"
+      },
+      "year": "2019"
+    },
+    {
+      "title": "DataBright: A Data Curation Platform for Machine Learning based on Markets and Trusted Computation",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:hMod-77fHWUC",
+      "citation_id": "XHeNA_8AAAAJ:hMod-77fHWUC",
+      "authors": "D Dao, D Alistarh, C Musat, C Zhang",
+      "publication": "ICML Workshop: Game-Theoretic Mechanisms for Data and Information, 2018",
+      "cited_by": {
+        "value": 9,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15349369290791013196,3433923588949018124",
+        "serpapi_link": "https://serpapi.com/search.json?cites=15349369290791013196%2C3433923588949018124&engine=google_scholar&hl=en",
+        "cites_id": "15349369290791013196,3433923588949018124"
+      },
+      "year": "2018"
+    },
+    {
+      "title": "Scalability vs. Utility: Do We Have To Sacrifice One for the Other in Data Importance Quantification?",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:pqnbT2bcN3wC",
+      "citation_id": "XHeNA_8AAAAJ:pqnbT2bcN3wC",
+      "authors": "R Jia, F Wu, X Sun, J Xu, D Dao, B Kailkhura, C Zhang, B Li, D Song",
+      "publication": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern …, 2021",
+      "cited_by": {
+        "value": 5,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11030679061162792135",
+        "serpapi_link": "https://serpapi.com/search.json?cites=11030679061162792135&engine=google_scholar&hl=en",
+        "cites_id": "11030679061162792135"
+      },
+      "year": "2021"
+    },
+    {
+      "title": "Ease. ML: A Lifecycle Management System for Machine Learning",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:M05iB0D1s5AC",
+      "citation_id": "XHeNA_8AAAAJ:M05iB0D1s5AC",
+      "authors": "L Aguilar Melgar, D Dao, S Gan, NM Gürel, N Hollenstein, J Jiang, ...",
+      "publication": "11th Annual Conference on Innovative Data Systems Research (CIDR 2021)(virtual), 2021",
+      "cited_by": {
+        "value": 5,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17460518780466483440,1603920567372647497",
+        "serpapi_link": "https://serpapi.com/search.json?cites=17460518780466483440%2C1603920567372647497&engine=google_scholar&hl=en",
+        "cites_id": "17460518780466483440,1603920567372647497"
+      },
+      "year": "2021"
+    },
+    {
+      "title": "GeoLabels: Towards Efficient Ecosystem Monitoring using Data Programming on Geospatial Information",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:NaGl4SEjCO4C",
+      "citation_id": "XHeNA_8AAAAJ:NaGl4SEjCO4C",
+      "authors": "D Dao, J Rausch, C Zhang",
+      "publication": "Climate Change AI workshop, NeurIPS 2019, 2019",
+      "cited_by": {
+        "value": 4,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15664633480530337581",
+        "serpapi_link": "https://serpapi.com/search.json?cites=15664633480530337581&engine=google_scholar&hl=en",
+        "cites_id": "15664633480530337581"
+      },
+      "year": "2019"
+    },
+    {
+      "title": "TrueBranch: Robust Deep Learning-Based Verification of Forest Conservation Projects",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:RYcK_YlVTxYC",
+      "citation_id": "XHeNA_8AAAAJ:RYcK_YlVTxYC",
+      "authors": "S Santamaria*, D Dao*, B Lütjens*, C Zhang",
+      "publication": "Climate Change AI workshop, ICLR'20, 2020",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13172568538698608526",
+        "serpapi_link": "https://serpapi.com/search.json?cites=13172568538698608526&engine=google_scholar&hl=en",
+        "cites_id": "13172568538698608526"
+      },
+      "year": "2020"
+    },
+    {
+      "title": "Tackling the Overestimation of Forest Carbon with Deep Learning and Aerial Imagery",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:HoB7MX3m0LUC",
+      "citation_id": "XHeNA_8AAAAJ:HoB7MX3m0LUC",
+      "authors": "G Reiersen, D Dao, B Lütjens, K Klemmer, X Zhu, C Zhang",
+      "publication": "arXiv preprint arXiv:2107.11320, 2021",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14303023842823884628",
+        "serpapi_link": "https://serpapi.com/search.json?cites=14303023842823884628&engine=google_scholar&hl=en",
+        "cites_id": "14303023842823884628"
+      },
+      "year": "2021"
+    },
+    {
+      "title": "Automated Plausibility Analysis of Large Phylogenies",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:W7OEmFMy1HYC",
+      "citation_id": "XHeNA_8AAAAJ:W7OEmFMy1HYC",
+      "authors": "D Dao, T Flouris, A Stamatakis",
+      "publication": "Pattern Recognition in Computational Molecular Biology, 457--482, 2014",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15850892894372928865",
+        "serpapi_link": "https://serpapi.com/search.json?cites=15850892894372928865&engine=google_scholar&hl=en",
+        "cites_id": "15850892894372928865"
+      },
+      "year": "2014"
+    },
+    {
+      "title": "ReforesTree: A Dataset for Estimating Tropical Forest Carbon Stock with Deep Learning and Aerial Imagery",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:3s1wT3WcHBgC",
+      "citation_id": "XHeNA_8AAAAJ:3s1wT3WcHBgC",
+      "authors": "G Reiersen, D Dao, B Lütjens, K Klemmer, K Amara, A Steinegger, ...",
+      "cited_by": {
+        "value": null,
+        "link": "https://scholar.google.com"
+      },
+      "year": "2022"
+    },
+    {
+      "title": "RumbleML: program the lakehouse with JSONiq",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:rO6llkc54NcC",
+      "citation_id": "XHeNA_8AAAAJ:rO6llkc54NcC",
+      "authors": "G Fourny, D Dao, CB Cikis, C Zhang, G Alonso",
+      "publication": "arXiv preprint arXiv:2112.12638, 2021",
+      "cited_by": {
+        "value": null,
+        "link": "https://scholar.google.com"
+      },
+      "year": "2021"
+    },
+    {
+      "title": "Toward Foundation Models for Earth Monitoring: Proposal for a Climate Change Benchmark",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:ZHo1McVdvXMC",
+      "citation_id": "XHeNA_8AAAAJ:ZHo1McVdvXMC",
+      "authors": "A Lacoste, ED Sherwin, H Kerner, H Alemohammad, B Lütjens, J Irvin, ...",
+      "publication": "arXiv preprint arXiv:2112.00570, 2021",
+      "cited_by": {
+        "value": null,
+        "link": "https://scholar.google.com"
+      },
+      "year": "2021"
+    },
+    {
+      "title": "Challenges in KDD and ML for Sustainable Development",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:SeFeTyx0c_EC",
+      "citation_id": "XHeNA_8AAAAJ:SeFeTyx0c_EC",
+      "authors": "L Berti-Equille, D Dao, S Ermon, B Goswami",
+      "publication": "Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data …, 2021",
+      "cited_by": {
+        "value": null,
+        "link": "https://scholar.google.com"
+      },
+      "year": "2021"
+    },
+    {
+      "title": "Xingu: Explaining Critical Geospatial Predictions in Weak Supervision for Climate Finance",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&alert_preview_top_rm=2&citation_for_view=XHeNA_8AAAAJ:lSLTfruPkqcC",
+      "citation_id": "XHeNA_8AAAAJ:lSLTfruPkqcC",
+      "authors": "D Dao, J Rausch, I Rott, C Zhang",
+      "publication": "Climate Change AI workshop, ICLR'20, 2020",
+      "cited_by": {
+        "value": null,
+        "link": "https://scholar.google.com"
+      },
+      "year": "2020"
+    }
+  ],
+  "cited_by": {
+    "table": [
+      {
+        "citations": {
+          "all": 433,
+          "since_2017": 430
+        }
+      },
+      {
+        "h_index": {
+          "all": 9,
+          "since_2017": 9
+        }
+      },
+      {
+        "i10_index": {
+          "all": 7,
+          "since_2017": 7
+        }
+      }
+    ],
+    "graph": [
+      {
+        "year": 2016,
+        "citations": 11
+      },
+      {
+        "year": 2017,
+        "citations": 20
+      },
+      {
+        "year": 2018,
+        "citations": 35
+      },
+      {
+        "year": 2019,
+        "citations": 73
+      },
+      {
+        "year": 2020,
+        "citations": 113
+      },
+      {
+        "year": 2021,
+        "citations": 173
+      }
+    ]
+  },
+  "public_access": {
+    "link": "https://scholar.google.com/citations?view_op=list_mandates&hl=en&user=XHeNA_8AAAAJ",
+    "available": 7,
+    "not_available": 0
+  },
+  "co_authors": [
+    {
+      "name": "Ce Zhang",
+      "link": "https://scholar.google.com/citations?user=GkXqbmMAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=GkXqbmMAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "GkXqbmMAAAAJ",
+      "affiliations": "ETH Zurich",
+      "email": "Verified email at inf.ethz.ch",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=GkXqbmMAAAAJ&citpid=2"
+    },
+    {
+      "name": "Dawn Song",
+      "link": "https://scholar.google.com/citations?user=84WzBlYAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=84WzBlYAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "84WzBlYAAAAJ",
+      "affiliations": "Professor of Computer Science, UC Berkeley",
+      "email": "Verified email at cs.berkeley.edu",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Ruoxi Jia",
+      "link": "https://scholar.google.com/citations?user=JCrug-YAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=JCrug-YAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "JCrug-YAAAAJ",
+      "affiliations": "Assistant Professor, Virginia Tech",
+      "email": "Verified email at vt.edu",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=JCrug-YAAAAJ&citpid=19"
+    },
+    {
+      "name": "Bo Li",
+      "link": "https://scholar.google.com/citations?user=K8vJkTcAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=K8vJkTcAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "K8vJkTcAAAAJ",
+      "affiliations": "University of Illinois at Urbana–Champaign",
+      "email": "Verified email at illinois.edu",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=K8vJkTcAAAAJ&citpid=4"
+    },
+    {
+      "name": "Frances Ann Hubis",
+      "link": "https://scholar.google.com/citations?user=HsJMTSIAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=HsJMTSIAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "HsJMTSIAAAAJ",
+      "affiliations": "Google Brain",
+      "email": "Verified email at google.com",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=HsJMTSIAAAAJ&citpid=1"
+    },
+    {
+      "name": "Costas Spanos",
+      "link": "https://scholar.google.com/citations?user=90TaOdoAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=90TaOdoAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "90TaOdoAAAAJ",
+      "affiliations": "Professor of Electrical Engineering and Computer Sciences, University of California, Berkeley",
+      "email": "Verified email at berkeley.edu",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=90TaOdoAAAAJ&citpid=2"
+    },
+    {
+      "name": "Nick Hynes",
+      "link": "https://scholar.google.com/citations?user=tsJLqzIAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=tsJLqzIAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "tsJLqzIAAAAJ",
+      "affiliations": "UC Berkeley, Oasis Labs",
+      "email": "Verified email at berkeley.edu",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Anne E. Carpenter",
+      "link": "https://scholar.google.com/citations?user=pj6Bz0gAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=pj6Bz0gAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "pj6Bz0gAAAAJ",
+      "affiliations": "Institute Scientist and Imaging Platform Director, Broad Institute of Harvard and MIT",
+      "email": "Verified email at broadinstitute.org",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=pj6Bz0gAAAAJ&citpid=3"
+    },
+    {
+      "name": "Jane Hung",
+      "link": "https://scholar.google.com/citations?user=BN7CL1AAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=BN7CL1AAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "BN7CL1AAAAAJ",
+      "affiliations": "Uber, Massachusetts Institute of Technology",
+      "email": "Verified email at mit.edu",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Shantanu Singh",
+      "link": "https://scholar.google.com/citations?user=2sEDTFIAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=2sEDTFIAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "2sEDTFIAAAAJ",
+      "affiliations": "Senior Group Leader, Broad Institute of MIT and Harvard",
+      "email": "Verified email at broad.mit.edu",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=2sEDTFIAAAAJ&citpid=3"
+    },
+    {
+      "name": "Holger Hennig",
+      "link": "https://scholar.google.com/citations?user=Hah-hu8AAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=Hah-hu8AAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "Hah-hu8AAAAJ",
+      "affiliations": "Broad Institute of Harvard and MIT, Cambridge, USA",
+      "email": "Verified email at broadinstitute.org",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=Hah-hu8AAAAJ&citpid=4"
+    },
+    {
+      "name": "Manuel Corpas",
+      "link": "https://scholar.google.com/citations?user=vBV3CA0AAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=vBV3CA0AAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "vBV3CA0AAAAJ",
+      "affiliations": "Cambridge Precision Medicine",
+      "email": "Verified email at cpm.onl",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=vBV3CA0AAAAJ&citpid=13"
+    },
+    {
+      "name": "Guy Yachdav",
+      "link": "https://scholar.google.com/citations?user=UoUkGhUAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=UoUkGhUAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "UoUkGhUAAAAJ",
+      "affiliations": "Columbia University",
+      "email": "Verified email at rostlab.org",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=UoUkGhUAAAAJ&citpid=2"
+    },
+    {
+      "name": "Burkhard Rost",
+      "link": "https://scholar.google.com/citations?user=BP3ofxcAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=BP3ofxcAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "BP3ofxcAAAAJ",
+      "affiliations": "Professor of Computer Science & Computational Biology & Bioinformatics, TUM, Munich",
+      "email": "Verified email at tum.de",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=BP3ofxcAAAAJ&citpid=2"
+    },
+    {
+      "name": "Suzanna Lewis",
+      "link": "https://scholar.google.com/citations?user=mS3mpAgAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=mS3mpAgAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "mS3mpAgAAAAJ",
+      "affiliations": "Lawrence Berkeley National Laboratory",
+      "email": "Verified email at lbl.gov",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=mS3mpAgAAAAJ&citpid=2"
+    },
+    {
+      "name": "Nick Pawlowski",
+      "link": "https://scholar.google.com/citations?user=a5u9fVYAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=a5u9fVYAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "a5u9fVYAAAAJ",
+      "affiliations": "Senior Researcher, Microsoft Research",
+      "email": "Verified email at microsoft.com",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=a5u9fVYAAAAJ&citpid=4"
+    },
+    {
+      "name": "Alexandros Stamatakis",
+      "link": "https://scholar.google.com/citations?user=WbMNvJwAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=WbMNvJwAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "WbMNvJwAAAAJ",
+      "affiliations": "Heidelberg Institute for Theoretical Studies and Karlsruhe Institute of Technology",
+      "email": "Verified email at h-its.org",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=WbMNvJwAAAAJ&citpid=4"
+    }
+  ],
+  "serpapi_pagination": {
+    "next": "https://serpapi.com/search.json?author_id=XHeNA_8AAAAJ&engine=google_scholar_author&hl=en&start=20"
+  }
 }
