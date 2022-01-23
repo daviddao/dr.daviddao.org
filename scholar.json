@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "61eb51d9f05eb886aa87799d",
+    "id": "61eca387d04d6d62712c62d3",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/61eb51d9f05eb886aa87799d.json",
-    "created_at": "2022-01-22 00:37:45 UTC",
-    "processed_at": "2022-01-22 00:37:45 UTC",
+    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/61eca387d04d6d62712c62d3.json",
+    "created_at": "2022-01-23 00:38:31 UTC",
+    "processed_at": "2022-01-23 00:38:31 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/61eb51d9f05eb886aa87799d.html",
-    "total_time_taken": 0.8
+    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/61eca387d04d6d62712c62d3.html",
+    "total_time_taken": 0.63
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -112,7 +112,7 @@
       "authors": "N Hynes, D Dao, D Yan, R Cheng, D Song",
       "publication": "Proceedings of the VLDB Endowment 11 (12), 2086-2089, 2018",
       "cited_by": {
-        "value": 32,
+        "value": 33,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4955005265641816256",
         "serpapi_link": "https://serpapi.com/search.json?cites=4955005265641816256&engine=google_scholar&hl=en",
         "cites_id": "4955005265641816256"
@@ -168,7 +168,7 @@
       "authors": "D Dao, D Alistarh, C Musat, C Zhang",
       "publication": "ICML Workshop: Game-Theoretic Mechanisms for Data and Information, 2018",
       "cited_by": {
-        "value": 9,
+        "value": 10,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15349369290791013196,3433923588949018124",
         "serpapi_link": "https://serpapi.com/search.json?cites=15349369290791013196%2C3433923588949018124&engine=google_scholar&hl=en",
         "cites_id": "15349369290791013196,3433923588949018124"
@@ -323,8 +323,8 @@
     "table": [
       {
         "citations": {
-          "all": 438,
-          "since_2017": 424
+          "all": 440,
+          "since_2017": 426
         }
       },
       {
@@ -335,8 +335,8 @@
       },
       {
         "i10_index": {
-          "all": 8,
-          "since_2017": 8
+          "all": 9,
+          "since_2017": 9
         }
       }
     ],
@@ -359,11 +359,11 @@
       },
       {
         "year": 2020,
-        "citations": 114
+        "citations": 115
       },
       {
         "year": 2021,
-        "citations": 176
+        "citations": 177
       },
       {
         "year": 2022,
