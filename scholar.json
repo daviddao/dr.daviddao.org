@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "61f48c025c1059e4ab20b581",
+    "id": "61f5de47629a011f54ecec38",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/61f48c025c1059e4ab20b581.json",
-    "created_at": "2022-01-29 00:36:18 UTC",
-    "processed_at": "2022-01-29 00:36:18 UTC",
+    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/61f5de47629a011f54ecec38.json",
+    "created_at": "2022-01-30 00:39:35 UTC",
+    "processed_at": "2022-01-30 00:39:35 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/61f48c025c1059e4ab20b581.html",
-    "total_time_taken": 1.86
+    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/61f5de47629a011f54ecec38.html",
+    "total_time_taken": 1.23
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -98,7 +98,7 @@
       "authors": "R Jia, D Dao, B Wang, FA Hubis, NM Gurel, B Li, C Zhang, CJ Spanos, ...",
       "publication": "VLDB, 2019",
       "cited_by": {
-        "value": 52,
+        "value": 53,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8974280610722983070",
         "serpapi_link": "https://serpapi.com/search.json?cites=8974280610722983070&engine=google_scholar&hl=en",
         "cites_id": "8974280610722983070"
@@ -112,7 +112,7 @@
       "authors": "N Hynes, D Dao, D Yan, R Cheng, D Song",
       "publication": "Proceedings of the VLDB Endowment 11 (12), 2086-2089, 2018",
       "cited_by": {
-        "value": 33,
+        "value": 34,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4955005265641816256",
         "serpapi_link": "https://serpapi.com/search.json?cites=4955005265641816256&engine=google_scholar&hl=en",
         "cites_id": "4955005265641816256"
@@ -154,7 +154,7 @@
       "authors": "D Dao, C Cang, C Fung, M Zhang, N Pawlowski, R Gonzales, N Beglinger, ...",
       "publication": "ICML Climate Change AI workshop, 2019",
       "cited_by": {
-        "value": 10,
+        "value": 11,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11838752411058826778",
         "serpapi_link": "https://serpapi.com/search.json?cites=11838752411058826778&engine=google_scholar&hl=en",
         "cites_id": "11838752411058826778"
@@ -323,8 +323,8 @@
     "table": [
       {
         "citations": {
-          "all": 438,
-          "since_2017": 424
+          "all": 441,
+          "since_2017": 427
         }
       },
       {
@@ -359,15 +359,15 @@
       },
       {
         "year": 2020,
-        "citations": 115
+        "citations": 116
       },
       {
         "year": 2021,
-        "citations": 174
+        "citations": 176
       },
       {
         "year": 2022,
-        "citations": 5
+        "citations": 6
       }
     ]
   },
