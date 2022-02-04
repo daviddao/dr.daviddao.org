@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "61fb240daef26423b311b640",
+    "id": "61fc75db1c450a5d2322e36c",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/61fb240daef26423b311b640.json",
-    "created_at": "2022-02-03 00:38:37 UTC",
-    "processed_at": "2022-02-03 00:38:37 UTC",
+    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/61fc75db1c450a5d2322e36c.json",
+    "created_at": "2022-02-04 00:39:55 UTC",
+    "processed_at": "2022-02-04 00:39:55 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/61fb240daef26423b311b640.html",
-    "total_time_taken": 1.7
+    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/61fc75db1c450a5d2322e36c.html",
+    "total_time_taken": 1.39
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -56,7 +56,7 @@
       "authors": "R Jia*, D Dao*, B Wang, FA Hubis, M Gurel, N Hynes, B Li, C Zhang, ...",
       "publication": "AISTATS, 2019",
       "cited_by": {
-        "value": 119,
+        "value": 118,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17484913464031621276",
         "serpapi_link": "https://serpapi.com/search.json?cites=17484913464031621276&engine=google_scholar&hl=en",
         "cites_id": "17484913464031621276"
@@ -70,7 +70,7 @@
       "authors": "D Dao, AN Fraser, J Hung, V Ljosa, S Singh, AE Carpenter",
       "publication": "Bioinformatics, 057976, 2016",
       "cited_by": {
-        "value": 92,
+        "value": 90,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15265904677077731352",
         "serpapi_link": "https://serpapi.com/search.json?cites=15265904677077731352&engine=google_scholar&hl=en",
         "cites_id": "15265904677077731352"
@@ -84,7 +84,7 @@
       "authors": "H Hennig, P Rees, T Blasi, L Kamentsky, J Hung, D Dao, AE Carpenter, ...",
       "publication": "Methods 112, 201-210, 2017",
       "cited_by": {
-        "value": 64,
+        "value": 63,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=18199354547788839905",
         "serpapi_link": "https://serpapi.com/search.json?cites=18199354547788839905&engine=google_scholar&hl=en",
         "cites_id": "18199354547788839905"
@@ -98,7 +98,7 @@
       "authors": "R Jia, D Dao, B Wang, FA Hubis, NM Gurel, B Li, C Zhang, CJ Spanos, ...",
       "publication": "VLDB, 2019",
       "cited_by": {
-        "value": 53,
+        "value": 52,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8974280610722983070",
         "serpapi_link": "https://serpapi.com/search.json?cites=8974280610722983070&engine=google_scholar&hl=en",
         "cites_id": "8974280610722983070"
@@ -154,7 +154,7 @@
       "authors": "D Dao, C Cang, C Fung, M Zhang, N Pawlowski, R Gonzales, N Beglinger, ...",
       "publication": "ICML Climate Change AI workshop, 2019",
       "cited_by": {
-        "value": 11,
+        "value": 12,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11838752411058826778",
         "serpapi_link": "https://serpapi.com/search.json?cites=11838752411058826778&engine=google_scholar&hl=en",
         "cites_id": "11838752411058826778"
@@ -176,7 +176,7 @@
       "year": "2018"
     },
     {
-      "title": "Scalability vs. Utility: Do We Have To Sacrifice One for the Other in Data Importance Quantification?",
+      "title": "Scalability vs. Utility: Do We Have to Sacrifice One for the Other in Data Importance Quantification?",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:pqnbT2bcN3wC",
       "citation_id": "XHeNA_8AAAAJ:pqnbT2bcN3wC",
       "authors": "R Jia, F Wu, X Sun, J Xu, D Dao, B Kailkhura, C Zhang, B Li, D Song",
@@ -194,7 +194,7 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:M05iB0D1s5AC",
       "citation_id": "XHeNA_8AAAAJ:M05iB0D1s5AC",
       "authors": "L Aguilar Melgar, D Dao, S Gan, NM Gürel, N Hollenstein, J Jiang, ...",
-      "publication": "11th Annual Conference on Innovative Data Systems Research (CIDR 2021)(virtual), 2021",
+      "publication": "Proceedings of the Annual Conference on Innovative Data Systems Research …, 2021",
       "cited_by": {
         "value": 5,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17460518780466483440,1603920567372647497",
@@ -232,6 +232,20 @@
       "year": "2020"
     },
     {
+      "title": "Automated Plausibility Analysis of Large Phylogenies",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:W7OEmFMy1HYC",
+      "citation_id": "XHeNA_8AAAAJ:W7OEmFMy1HYC",
+      "authors": "D Dao, T Flouris, A Stamatakis",
+      "publication": "Pattern Recognition in Computational Molecular Biology, 457--482, 2014",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15850892894372928865",
+        "serpapi_link": "https://serpapi.com/search.json?cites=15850892894372928865&engine=google_scholar&hl=en",
+        "cites_id": "15850892894372928865"
+      },
+      "year": "2014"
+    },
+    {
       "title": "Tackling the Overestimation of Forest Carbon with Deep Learning and Aerial Imagery",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:HoB7MX3m0LUC",
       "citation_id": "XHeNA_8AAAAJ:HoB7MX3m0LUC",
@@ -246,24 +260,11 @@
       "year": "2021"
     },
     {
-      "title": "Automated Plausibility Analysis of Large Phylogenies",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:W7OEmFMy1HYC",
-      "citation_id": "XHeNA_8AAAAJ:W7OEmFMy1HYC",
-      "authors": "D Dao, T Flouris, A Stamatakis",
-      "publication": "Pattern Recognition in Computational Molecular Biology, 457--482, 2014",
-      "cited_by": {
-        "value": 1,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15850892894372928865",
-        "serpapi_link": "https://serpapi.com/search.json?cites=15850892894372928865&engine=google_scholar&hl=en",
-        "cites_id": "15850892894372928865"
-      },
-      "year": "2014"
-    },
-    {
       "title": "ReforesTree: A Dataset for Estimating Tropical Forest Carbon Stock with Deep Learning and Aerial Imagery",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:3s1wT3WcHBgC",
       "citation_id": "XHeNA_8AAAAJ:3s1wT3WcHBgC",
       "authors": "G Reiersen, D Dao, B Lütjens, K Klemmer, K Amara, A Steinegger, ...",
+      "publication": "arXiv preprint arXiv:2201.11192, 2022",
       "cited_by": {
         "value": null,
         "link": "https://scholar.google.com"
@@ -323,8 +324,8 @@
     "table": [
       {
         "citations": {
-          "all": 441,
-          "since_2017": 427
+          "all": 438,
+          "since_2017": 423
         }
       },
       {
@@ -351,29 +352,29 @@
       },
       {
         "year": 2018,
-        "citations": 35
+        "citations": 33
       },
       {
         "year": 2019,
-        "citations": 73
+        "citations": 72
       },
       {
         "year": 2020,
-        "citations": 116
+        "citations": 115
       },
       {
         "year": 2021,
-        "citations": 176
+        "citations": 173
       },
       {
         "year": 2022,
-        "citations": 6
+        "citations": 8
       }
     ]
   },
   "public_access": {
     "link": "https://scholar.google.com/citations?view_op=list_mandates&hl=en&user=XHeNA_8AAAAJ",
-    "available": 7,
+    "available": 6,
     "not_available": 0
   },
   "co_authors": [
