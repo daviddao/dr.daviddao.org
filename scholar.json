@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "61ff1a4ea5ad6d4241b2cbf5",
+    "id": "62006a747690dcf348aea3d4",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/61ff1a4ea5ad6d4241b2cbf5.json",
-    "created_at": "2022-02-06 00:46:06 UTC",
-    "processed_at": "2022-02-06 00:46:06 UTC",
+    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/62006a747690dcf348aea3d4.json",
+    "created_at": "2022-02-07 00:40:20 UTC",
+    "processed_at": "2022-02-07 00:40:20 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/61ff1a4ea5ad6d4241b2cbf5.html",
-    "total_time_taken": 2.56
+    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/62006a747690dcf348aea3d4.html",
+    "total_time_taken": 0.22
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -56,7 +56,7 @@
       "authors": "R Jia*, D Dao*, B Wang, FA Hubis, M Gurel, N Hynes, B Li, C Zhang, ...",
       "publication": "AISTATS, 2019",
       "cited_by": {
-        "value": 118,
+        "value": 120,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17484913464031621276",
         "serpapi_link": "https://serpapi.com/search.json?cites=17484913464031621276&engine=google_scholar&hl=en",
         "cites_id": "17484913464031621276"
@@ -98,7 +98,7 @@
       "authors": "R Jia, D Dao, B Wang, FA Hubis, NM Gurel, B Li, C Zhang, CJ Spanos, ...",
       "publication": "VLDB, 2019",
       "cited_by": {
-        "value": 52,
+        "value": 54,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8974280610722983070",
         "serpapi_link": "https://serpapi.com/search.json?cites=8974280610722983070&engine=google_scholar&hl=en",
         "cites_id": "8974280610722983070"
@@ -218,6 +218,20 @@
       "year": "2019"
     },
     {
+      "title": "Ease. ML: A lifecycle management system for MLDev and MLOps",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:u_35RYKgDlwC",
+      "citation_id": "XHeNA_8AAAAJ:u_35RYKgDlwC",
+      "authors": "L Aguilar, D Dao, S Gan, NM Gurel, N Hollenstein, J Jiang, B Karlas, ...",
+      "publication": "Proc. of Innovative Data Systems Research, 2021",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12520647960941808049",
+        "serpapi_link": "https://serpapi.com/search.json?cites=12520647960941808049&engine=google_scholar&hl=en",
+        "cites_id": "12520647960941808049"
+      },
+      "year": "2021"
+    },
+    {
       "title": "TrueBranch: Robust Deep Learning-Based Verification of Forest Conservation Projects",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:RYcK_YlVTxYC",
       "citation_id": "XHeNA_8AAAAJ:RYcK_YlVTxYC",
@@ -306,26 +320,14 @@
         "link": "https://scholar.google.com"
       },
       "year": "2021"
-    },
-    {
-      "title": "Xingu: Explaining Critical Geospatial Predictions in Weak Supervision for Climate Finance",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XHeNA_8AAAAJ&citation_for_view=XHeNA_8AAAAJ:lSLTfruPkqcC",
-      "citation_id": "XHeNA_8AAAAJ:lSLTfruPkqcC",
-      "authors": "D Dao, J Rausch, I Rott, C Zhang",
-      "publication": "Climate Change AI workshop, ICLR'20, 2020",
-      "cited_by": {
-        "value": null,
-        "link": "https://scholar.google.com"
-      },
-      "year": "2020"
     }
   ],
   "cited_by": {
     "table": [
       {
         "citations": {
-          "all": 438,
-          "since_2017": 423
+          "all": 444,
+          "since_2017": 429
         }
       },
       {
@@ -364,17 +366,17 @@
       },
       {
         "year": 2021,
-        "citations": 173
+        "citations": 177
       },
       {
         "year": 2022,
-        "citations": 8
+        "citations": 10
       }
     ]
   },
   "public_access": {
     "link": "https://scholar.google.com/citations?view_op=list_mandates&hl=en&user=XHeNA_8AAAAJ",
-    "available": 6,
+    "available": 7,
     "not_available": 0
   },
   "co_authors": [
