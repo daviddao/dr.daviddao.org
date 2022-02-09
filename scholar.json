@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "6201bc292236e228f555a595",
+    "id": "62030e169b64724307f6043e",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/6201bc292236e228f555a595.json",
-    "created_at": "2022-02-08 00:41:13 UTC",
-    "processed_at": "2022-02-08 00:41:13 UTC",
+    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/62030e169b64724307f6043e.json",
+    "created_at": "2022-02-09 00:43:02 UTC",
+    "processed_at": "2022-02-09 00:43:02 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/6201bc292236e228f555a595.html",
-    "total_time_taken": 0.91
+    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/62030e169b64724307f6043e.html",
+    "total_time_taken": 1.08
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -26,14 +26,14 @@
         "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Amachine_learning"
       },
       {
-        "title": "Data Valuation",
-        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:data_valuation",
-        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Adata_valuation"
+        "title": "Data Marketplaces",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:data_marketplaces",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Adata_marketplaces"
       },
       {
-        "title": "Remote Sensing",
-        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:remote_sensing",
-        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Aremote_sensing"
+        "title": "Game Theory",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:game_theory",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Agame_theory"
       },
       {
         "title": "Computational Sustainability",
@@ -140,7 +140,7 @@
       "authors": "L Wang, JP Near, N Somani, P Gao, A Low, D Dao, D Song",
       "publication": "Heterogeneous Data Management, Polystores, and Analytics for Healthcare, 3-23, 2019",
       "cited_by": {
-        "value": 18,
+        "value": 19,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17119379763499216965",
         "serpapi_link": "https://serpapi.com/search.json?cites=17119379763499216965&engine=google_scholar&hl=en",
         "cites_id": "17119379763499216965"
@@ -326,8 +326,8 @@
     "table": [
       {
         "citations": {
-          "all": 444,
-          "since_2017": 429
+          "all": 445,
+          "since_2017": 430
         }
       },
       {
@@ -366,7 +366,7 @@
       },
       {
         "year": 2021,
-        "citations": 177
+        "citations": 178
       },
       {
         "year": 2022,
