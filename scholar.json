@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "6219778749ecdb0327473394",
+    "id": "621aca6dfdca3e0825f43b89",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/6219778749ecdb0327473394.json",
-    "created_at": "2022-02-26 00:42:47 UTC",
-    "processed_at": "2022-02-26 00:42:47 UTC",
+    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/621aca6dfdca3e0825f43b89.json",
+    "created_at": "2022-02-27 00:48:45 UTC",
+    "processed_at": "2022-02-27 00:48:45 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/6219778749ecdb0327473394.html",
-    "total_time_taken": 0.23
+    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/621aca6dfdca3e0825f43b89.html",
+    "total_time_taken": 0.57
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -140,7 +140,7 @@
       "authors": "L Wang, JP Near, N Somani, P Gao, A Low, D Dao, D Song",
       "publication": "Heterogeneous Data Management, Polystores, and Analytics for Healthcare, 3-23, 2019",
       "cited_by": {
-        "value": 19,
+        "value": 20,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17119379763499216965",
         "serpapi_link": "https://serpapi.com/search.json?cites=17119379763499216965&engine=google_scholar&hl=en",
         "cites_id": "17119379763499216965"
@@ -326,8 +326,8 @@
     "table": [
       {
         "citations": {
-          "all": 450,
-          "since_2017": 435
+          "all": 451,
+          "since_2017": 436
         }
       },
       {
@@ -370,7 +370,7 @@
       },
       {
         "year": 2022,
-        "citations": 12
+        "citations": 13
       }
     ]
   },
