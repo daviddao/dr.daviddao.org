@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "622162fb2bc7d8f22d435d1c",
+    "id": "6222b3c0a1b4231bcef1da3b",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/622162fb2bc7d8f22d435d1c.json",
-    "created_at": "2022-03-04 00:53:15 UTC",
-    "processed_at": "2022-03-04 00:53:15 UTC",
+    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/6222b3c0a1b4231bcef1da3b.json",
+    "created_at": "2022-03-05 00:50:08 UTC",
+    "processed_at": "2022-03-05 00:50:08 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/622162fb2bc7d8f22d435d1c.html",
-    "total_time_taken": 0.74
+    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/6222b3c0a1b4231bcef1da3b.html",
+    "total_time_taken": 1.8
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -56,7 +56,7 @@
       "authors": "R Jia*, D Dao*, B Wang, FA Hubis, M Gurel, N Hynes, B Li, C Zhang, ...",
       "publication": "AISTATS, 2019",
       "cited_by": {
-        "value": 127,
+        "value": 128,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17484913464031621276",
         "serpapi_link": "https://serpapi.com/search.json?cites=17484913464031621276&engine=google_scholar&hl=en",
         "cites_id": "17484913464031621276"
@@ -326,8 +326,8 @@
     "table": [
       {
         "citations": {
-          "all": 456,
-          "since_2017": 441
+          "all": 457,
+          "since_2017": 442
         }
       },
       {
@@ -370,7 +370,7 @@
       },
       {
         "year": 2022,
-        "citations": 17
+        "citations": 18
       }
     ]
   },
