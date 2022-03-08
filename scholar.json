@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "62255654defa138eee75b7b6",
+    "id": "6226a738e4a23db199c3010a",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/62255654defa138eee75b7b6.json",
-    "created_at": "2022-03-07 00:48:20 UTC",
-    "processed_at": "2022-03-07 00:48:20 UTC",
+    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/6226a738e4a23db199c3010a.json",
+    "created_at": "2022-03-08 00:45:44 UTC",
+    "processed_at": "2022-03-08 00:45:44 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/62255654defa138eee75b7b6.html",
-    "total_time_taken": 1.12
+    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/6226a738e4a23db199c3010a.html",
+    "total_time_taken": 0.54
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -56,7 +56,7 @@
       "authors": "R Jia*, D Dao*, B Wang, FA Hubis, M Gurel, N Hynes, B Li, C Zhang, ...",
       "publication": "AISTATS, 2019",
       "cited_by": {
-        "value": 128,
+        "value": 129,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17484913464031621276",
         "serpapi_link": "https://serpapi.com/search.json?cites=17484913464031621276&engine=google_scholar&hl=en",
         "cites_id": "17484913464031621276"
@@ -140,7 +140,7 @@
       "authors": "L Wang, JP Near, N Somani, P Gao, A Low, D Dao, D Song",
       "publication": "Heterogeneous Data Management, Polystores, and Analytics for Healthcare, 3-23, 2019",
       "cited_by": {
-        "value": 20,
+        "value": 21,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17119379763499216965",
         "serpapi_link": "https://serpapi.com/search.json?cites=17119379763499216965&engine=google_scholar&hl=en",
         "cites_id": "17119379763499216965"
@@ -326,8 +326,8 @@
     "table": [
       {
         "citations": {
-          "all": 457,
-          "since_2017": 442
+          "all": 459,
+          "since_2017": 444
         }
       },
       {
@@ -370,7 +370,7 @@
       },
       {
         "year": 2022,
-        "citations": 18
+        "citations": 20
       }
     ]
   },
