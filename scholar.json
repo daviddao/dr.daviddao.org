@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "622e915d49ecdb5da7e9e7b9",
+    "id": "622fe30ef21801c222e0bba3",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/622e915d49ecdb5da7e9e7b9.json",
-    "created_at": "2022-03-14 00:50:37 UTC",
-    "processed_at": "2022-03-14 00:50:37 UTC",
+    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/622fe30ef21801c222e0bba3.json",
+    "created_at": "2022-03-15 00:51:26 UTC",
+    "processed_at": "2022-03-15 00:51:26 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/622e915d49ecdb5da7e9e7b9.html",
-    "total_time_taken": 0.21
+    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/622fe30ef21801c222e0bba3.html",
+    "total_time_taken": 1.47
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -56,7 +56,7 @@
       "authors": "R Jia*, D Dao*, B Wang, FA Hubis, M Gurel, N Hynes, B Li, C Zhang, ...",
       "publication": "AISTATS, 2019",
       "cited_by": {
-        "value": 129,
+        "value": 130,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17484913464031621276",
         "serpapi_link": "https://serpapi.com/search.json?cites=17484913464031621276&engine=google_scholar&hl=en",
         "cites_id": "17484913464031621276"
@@ -70,7 +70,7 @@
       "authors": "D Dao, AN Fraser, J Hung, V Ljosa, S Singh, AE Carpenter",
       "publication": "Bioinformatics, 057976, 2016",
       "cited_by": {
-        "value": 91,
+        "value": 93,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15265904677077731352",
         "serpapi_link": "https://serpapi.com/search.json?cites=15265904677077731352&engine=google_scholar&hl=en",
         "cites_id": "15265904677077731352"
@@ -98,7 +98,7 @@
       "authors": "R Jia, D Dao, B Wang, FA Hubis, NM Gurel, B Li, C Zhang, CJ Spanos, ...",
       "publication": "VLDB, 2019",
       "cited_by": {
-        "value": 55,
+        "value": 56,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8974280610722983070",
         "serpapi_link": "https://serpapi.com/search.json?cites=8974280610722983070&engine=google_scholar&hl=en",
         "cites_id": "8974280610722983070"
@@ -112,7 +112,7 @@
       "authors": "N Hynes, D Dao, D Yan, R Cheng, D Song",
       "publication": "Proceedings of the VLDB Endowment 11 (12), 2086-2089, 2018",
       "cited_by": {
-        "value": 34,
+        "value": 35,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4955005265641816256",
         "serpapi_link": "https://serpapi.com/search.json?cites=4955005265641816256&engine=google_scholar&hl=en",
         "cites_id": "4955005265641816256"
@@ -326,8 +326,8 @@
     "table": [
       {
         "citations": {
-          "all": 459,
-          "since_2017": 444
+          "all": 464,
+          "since_2017": 449
         }
       },
       {
@@ -362,15 +362,15 @@
       },
       {
         "year": 2020,
-        "citations": 116
+        "citations": 117
       },
       {
         "year": 2021,
-        "citations": 182
+        "citations": 183
       },
       {
         "year": 2022,
-        "citations": 19
+        "citations": 23
       }
     ]
   },
