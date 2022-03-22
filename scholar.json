@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "6237cbc42d5b1245abff978e",
+    "id": "62391d99a3f4efed0ca48941",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/6237cbc42d5b1245abff978e.json",
-    "created_at": "2022-03-21 00:50:12 UTC",
-    "processed_at": "2022-03-21 00:50:12 UTC",
+    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/62391d99a3f4efed0ca48941.json",
+    "created_at": "2022-03-22 00:51:37 UTC",
+    "processed_at": "2022-03-22 00:51:37 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/6237cbc42d5b1245abff978e.html",
-    "total_time_taken": 2.03
+    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/62391d99a3f4efed0ca48941.html",
+    "total_time_taken": 0.77
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -56,7 +56,7 @@
       "authors": "R Jia*, D Dao*, B Wang, FA Hubis, M Gurel, N Hynes, B Li, C Zhang, ...",
       "publication": "AISTATS, 2019",
       "cited_by": {
-        "value": 131,
+        "value": 132,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17484913464031621276",
         "serpapi_link": "https://serpapi.com/search.json?cites=17484913464031621276&engine=google_scholar&hl=en",
         "cites_id": "17484913464031621276"
@@ -70,7 +70,7 @@
       "authors": "D Dao, AN Fraser, J Hung, V Ljosa, S Singh, AE Carpenter",
       "publication": "Bioinformatics, 057976, 2016",
       "cited_by": {
-        "value": 93,
+        "value": 94,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15265904677077731352",
         "serpapi_link": "https://serpapi.com/search.json?cites=15265904677077731352&engine=google_scholar&hl=en",
         "cites_id": "15265904677077731352"
@@ -326,8 +326,8 @@
     "table": [
       {
         "citations": {
-          "all": 465,
-          "since_2017": 450
+          "all": 467,
+          "since_2017": 452
         }
       },
       {
@@ -370,7 +370,7 @@
       },
       {
         "year": 2022,
-        "citations": 24
+        "citations": 26
       }
     ]
   },
