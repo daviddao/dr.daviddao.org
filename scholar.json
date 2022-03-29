@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "6241079e7690dc6b5a50c59e",
+    "id": "624259235f2203da3eac67a4",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/6241079e7690dc6b5a50c59e.json",
-    "created_at": "2022-03-28 00:55:58 UTC",
-    "processed_at": "2022-03-28 00:55:58 UTC",
+    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/624259235f2203da3eac67a4.json",
+    "created_at": "2022-03-29 00:56:03 UTC",
+    "processed_at": "2022-03-29 00:56:03 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/6241079e7690dc6b5a50c59e.html",
-    "total_time_taken": 1.28
+    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/624259235f2203da3eac67a4.html",
+    "total_time_taken": 2.0
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -126,7 +126,7 @@
       "authors": "G Yachdav, T Goldberg, S Wilzbach, D Dao, I Shih, S Choudhary, ...",
       "publication": "Elife 4, e07009, 2015",
       "cited_by": {
-        "value": 22,
+        "value": 23,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1120282079215850924",
         "serpapi_link": "https://serpapi.com/search.json?cites=1120282079215850924&engine=google_scholar&hl=en",
         "cites_id": "1120282079215850924"
@@ -326,8 +326,8 @@
     "table": [
       {
         "citations": {
-          "all": 468,
-          "since_2017": 452
+          "all": 469,
+          "since_2017": 453
         }
       },
       {
@@ -350,7 +350,7 @@
       },
       {
         "year": 2017,
-        "citations": 20
+        "citations": 21
       },
       {
         "year": 2018,
@@ -376,7 +376,7 @@
   },
   "public_access": {
     "link": "https://scholar.google.com/citations?view_op=list_mandates&hl=en&user=XHeNA_8AAAAJ",
-    "available": 7,
+    "available": 8,
     "not_available": 0
   },
   "co_authors": [
