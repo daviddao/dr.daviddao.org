@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "62537c880f9866eff6634d3f",
+    "id": "6254cdce3d6919ee56428f40",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/62537c880f9866eff6634d3f.json",
-    "created_at": "2022-04-11 00:55:36 UTC",
-    "processed_at": "2022-04-11 00:55:36 UTC",
+    "json_endpoint": "https://serpapi.com/searches/dcf570b2377cd850/6254cdce3d6919ee56428f40.json",
+    "created_at": "2022-04-12 00:54:38 UTC",
+    "processed_at": "2022-04-12 00:54:38 UTC",
     "google_scholar_author_url": "https://scholar.google.com/citations?user=XHeNA_8AAAAJ&hl=en",
-    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/62537c880f9866eff6634d3f.html",
-    "total_time_taken": 0.46
+    "raw_html_file": "https://serpapi.com/searches/dcf570b2377cd850/6254cdce3d6919ee56428f40.html",
+    "total_time_taken": 0.23
   },
   "search_parameters": {
     "engine": "google_scholar_author",
@@ -56,7 +56,7 @@
       "authors": "R Jia*, D Dao*, B Wang, FA Hubis, M Gurel, N Hynes, B Li, C Zhang, ...",
       "publication": "AISTATS, 2019",
       "cited_by": {
-        "value": 132,
+        "value": 133,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17484913464031621276",
         "serpapi_link": "https://serpapi.com/search.json?cites=17484913464031621276&engine=google_scholar&hl=en",
         "cites_id": "17484913464031621276"
@@ -70,7 +70,7 @@
       "authors": "D Dao, AN Fraser, J Hung, V Ljosa, S Singh, AE Carpenter",
       "publication": "Bioinformatics, 057976, 2016",
       "cited_by": {
-        "value": 95,
+        "value": 96,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15265904677077731352",
         "serpapi_link": "https://serpapi.com/search.json?cites=15265904677077731352&engine=google_scholar&hl=en",
         "cites_id": "15265904677077731352"
@@ -98,7 +98,7 @@
       "authors": "R Jia, D Dao, B Wang, FA Hubis, NM Gurel, B Li, C Zhang, CJ Spanos, ...",
       "publication": "VLDB, 2019",
       "cited_by": {
-        "value": 56,
+        "value": 57,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8974280610722983070",
         "serpapi_link": "https://serpapi.com/search.json?cites=8974280610722983070&engine=google_scholar&hl=en",
         "cites_id": "8974280610722983070"
@@ -326,8 +326,8 @@
     "table": [
       {
         "citations": {
-          "all": 472,
-          "since_2017": 456
+          "all": 475,
+          "since_2017": 459
         }
       },
       {
@@ -370,7 +370,7 @@
       },
       {
         "year": 2022,
-        "citations": 28
+        "citations": 31
       }
     ]
   },
