@@ -11,9 +11,8 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
       - name: Download scholar
-        env:
-          super_secret: ${{ secrets.SERPAPI }}
-        run: curl "https://serpapi.com/search.json?author_id=XHeNA_8AAAAJ&engine=google_scholar_author&hl=en&api_key=$super_secret" > ./scholar.json
+        working-directory: ./scholar-crawler
+        run: cargo run
       - name: Commit data
         run: |
           git config --global user.name 'David Dao'
