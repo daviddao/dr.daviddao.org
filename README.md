@@ -1,5 +1,7 @@
 ## Academic homepage
 
+[![Download scholar](https://github.com/daviddao/daviddao.github.io/actions/workflows/download-scholar-data.yml/badge.svg)](https://github.com/daviddao/daviddao.github.io/actions/workflows/download-scholar-data.yml)
+
 ### How to run
 
 Just use python and type
