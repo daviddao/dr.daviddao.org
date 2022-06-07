@@ -1,0 +1,12 @@
+/Users/david/Projects/daviddao.github.io/scholar-crawler/target/debug/deps/tempfile-0dea29ce885d67ff.rmeta: /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/lib.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/dir.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/error.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/mod.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/imp/mod.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/spooled.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/util.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/imp/unix.rs
+
+/Users/david/Projects/daviddao.github.io/scholar-crawler/target/debug/deps/tempfile-0dea29ce885d67ff.d: /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/lib.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/dir.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/error.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/mod.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/imp/mod.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/spooled.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/util.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/imp/unix.rs
+
+/Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/lib.rs:
+/Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/dir.rs:
+/Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/error.rs:
+/Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/mod.rs:
+/Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/imp/mod.rs:
+/Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/spooled.rs:
+/Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/util.rs:
+/Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/imp/unix.rs:

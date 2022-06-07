@@ -1,0 +1,12 @@
+/Users/david/Projects/daviddao.github.io/scholar-crawler/target/debug/deps/rand_core-07a874d5cdbdbc36.rmeta: /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/lib.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/block.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/error.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/impls.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/le.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/os.rs
+
+/Users/david/Projects/daviddao.github.io/scholar-crawler/target/debug/deps/librand_core-07a874d5cdbdbc36.rlib: /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/lib.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/block.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/error.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/impls.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/le.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/os.rs
+
+/Users/david/Projects/daviddao.github.io/scholar-crawler/target/debug/deps/rand_core-07a874d5cdbdbc36.d: /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/lib.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/block.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/error.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/impls.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/le.rs /Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/os.rs
+
+/Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/lib.rs:
+/Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/block.rs:
+/Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/error.rs:
+/Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/impls.rs:
+/Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/le.rs:
+/Users/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.6.3/src/os.rs:
